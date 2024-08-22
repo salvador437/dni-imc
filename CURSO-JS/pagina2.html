@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telacojo elec.pag2</title>
+    <link rel="stylesheet" href="/hojas-estilo/style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!------------------------- menu de navegación ------------------------->
+      <div class="navbar">
+        <div class="logo">Telacojo &copy</div>
+
+        <img src="src/logo.svg" alt="" />
+        <div class="menu" id="navbarMenu">
+          <a
+            href="https://www.google.es/"
+            title="Enlace wikipedia"
+            target="_blank"
+            >google</a
+          >
+          <a
+            href="index.html" 
+            title="calculo letra DNI"
+            
+            >Letra DNI</a
+          >
+          <a
+            href="https://es.farnell.com/convertidor-temperatura"
+            target="_blank"
+            title="Enlace a Farnell"
+            >Temperatura</a
+          >
+          <a href="images/salva.jpg" target="_blank" title="foto">Contacto</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- -------------------------------card IMC--------------------------------- -->
+      <div class="clase-imc">
+        <p>Cálculo indice masa corporal IMC:</p>
+        <label class="label"  for="input-imcPeso">Peso</label>
+        <input
+          type="text" class="input-imcPeso" placeholder=" intro. peso en kgrs." maxlength="5"/><br>
+
+        <label class="label" for="input-imcAltura">Altura</label>
+        <input
+          type="text"
+          class="input-imcAltura"
+          placeholder=" intro. altura en cm."
+          maxlength="5"
+        />
+
+        <button class="btn-cal-imc">calcular</button>
+
+        <div class="clase-imc-resultado">
+          <p id="resultado-imc"></p>
+        </div>
+
+      </div>
+      
+      <div class="clase-imc">
+        <h5><p>TABLA INDICE MASA CORPORAL</p></h5>
+        <p> < 18.5: Peso insuficiente.</p>
+        <p>18.5 – 24.9: Peso normal.</p>      
+        <p>25.0 – 29.9: Sobrepeso.</p>      
+        <p>30.0 o más: Obesidad.</p>     
+          
+      </div>
+    
+    </main>
+    <!-- --------------------------pie de página (footer)---------------------------- -->
+    <footer>
+      <div class="footer">
+        <img src="src/logo2.svg" alt="" /> &copy; Telacojo sabadell (BCN)
+      </div>
+    </footer>
+    <!-- ---------------------------------------------------------------------------- -->
+    <script src="/src/pagina2.js"></script>
+  </body>
+</html>

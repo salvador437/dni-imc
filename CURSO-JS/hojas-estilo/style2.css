@@ -1,0 +1,174 @@
+/* variables para estilos de color */
+:root {
+    --body-background: #2f0d96;
+    --div-background: #4a38e7;
+    --btn-background: #554edc;
+    --btn-text-color: white;
+    --footer-background: #333;
+    --a-hover-background: #0a0c5a;
+    --text-color: #7fc7f3;
+    --text-color-logo: #e8f803;
+    --text-navbar: #7fc7f3;
+    --text-color-footer: white;
+    --color-shadow: #040111;
+}
+
+/* estilos para el body del html index2.html*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body-background);
+}
+
+
+.clase-imc 
+.input-imcPeso,
+.input-imcAltura
+ {
+    font-size: 0.9em;
+    border-radius: 7px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1em;
+    background-color: var(--div-background);
+}
+
+.clase-imc
+{
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    max-width: 300px;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 20px;
+    line-height: 1em;
+    user-select: none;
+    box-shadow: 10px 10px 25px var(--color-shadow);
+    background-color: var(--div-background);
+    color: var(--text-color);
+}
+
+
+.label{
+    font-size: 12px;
+}
+
+
+.btn-cal-imc {
+    cursor: pointer;
+    margin-left:30%;
+    font-size: 1em;
+    padding: 0 .8em;
+    border-radius: 0.3em;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--text-color-footer);
+    background-color: var(--footer-background);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    user-select: none;
+    background-color: var(--div-background);
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 1.2em;
+    user-select: none;
+    color: var(--text-navbar);
+}
+
+.navbar a:hover {
+    border-radius: 5px;
+    background-color: var(--a-hover-background);
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.5s;
+    color: var(--text-color-logo);
+}
+
+.navbar .logo:hover {
+    font-size: 2em;
+    font-weight: bold;
+    zoom: 1.1;
+    rotate: 360deg;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu a {
+    display: none;
+}
+
+.navbar .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 650px) {
+    .navbar .menu a {
+        display: block;
+    }
+
+    .navbar .menu-icon {
+        display: none;
+    }
+}
+
+.navbar .menu.responsive {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--footer-background);
+}
+
+.navbar .menu.responsive a {
+    display: block;
+    text-align: center;
+}
+
+.menu-icon {
+    color: #76c4f5;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.5s;
+    color: var(--text-color-logo);
+}
+
+.navbar .logo:hover {
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotateY(360deg);
+}
