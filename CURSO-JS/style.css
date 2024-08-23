@@ -1,0 +1,187 @@
+/* variables para estilos de color */
+:root{
+    --body-background:#54bb0f;
+    --footer-background: #333;
+    --div-background: #1f5c3a;
+    --btn-background:#175131;
+    --nav-background: #0d3f17;
+    --menu-respon-backgraund: #252424;
+    --menu-icono-hambur-color:#07fc27;
+    --text-color: #5ac47d;
+    --text-color-logo: #e8f803;
+    --text-navbar: #3ff172;
+    --text-color-footer:white;
+    --color-shadow: #03290b;
+}
+
+
+/* estilos para el body del index.html*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-background);
+}
+
+
+/* del div ".clase-dni" otorgamos reglas 
+a: "input-dniNumero" , ".input-conversor" 
+    "btn-calcular" y "btn-cal-tem"     */   
+.input-dniNumero, 
+.input-conversor,
+.btn-calcular,
+.btn-cal-temp
+{
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 15px;
+    color: var(--text-color);
+    background-color: var(--div-background);
+}
+
+
+/* damos reglas a la clase ".clase-dni" y ".conversor" */
+.clase-dni, .conversor {
+    font-size: 1.2em;
+    justify-content:center;
+    align-items: center;
+    /* width: 50%; */
+    min-width: 250px; 
+    max-width: 300px;
+    margin-top: 1em;
+    margin-bottom: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 1em;
+    user-select: none;
+    color: var(--text-color);
+    box-shadow: 10px 10px 25px var(--color-shadow);
+    background-color: var(--div-background);
+}
+
+
+/* damos reglas a la clase ".footer" */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer-background);
+    color: var(--text-color-footer);
+}
+
+
+/* damos reglas a la clase ".navbar" que es */
+/* la barra de navegación  */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    user-select: none;
+    background-color: var(--div-background);
+}
+
+
+/* damos reglas dentro del menú de navegación */
+/* sólo a los elementos "a", para ir a enlaces */
+a {
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: 1.2em;
+    user-select: none;
+    color: var(--text-navbar);
+}
+
+
+a:hover {
+    border-radius: 5px;
+    background-color: var(--nav-background);
+    
+}
+
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--text-color-logo);
+}
+
+
+.logo:hover {
+    font-size: 2em;
+    font-weight: bold;
+    zoom: 1.1;
+    transform: rotate(360deg);
+}
+
+
+.menu {
+    display: flex;
+}
+
+
+.menu a {
+    display: none;
+}
+
+
+.menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 650px) {
+    .menu a {
+        display: block;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+
+.menu.responsive {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--menu-respon-backgraund);
+}
+
+
+.menu.responsive a {
+    display: block;
+    text-align: center;
+}
+
+.menu-icon {
+    color: var(--menu-icono-hambur-color);
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.5s;
+    color: var(--text-color-logo);
+}
+
+.logo:hover {
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotateY(360deg);
+}
+
+
+
