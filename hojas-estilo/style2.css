@@ -35,6 +35,11 @@ body {
     background-color: var(--div-background);
 }
 
+.input-imcPeso:hover,
+.input-imcAltura:hover{
+    cursor: pointer;
+}
+
 .clase-imc
 {
     font-size: 1.2em;
