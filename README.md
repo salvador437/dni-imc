@@ -19,3 +19,28 @@ sguiente algorritmo:
 debe introducir el peso en kgrs. y la altura en cmts. 
 
 
+## LISTA de archivos app DNI-IMC
+
+## CARPETA hojas de estilo:
+- style.css
+- style2.css
+
+## CARPETA images:
+- logo.svg
+- logo2.svg
+- logo3.svg
+- salva.jpg
+
+## CARPETA src:
+- index.js
+- notificacionError.js
+- notificacionError.js
+- pagina2.js
+
+## ROOT:
+- index.html
+- notificacionError.html
+- notificacionErrorIMC.html
+- readme.md
+
+
