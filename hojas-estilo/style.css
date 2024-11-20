@@ -88,8 +88,8 @@ a: "input-dniNumero" , ".input-conversor"
 
 /* Estilos del contenido del modal */
 .modal-content {
-  background-color:var(--div-background);
-  color:#ffffff ;
+  background-color: var(--div-background);
+  color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #e8f803;
