@@ -77,3 +77,4 @@ function calcularTemperaturaCF() {
     "#resultado-temperatura"
   ).textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
 }
+
