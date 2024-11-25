@@ -29,7 +29,7 @@ inputConversor.addEventListener("blur", () => {
 
 // commutación menú hanburguesa y navegador.
 function toggleMenu() {
-  const menu = document.getElementById("navbarMenu");
+  const menu = document.getElementById("navbarMenu")
   if (menu.className === "menu") {
     menu.className += " responsive";
   } else {
