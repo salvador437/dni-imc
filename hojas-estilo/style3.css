@@ -25,10 +25,10 @@ a:hover{
 }
 
 p::first-letter {
-  color: white;
-  background-color: rgb(88, 86, 86);
+  color: black;
+  background-color: orangered;
   border-radius: 5%;
-  box-shadow: 3px 3px 0 #3f02e6;
+  box-shadow: 3px 3px 0 black;
   font-size: 200%;
   padding: 6px 3px;
   margin-right: 6px;
@@ -37,7 +37,7 @@ p::first-letter {
 
 .header{
   border: 1px solid #d1740a;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 
