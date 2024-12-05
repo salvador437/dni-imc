@@ -24,12 +24,16 @@ debe introducir el peso en kgrs. y la altura en cmts.
 ## CARPETA hojas de estilo:
 - style.css
 - style2.css
+- style3.css
 
 ## CARPETA images:
+- IMC.png
+- IMG_6141.jpg
 - logo.svg
 - logo2.svg
 - logo3.svg
 - salva.jpg
+- salva2.jpg
 
 ## CARPETA src:
 - index.js
@@ -38,7 +42,9 @@ debe introducir el peso en kgrs. y la altura en cmts.
 - pagina2.js
 
 ## ROOT:
+-caculoIMC.html
 - index.html
+- link.html
 - notificacionError.html
 - notificacionErrorIMC.html
 - readme.md
