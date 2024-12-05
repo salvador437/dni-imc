@@ -28,9 +28,9 @@
           title="MDN-css">MDN-css</a>
         <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"
           title="Enlace a MDN-javascript">MDN-javascript</a>
-        <a href="./pagina3.html" target="_blank"
+        <a href="./link.html" target="_blank"
           title="Link">Link</a>  
-        <a href="images/salva.jpg" target="_blank" title="foto">Contacto</a>
+        <a href="images/salva2.jpg" target="_blank" title="foto">Contacto</a>
       </div>
       <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </div>
@@ -39,14 +39,14 @@
   <main>
     <!-- card IMC -->
     <div class="clase-imc">
-      <p>Cálculo índice masa corporal IMC:</p>
-      <label class="label" for="input-imcPeso">Peso.</label>
+      <center><p>Cálculo índice masa corporal IMC:</p>
+      <label class="label" for="input-imcPeso">Peso</label>
       <input type="text" class="input-imcPeso" placeholder=" intro. peso en kgrs." maxlength="5"><br>
 
       <label class="label" for="input-imcAltura">Altura</label>
       <input type="text" class="input-imcAltura" placeholder=" intro. altura en cm." maxlength="5">
 
-      <button class="btn-cal-imc">calcular</button>
+      <button class="btn-cal-imc">calcular</button></center>
 
       <div class="clase-imc-resultado">
         <p id="resultado-imc"></p>
@@ -55,7 +55,7 @@
 
     <div class="clase-imc">
       <h5>
-        TABLA INDICE MASA CORPORAL
+        <center>TABLA INDICE MASA CORPORAL
       </h5>
       <table border="1">
         <tr>
@@ -78,7 +78,7 @@
           <td>30.0 o más</td>
           <td>Obesidad</td>
         </tr>
-      </table>
+      </table></center>
     </div>
   </main>
   <!-- pie de página (footer) -->
@@ -88,6 +88,6 @@
     </div>
   </footer>
 
-  <script src="./src/pagina2.js" ></script>
+  <script src="/src/pagina2.js" defer></script>
 </body>
 </html>

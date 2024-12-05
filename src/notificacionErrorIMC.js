@@ -5,5 +5,5 @@ const closeBtn = document.getElementsByClassName("close2")[0];
 
 closeBtn.onclick = function () {
   modal.style.display = "none";
-  open("./pagina2.html", target="_self");
+  open("./calculoIMC.html", target="_self");
 };

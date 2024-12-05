@@ -29,7 +29,7 @@ inputConversor.addEventListener("blur", () => {
 
 // commutación menú hanburguesa y navegador.
 function toggleMenu() {
-  const menu = document.getElementById("navbarMenu")
+  const menu = document.getElementById("navbarMenu");
   if (menu.className === "menu") {
     menu.className += " responsive";
   } else {
@@ -63,7 +63,11 @@ function calcularLetraDNI() {
 //Cálculo de la conversión de grados C => F.
 function calcularTemperaturaCF() {
   const gradosConversion = document.querySelector(".input-conversor").value;
-  if (gradosConversion.length > 5 ||isNaN(gradosConversion) ||gradosConversion.length < 1) {
+  if (
+    gradosConversion.length > 5 ||
+    isNaN(gradosConversion) ||
+    gradosConversion.length < 1
+  ) {
     window.open("./notificacionError.html", (target = "_self"));
   }
 
@@ -77,4 +81,3 @@ function calcularTemperaturaCF() {
     "#resultado-temperatura"
   ).textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
 }
-
