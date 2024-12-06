@@ -7,7 +7,7 @@ o contenga cualquier digito que no sea numerico y le mostrará
 el mensage de "Por favor introduzca sólo números de 8 digitos".
 
 Para la conversión de temperatura de grados celsius a grados
-farenheit debe introducir valor numerico de 3 digitos maximo.
+farenheit debe introducir valor numerico de maximo 5 digitos contando con el punto decimal silo hay.
 Utilizando el algoritmo:
     gradosFarhengeis = (9 / 5) * gradosConversion + 32;
 
@@ -22,9 +22,9 @@ debe introducir el peso en kgrs. y la altura en cmts.
 ## LISTA de archivos app DNI-IMC
 
 ## CARPETA hojas de estilo:
-- style.css
-- style2.css
-- style3.css
+- index.css
+- calculoIMC.css
+- link.css
 
 ## CARPETA images:
 - IMC.png
@@ -35,11 +35,15 @@ debe introducir el peso en kgrs. y la altura en cmts.
 - salva.jpg
 - salva2.jpg
 
+## CARPETA JACASCRIPT:
+- 78 Carpetas delcurso (1-70)
+- Carpeta glosario javascript
+
 ## CARPETA src:
 - index.js
 - notificacionError.js
 - notificacionError.js
-- pagina2.js
+- calculoIMC.js
 
 ## ROOT:
 -caculoIMC.html
