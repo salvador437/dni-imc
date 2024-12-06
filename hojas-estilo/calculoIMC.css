@@ -98,6 +98,7 @@ body {
     max-width: 500px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
     border-radius: 0.8em;
+    user-select: none;
 }
 
 /* Botón de cerrar */
@@ -146,6 +147,7 @@ h5{
     left: 0;
     bottom: 0;
     width: 100%;
+    user-select: none;
     color: var(--text-color-footer);
     background-color: var(--footer-background);
 }

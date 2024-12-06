@@ -38,6 +38,7 @@ a: "input-dniNumero" , ".input-conversor"
   cursor: pointer;
   margin-left: 15px;
   user-select: none;
+  user-select: none;
   color: var(--text-color);
   background-color: var(--div-background);
 }
@@ -61,6 +62,7 @@ a: "input-dniNumero" , ".input-conversor"
   line-height: 1em;
   user-select: none;
   color: var(--text-color);
+  user-select: none;
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
 }
@@ -99,6 +101,7 @@ a: "input-dniNumero" , ".input-conversor"
   border: 1px solid #e8f803;
   width: 80%;
   max-width: 500px;
+  user-select: none;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
   border-radius: 0.8em;
 }
