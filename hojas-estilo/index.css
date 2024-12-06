@@ -4,7 +4,7 @@
   --footer-background: #333;
   --div-background: #1f5c3a;
   --btn-background: #175131;
-  --nav-background: #0d3f17;
+  --nav-background: #0e3a17;
   --menu-respon-backgraund: #252424;
   --menu-icono-hambur-color: rgb(7, 252, 39);
   --text-color: #5ac47d;
@@ -65,6 +65,14 @@ a: "input-dniNumero" , ".input-conversor"
   user-select: none;
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
+}
+
+#resultado-temperatura{
+  text-align: center;
+}
+
+#resultado{
+  text-align: center;
 }
 
 /* damos reglas a la clase ".footer" */

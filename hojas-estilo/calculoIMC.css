@@ -5,7 +5,7 @@
     --btn-background: #554edc;
     --btn-text-color: white;
     --footer-background: #333;
-    --a-hover-background: #0a0c5a;
+    --a-hover-background: #16189b;
     --text-color: #7fc7f3;
     --text-color-logo: #e8f803;
     --text-navbar: #7fc7f3;
@@ -99,6 +99,10 @@ body {
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
     border-radius: 0.8em;
     user-select: none;
+}
+
+#resultado-imc{
+    text-align: center;
 }
 
 /* Botón de cerrar */
