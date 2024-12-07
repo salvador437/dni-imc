@@ -1,12 +1,12 @@
 /* variables para estilos de color */
 :root {
     --body-background: #2f0d96;
-    --div-background: #4a38e7;
-    --btn-background: #554edc;
+    --div-background: rgb(74, 56, 231,0.6);
+    --btn-background: rgb(85, 78, 220,0.4);
     --btn-text-color: white;
     --footer-background: #333;
     --a-hover-background: #16189b;
-    --text-color: #7fc7f3;
+    --text-color: #1d0ba5;
     --text-color-logo: #7fc7f3;
     --text-navbar: #7fc7f3;
     --text-color-footer: white;
@@ -37,7 +37,7 @@ body {
 
 .clase-imc
 {
-    border: 2px solid var(--body-background) ;
+    /* border: 2px solid var(--body-background) ; */
     font-size: 1.2em;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body {
     background-color: var(--btn-background);
 }
 
-#resultado-validacion{
+#resultado-imc{
     margin-left: 2em;
     text-align: center; 
 }

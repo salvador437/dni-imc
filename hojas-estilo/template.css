@@ -1,7 +1,7 @@
 /* variables para estilos de color */
 :root {
   --body-background:#000;
-  --div-background: #000;
+  --div-background: rgb(0, 0, 0,0.7);
   --btn-background: #000;
   --btn-text-color: orangered;
   --footer-background: #222;
@@ -21,8 +21,12 @@ body {
   box-sizing: border-box;
   /* background-color: var(--body-background); */
   background-image: url(../images/card-credito.jpg);
+  
 }
 
+h2{
+  color: orangered;
+}
 
 .clase-validacion 
 .input-validacion
@@ -80,8 +84,9 @@ body {
   cursor: pointer;
 }
 
-#resultado-imc{
-  margin-left: 2em; 
+#resultado-validacion{
+text-align: center;
+color: #e8f803;
 }
 
 .modal {
@@ -110,42 +115,24 @@ body {
   user-select: none;
 }
 
-#resultado-imc{
+#resultado-validacion{
   text-align: center;
 }
 
 /* Botón de cerrar */
-.close {
+.close3 {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
+.close3:hover,
+.close3:focus {
+  color: #555;
   text-decoration: none;
   cursor: pointer;
 }
-
-.close2 {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
 
 .footer {
   text-align: center;
