@@ -2,13 +2,13 @@
 :root {
   --body-background: #54bb0f;
   --footer-background: #333;
-  --div-background: #1f5c3a;
+  --div-background: #333;
   --btn-background: #175131;
-  --nav-background: #0e3a17;
-  --menu-respon-backgraund: #252424;
+  --nav-background: #222;
+  --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
   --text-color: #5ac47d;
-  --text-color-logo: #e8f803;
+  --text-color-logo: #5ac47d;
   --text-navbar: #3ff172;
   --text-color-footer: white;
   --color-shadow: #03290b;
@@ -19,7 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--body-background);
+  background-image: url(../images/dni2.jpg);
 }
 
 /* del div ".clase-dni" otorgamos reglas 
@@ -63,6 +63,7 @@ a: "input-dniNumero" , ".input-conversor"
   user-select: none;
   color: var(--text-color);
   user-select: none;
+  border: 2px solid var(--text-color);
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
 }
@@ -136,7 +137,7 @@ a: "input-dniNumero" , ".input-conversor"
   align-items: center;
   padding: 10px 20px;
   user-select: none;
-  background-color: var(--div-background);
+  background-color: var(--nav-background);
 }
 
 /* damos reglas dentro del menú de navegación */
@@ -152,7 +153,7 @@ a {
 
 a:hover {
   border-radius: 5px;
-  background-color: var(--nav-background);
+  background-color: #444;
 }
 
 .logo {

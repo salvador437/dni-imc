@@ -7,7 +7,7 @@
   --footer-background: #222;
   --a-hover-background: #000;
   --text-color: orangered;
-  --text-color-logo: #e8f803;
+  --text-color-logo: orangered;
   --text-navbar: orangered;
   --text-color-footer: white;
   --color-shadow: #040111;
@@ -19,13 +19,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--body-background);
+  /* background-color: var(--body-background); */
+  background-image: url(../images/card-credito.jpg);
 }
 
 
-.clase-imc 
-.input-imcPeso,
-.input-imcAltura
+.clase-validacion 
+.input-validacion
 {
   font-size: 0.9em;
   border-radius: 7px;
@@ -35,7 +35,7 @@ body {
   background-color: var(--div-background);
 }
 
-.clase-imc
+.clase-validacion
 {
   
   font-size: 1.2em;
@@ -63,13 +63,21 @@ body {
 }
 
 
-.btn-cal-imc {
+.btn-cal-validacion {
+  outline:invert;
+  border: 1px solid orangered;
   cursor: pointer;
   font-size: 1em;
   padding: 0 .8em;
   border-radius: 0.3em;
   color: var(--btn-text-color);
-  background-color: var(--btn-background);
+  background-color: #222;
+}
+
+.btn-cal-validacion:hover{
+  color: white;
+  background-color: orangered;
+  cursor: pointer;
 }
 
 #resultado-imc{

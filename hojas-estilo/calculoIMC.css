@@ -7,7 +7,7 @@
     --footer-background: #333;
     --a-hover-background: #16189b;
     --text-color: #7fc7f3;
-    --text-color-logo: #e8f803;
+    --text-color-logo: #7fc7f3;
     --text-navbar: #7fc7f3;
     --text-color-footer: white;
     --color-shadow: #040111;
@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--body-background);
+    background-image: url(../images/IMC.jpg);
 }
 
 
@@ -37,7 +37,7 @@ body {
 
 .clase-imc
 {
-    
+    border: 2px solid var(--body-background) ;
     font-size: 1.2em;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ body {
 }
 
 
-.btn-cal-imc {
+.btn-cal-validacion {
     cursor: pointer;
     font-size: 1em;
     padding: 0 .8em;
@@ -71,9 +71,12 @@ body {
     background-color: var(--btn-background);
 }
 
-#resultado-imc{
-    margin-left: 2em; 
+#resultado-validacion{
+    margin-left: 2em;
+    text-align: center; 
 }
+
+
 
 .modal {
     display: block;
@@ -101,9 +104,7 @@ body {
     user-select: none;
 }
 
-#resultado-imc{
-    text-align: center;
-}
+
 
 /* Botón de cerrar */
 .close {

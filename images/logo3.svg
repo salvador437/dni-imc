@@ -6,7 +6,7 @@
     height="65"
     viewBox="0 0 300 300">
     <!-- Fondo del círculo -->
-    <circle cx="150" cy="150" r="195" fill="#1f5c3a" />
+    <circle cx="150" cy="150" r="195" fill="#222" />
     
     <!-- Símbolo del rayo -->
     <polygon points="110,20 90,80 120,80 80,180 100,110 70,110" fill="#ffcc00" />

@@ -20,7 +20,7 @@
   <header>
     <!-- menu de navegación -->
     <div class="navbar">
-      <div class="logo">Telacojo &copy;</div>
+      <div class="logo">Validación CARD </div>
       <img src="images/logo-template.svg" alt="">
       <div class="menu" id="navbarMenu">
         <a href="./index.html" title="calculo letra DNI">Cálculo DNI</a>
@@ -39,22 +39,16 @@
 
   <main>
     <!-- card IMC -->
-    <div class="clase-imc">
-      <center><p>Cálculo índice masa corporal IMC:</p>
-      <label class="label" for="input-imcPeso">Peso</label>
-      <input type="text" class="input-imcPeso" placeholder=" intro. peso en kgrs." maxlength="5"><br>
-
-      <label class="label" for="input-imcAltura">Altura</label>
-      <input type="text" class="input-imcAltura" placeholder=" intro. altura en cm." maxlength="5">
-
-      <button class="btn-cal-imc">calcular</button></center>
-
-      <div class="clase-imc-resultado">
-        <p id="resultado-imc"></p>
+    <div class="clase-validacion">
+      <center><p>Validación Nº tarjeta credito</p>
+      <label class="label" for="input-validacion">número</label>
+      <input type="text" class="input-validacion" placeholder=" intro. número tarjeta." maxlength="16"><br>
+      <button class="btn-cal-validacion">calcular</button></center>
+      <div class="clase-validacion-resultado">
+        <p id="resultado-validacion"></p>
       </div>
     </div>
 
-    
   </main>
   <!-- pie de página (footer) -->
   <footer>
@@ -63,6 +57,6 @@
     </div>
   </footer>
 
-  <script src="/src/template.js" defer></script>
+  <script src="/src/validacionCard.js" defer></script>
 </body>
 </html>
