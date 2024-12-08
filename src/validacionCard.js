@@ -2,7 +2,7 @@
 const inputValidacion = document.querySelector(".input-validacion");
 const btnValidacion = document.querySelector(".btn-cal-validacion");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
-
+const posibleNumero = document.querySelector("#posible-numero");
 // escuchando cuando se hace click  en el botón calcular
 btnValidacion.addEventListener("click", calcularValidacion);
 
@@ -10,11 +10,12 @@ btnValidacion.addEventListener("click", calcularValidacion);
 inputValidacion.addEventListener("focus", () => {
   inputValidacion.value = "";
   document.querySelector("#resultado-validacion").textContent = "";
+  document.querySelector("#posible-numero").textContent = ""
 });
 
 // cálculo de la validación del número de la card
-function calcularValidacion(){
-  
+function calcularValidacion(){ 
+
   const valorValidacion = inputValidacion.value;
   const validacion = ccTest(valorValidacion);
 
@@ -26,16 +27,18 @@ function calcularValidacion(){
   }
 
   if (validacion){
-    console.log("tarjeta valida")
     document.getElementById("resultado-validacion").style.color = "chartreuse"
     resultadoValidacion.textContent = "Tarjeta valida"
   }else{
-    console.log("tarjeta rechazada")
+    const valorValidacion = inputValidacion.value;
     document.getElementById("resultado-validacion").style.color = "red"
     resultadoValidacion.textContent = "Tarjeta rechazada"
+    posibleNumero.textContent = `Pruebe éste ${ccGen(valorValidacion)}`
   }
 
 }
+
+
 
 // commutación menú hanburguesa y navegador.
 function toggleMenu() {

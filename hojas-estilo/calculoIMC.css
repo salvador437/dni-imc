@@ -1,14 +1,14 @@
 /* variables para estilos de color */
 :root {
     --body-background: #2f0d96;
-    --div-background: rgb(74, 56, 231,0.6);
+    --div-background: rgb(74, 56, 231,0.8);
     --btn-background: rgb(85, 78, 220,0.4);
     --btn-text-color: white;
     --footer-background: #333;
     --a-hover-background: #16189b;
-    --text-color: #1d0ba5;
+    --text-color: #1c09ac;
     --text-color-logo: #7fc7f3;
-    --text-navbar: #7fc7f3;
+    --text-navbar: #70c2f5;
     --text-color-footer: white;
     --color-shadow: #040111;
 }
@@ -33,6 +33,11 @@ body {
     text-align: center;
     margin-bottom: 1em;
     background-color: var(--div-background);
+}
+
+h2{
+    color:#1c09ac;
+    text-decoration: underline;
 }
 
 .clase-imc

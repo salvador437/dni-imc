@@ -34,6 +34,8 @@ function ccGen(bin){
 			cc+=bin.substring(i,i+1);
 		}
 	}
+	
+	
 	function ccGenX(bin,xInd){
 		let cc="";
 		for(let i=0;i<16;i++){
@@ -53,3 +55,4 @@ function ccGen(bin){
 	}
 	return cc;
 }
+console.log(ccGen("1981xxxx"));

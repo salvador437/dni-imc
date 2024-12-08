@@ -2,9 +2,9 @@
 :root {
   --body-background: #54bb0f;
   --footer-background: #333;
-  --div-background: rgb(51, 51, 51,0.7);
+  --div-background: rgb(51, 51, 51,0.8);
   --btn-background: #175131;
-  --nav-background: rgb(34, 34, 34,0.7);
+  --nav-background: rgb(34, 34, 34,0.8);
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
   --text-color: #5ac47d;
@@ -20,6 +20,11 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../images/dni2.jpg);
+}
+
+h2{
+  color: chartreuse;
+  text-decoration: underline;
 }
 
 /* del div ".clase-dni" otorgamos reglas 
@@ -98,6 +103,7 @@ a: "input-dniNumero" , ".input-conversor"
   width: 100%;
   height: 100%;
   overflow: auto;
+  font-weight: 50;
   background-color: var(--body-background);
 }
 
@@ -107,12 +113,13 @@ a: "input-dniNumero" , ".input-conversor"
   color:#ffffff ;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #e8f803;
+  border: 1px solid #03f828;
   width: 80%;
   max-width: 500px;
   user-select: none;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
   border-radius: 0.8em;
+  font-weight: 50;
 }
 
 .close {
