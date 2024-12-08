@@ -14,7 +14,7 @@ El comando npm create vite hará toda la magia por nosotros. En nuestro ejemplo,
 Se nos advertirá que es necesario instalar el paquete create-vite de no tenerlo instalado, que es el asistente encargado de crear la aplicación web. Al responder afirmativamente, nos aparecerá un menú para seleccionar que plantilla queremos utilizar (al elegir una, luego nos preguntará si queremos la versión javascript o typescript).
 
 ## <span style="color:orange">Plantillas de Vite.</span>
-Si no queremos que nos aparezca ese menú interactivo, es posible indicar un parámetro opcional --template para especificar directamente la plantilla a utilizar sin que nos salte el asistente:
+Si no queremos que nos aparezca ese menú interactivo, es posible indicar un parámetro opcional --validacionCard para especificar directamente la plantilla a utilizar sin que nos salte el asistente:
 
 ![alt text](./imagenes-vite-tutorial-inicio/image-1.png)
 

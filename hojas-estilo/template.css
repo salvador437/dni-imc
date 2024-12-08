@@ -156,6 +156,8 @@ color: #e8f803;
   padding: 10px 20px;
   user-select: none;
   background-color: var(--footer-background);
+  border-bottom: 3px solid #FFF;
+  border-top: 3px solid #FFF;
 }
 
 .navbar a {

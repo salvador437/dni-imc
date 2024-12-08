@@ -9,9 +9,10 @@ btnCalImc.addEventListener("click", calcularIMC);
 
 // escuchando cuando tiene el foco el "inputImcPeso".
 inputImcPeso.addEventListener("focus", () => {
-  inputImcPeso.value = "";
-  document.querySelector("#resultado-imc").textContent = "";
+  limpiar()
 });
+
+
 
 // escuchando cuando tiene el foco el inputImcAltura.
 inputImcAltura.addEventListener("focus", () => {
@@ -27,6 +28,28 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    limpiar();
+  }
+
+  if(event.key === "Enter"){
+    calcularIMC()
+  }
+
+  if (event.ctrlKey && event.key === "z") {
+    window.open("./index.html")
+  }
+
+});
+
+
+
+function limpiar(){
+  inputImcPeso.value = "";
+  document.querySelector("#resultado-imc").textContent = "";
 }
 
 // calcula el indice de masa corporal IMC

@@ -10,17 +10,35 @@ btnCalTemp.addEventListener("click", calcularTemperaturaCF);
 
 // escuchando cuando tiene el foco el input dni.
 inputdni.addEventListener("focus", () => {
-  inputdni.value = "";
-  inputConversor.value = "";
-  document.querySelector("#resultado").textContent = "";
+  limpiar()
 });
 
 // escuchando cuando  tiene el  input temperatura.
 inputConversor.addEventListener("focus", () => {
+  limpiar()
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    limpiar();
+  }
+
+
+  if (event.ctrlKey && event.key === "z") {
+    window.open("./index.html")
+  }
+
+});
+
+function limpiar(){
+  inputdni.value = "";
+  inputConversor.value = "";
+  document.querySelector("#resultado").textContent = "";
   inputConversor.value = "";
   inputdni.value = "";
   document.querySelector("#resultado-temperatura").textContent = "";
-});
+
+}
 
 // escuchando cuando el input pierde el foco
 inputConversor.addEventListener("blur", () => {
@@ -39,14 +57,15 @@ function toggleMenu() {
 
 // cálculo de la letra del DNI.
 function calcularLetraDNI() {
-  // Verificar que el DNI sea un número de 8 dígitos
-  const dniNumero = document.querySelector(".input-dniNumero").value;
+  const dniNumero = inputdni.value;
   inputdni.addEventListener("input", function (event) {
     if (/^[0-9]$/.test(event.key)) {
       event.preventDefault();
     }
   });
 
+
+  // Verificar que el DNI sea un número de 8 dígitos
   if (dniNumero.length !== 8 || isNaN(dniNumero)) {
     window.open("./notificacionError.html", (target = "_self"));
   }
@@ -57,7 +76,7 @@ function calcularLetraDNI() {
   const letraDNI = letras[indice];
 
   document.querySelector("#resultado").textContent = ` El DNI 
-  completo es: ${dniNumero}${letraDNI} `;
+  completo es: ${dniNumero}-${letraDNI} `;
 }
 
 //Cálculo de la conversión de grados C => F.

@@ -145,6 +145,8 @@ a: "input-dniNumero" , ".input-conversor"
   padding: 10px 20px;
   user-select: none;
   background-color: var(--nav-background);
+  border-bottom: 3px solid #FFF;
+  border-top: 3px solid #FFF;
 }
 
 /* damos reglas dentro del menú de navegación */
@@ -160,7 +162,7 @@ a {
 
 a:hover {
   border-radius: 5px;
-  background-color: #444;
+  background-color: #222;
 }
 
 .logo {

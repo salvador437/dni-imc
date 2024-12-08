@@ -64,7 +64,7 @@ Todo esto lo hace ideal para crear plantillas reutilizables, por ejemplo, con c�
 
 ![alt text](./imagenes-string/image-8.png)
 
-Observa que template incluye el código HTML de magicalWord, algo que quizás no tiene mucho sentido aún, pero que puede cobrar mucho sentido si pensamos en crear funciones reutilizables:
+Observa que validacionCard incluye el código HTML de magicalWord, algo que quizás no tiene mucho sentido aún, pero que puede cobrar mucho sentido si pensamos en crear funciones reutilizables:
 
 ![alt text](./imagenes-string/image-9.png)
 
