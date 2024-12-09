@@ -5,7 +5,7 @@
   --btn-background: #000;
   --btn-text-color: orangered;
   --footer-background: #222;
-  --a-hover-background: #000;
+  --a-hover-background: #222;
   --text-color: orangered;
   --text-color-logo: orangered;
   --text-navbar: orangered;
@@ -145,6 +145,7 @@ color: #e8f803;
   bottom: 0;
   width: 100%;
   user-select: none;
+  font-size: 1.5em;
   color: var(--text-color-footer);
   background-color: var(--footer-background);
 }
@@ -165,7 +166,7 @@ color: #e8f803;
   text-decoration: none;
   padding: 14px 20px;
   display: block;
-  font-size: 1.2em;
+  font-size: 1.4em;
   user-select: none;
   color: var(--text-navbar);
 }
@@ -173,6 +174,7 @@ color: #e8f803;
 .navbar a:hover {
   border-radius: 5px;
   background-color: var(--a-hover-background);
+  border: 1px solid orangered;
 }
 
 .navbar .logo {

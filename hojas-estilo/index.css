@@ -7,7 +7,7 @@
   --nav-background: rgb(34, 34, 34,0.8);
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
-  --text-color: #5ac47d;
+  --text-color: #b4abab;
   --text-color-logo: #5ac47d;
   --text-navbar: #3ff172;
   --text-color-footer: white;
@@ -90,6 +90,7 @@ a: "input-dniNumero" , ".input-conversor"
   bottom: 0;
   width: 100%;
   user-select: none;
+  font-size: 1.5em;
   background-color: var(--footer-background);
   color: var(--text-color-footer);
 }
@@ -157,7 +158,7 @@ a {
   text-decoration: none;
   padding: 14px 20px;
   display: block;
-  font-size: 1.2em;
+  font-size: 1.4em;
   user-select: none;
   color: var(--text-navbar);
 }
@@ -165,6 +166,7 @@ a {
 a:hover {
   border-radius: 5px;
   background-color: #444;
+  border: 1px solid #54bb0f;
 }
 
 .logo {

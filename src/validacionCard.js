@@ -3,14 +3,14 @@ const inputValidacion = document.querySelector(".input-validacion");
 const btnValidacion = document.querySelector(".btn-cal-validacion");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
 const posibleNumero = document.querySelector("#posible-numero");
+
 // escuchando cuando se hace click  en el botón calcular
 btnValidacion.addEventListener("click", calcularValidacion);
-
 // escuchando cuando tiene el foco el input validación
 inputValidacion.addEventListener("focus", () => {
   limpiar();
 });
-
+// escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
@@ -64,6 +64,7 @@ function toggleMenu() {
   }
 }
 
+// cálculo de la validación del número de la card
 function ccTest(cc){
 	let sumaPar=0;
 	let sumaImpar=0;

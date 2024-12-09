@@ -6,20 +6,15 @@ const resultadoIMC = document.querySelector("#resultado-imc");
 
 // escuchando cuando se hace click en el botón "btnCalImc".
 btnCalImc.addEventListener("click", calcularIMC);
-
 // escuchando cuando tiene el foco el "inputImcPeso".
 inputImcPeso.addEventListener("focus", () => {
   limpiar()
 });
-
-
-
 // escuchando cuando tiene el foco el inputImcAltura.
 inputImcAltura.addEventListener("focus", () => {
   inputImcAltura.value = "";
   document.querySelector("#resultado-imc").textContent = "";
 });
-
 // commutación menú hanburguesa y navegador.
 function toggleMenu() {
   const menu = document.getElementById("navbarMenu");
@@ -29,20 +24,17 @@ function toggleMenu() {
     menu.className = "menu";
   }
 }
-
+// escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
-
   if(event.key === "Enter"){
     calcularIMC()
   }
-
   if (event.ctrlKey && event.key === "z") {
     window.open("./index.html")
   }
-
 });
 
 

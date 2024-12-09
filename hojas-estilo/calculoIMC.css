@@ -3,10 +3,10 @@
     --body-background: #2f0d96;
     --div-background: #333333cc;
     --btn-background: #333333cc;
-    --btn-text-color: white;
+    --btn-text-color: #b4abab;
     --footer-background: #333;
-    --a-hover-background: #16189b;
-    --text-color: #70c2f5;
+    --a-hover-background: #444;
+    --text-color: #b4abab;
     --text-color-logo: #7fc7f3;
     --text-navbar: #70c2f5;
     --text-color-footer: white;
@@ -158,6 +158,7 @@ h5{
     bottom: 0;
     width: 100%;
     user-select: none;
+    font-size: 1.5em;
     color: var(--text-color-footer);
     background-color: var(--footer-background);
 }
@@ -178,13 +179,14 @@ h5{
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.4em;
     user-select: none;
     color: var(--text-navbar);
 }
 
 .navbar a:hover {
     border-radius: 5px;
+    border: 1px solid var(--text-navbar);
     background-color: var(--a-hover-background);
 }
 
