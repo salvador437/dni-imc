@@ -156,8 +156,9 @@ color: #e8f803;
   padding: 10px 20px;
   user-select: none;
   background-color: var(--footer-background);
-  border-bottom: 3px solid #FFF;
-  border-top: 3px solid #FFF;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #444;
+  background: linear-gradient(5deg, black,#222,#777)
 }
 
 .navbar a {

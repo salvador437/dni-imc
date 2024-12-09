@@ -1,12 +1,12 @@
 /* variables para estilos de color */
 :root {
     --body-background: #2f0d96;
-    --div-background: rgb(74, 56, 231,0.8);
-    --btn-background: rgb(85, 78, 220,0.4);
+    --div-background: #333333cc;
+    --btn-background: #333333cc;
     --btn-text-color: white;
     --footer-background: #333;
     --a-hover-background: #16189b;
-    --text-color: #1c09ac;
+    --text-color: #70c2f5;
     --text-color-logo: #7fc7f3;
     --text-navbar: #70c2f5;
     --text-color-footer: white;
@@ -36,7 +36,7 @@ body {
 }
 
 h2{
-    color:#1c09ac;
+    color:#50a7f9;
     text-decoration: underline;
 }
 
@@ -98,10 +98,10 @@ h2{
   /* Estilos del contenido del modal */
 .modal-content {
     background-color: var(--div-background);
-    color:#ffffff ;
+    color:#8bd6f5 ;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #e8f803;
+    border: 1px solid #8bd6f5;
     width: 80%;
     max-width: 500px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
@@ -168,9 +168,10 @@ h5{
     align-items: center;
     padding: 10px 20px;
     user-select: none;
+    background: linear-gradient(5deg, black,#222,#777);
     background-color: var(--div-background);
-    border-bottom: 3px solid #FFF;
-    border-top: 3px solid #FFF;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #444;
 }
 
 .navbar a {
