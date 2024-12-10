@@ -2,9 +2,9 @@
 :root {
   --body-background: #54bb0f;
   --footer-background: #333;
-  --div-background: rgb(51, 51, 51,0.8);
+  --div-background: rgb(51, 51, 51, 0.8);
   --btn-background: #175131;
-  --nav-background: rgb(34, 34, 34,0.8);
+  --nav-background: rgb(34, 34, 34, 0.8);
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
   --text-color: #b4abab;
@@ -22,7 +22,7 @@ body {
   background-image: url(../images/dni2.jpg);
 }
 
-h2{
+h2 {
   color: chartreuse;
   text-decoration: underline;
 }
@@ -73,11 +73,11 @@ a: "input-dniNumero" , ".input-conversor"
   background-color: var(--div-background);
 }
 
-#resultado-temperatura{
+#resultado-temperatura {
   text-align: center;
 }
 
-#resultado{
+#resultado {
   text-align: center;
 }
 
@@ -110,8 +110,8 @@ a: "input-dniNumero" , ".input-conversor"
 
 /* Estilos del contenido del modal */
 .modal-content {
-  background-color:var(--div-background);
-  color:#ffffff ;
+  background-color: var(--div-background);
+  color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #03f828;
@@ -145,7 +145,7 @@ a: "input-dniNumero" , ".input-conversor"
   align-items: center;
   padding: 10px 20px;
   user-select: none;
-  background: linear-gradient(5deg, black,#222,#777);
+  background: linear-gradient(5deg, black, #222, #777);
 
   background-color: var(--nav-background);
   border-bottom: 1px solid #000;

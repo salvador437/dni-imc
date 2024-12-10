@@ -1,7 +1,7 @@
 /* variables para estilos de color */
 :root {
-  --body-background:#000;
-  --div-background: rgb(0, 0, 0,0.8);
+  --body-background: #000;
+  --div-background: rgb(0, 0, 0, 0.8);
   --btn-background: #000;
   --btn-text-color: orangered;
   --footer-background: #222;
@@ -21,17 +21,14 @@ body {
   box-sizing: border-box;
   /* background-color: var(--body-background); */
   background-image: url(../images/card-credito.jpg);
-  
 }
 
-h2{
+h2 {
   color: orangered;
   text-decoration: underline;
 }
 
-.clase-validacion 
-.input-validacion
-{
+.clase-validacion .input-validacion {
   font-size: 0.9em;
   border-radius: 7px;
   color: var(--text-color);
@@ -40,9 +37,7 @@ h2{
   background-color: var(--div-background);
 }
 
-.clase-validacion
-{
-  
+.clase-validacion {
   font-size: 1.2em;
   justify-content: center;
   align-items: center;
@@ -59,37 +54,34 @@ h2{
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
   color: var(--text-color);
-  border: 1px solid orangered
+  border: 1px solid orangered;
 }
 
-
-.label{
+.label {
   font-size: 12px;
 }
 
-
 .btn-cal-validacion {
-  outline:invert;
+  outline: invert;
   border: 1px solid orangered;
   cursor: pointer;
   font-size: 1em;
-  padding: 0 .8em;
+  padding: 0 0.8em;
   border-radius: 0.3em;
   color: var(--btn-text-color);
   background-color: #222;
 }
 
-.btn-cal-validacion:hover{
+.btn-cal-validacion:hover {
   color: white;
   background-color: orangered;
   cursor: pointer;
 }
 
 #resultado-validacion,
-#posible-numero
-{
-text-align: center;
-color: #e8f803;
+#posible-numero {
+  text-align: center;
+  color: #e8f803;
 }
 
 .modal {
@@ -107,7 +99,7 @@ color: #e8f803;
 /* Estilos del contenido del modal */
 .modal-content {
   background-color: var(--div-background);
-  color:#ffffff ;
+  color: #ffffff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #e8f803;
@@ -118,7 +110,7 @@ color: #e8f803;
   user-select: none;
 }
 
-#resultado-validacion{
+#resultado-validacion {
   text-align: center;
 }
 
@@ -159,7 +151,7 @@ color: #e8f803;
   background-color: var(--footer-background);
   border-bottom: 1px solid #000;
   border-top: 1px solid #444;
-  background: linear-gradient(5deg, black,#222,#777)
+  background: linear-gradient(5deg, black, #222, #777);
 }
 
 .navbar a {
@@ -207,11 +199,11 @@ color: #e8f803;
 
 @media screen and (min-width: 600px) {
   .navbar .menu a {
-      display: block;
+    display: block;
   }
 
   .navbar .menu-icon {
-      display: none;
+    display: none;
   }
 }
 
@@ -251,11 +243,11 @@ color: #e8f803;
 
 @media screen and (min-width: 600px) {
   .navbar .menu a {
-      display: block;
+    display: block;
   }
 
   .navbar .menu-icon {
-      display: none;
+    display: none;
   }
 }
 

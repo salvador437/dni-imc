@@ -1,263 +1,256 @@
 /* variables para estilos de color */
 :root {
-    --body-background: #2f0d96;
-    --div-background: #333333cc;
-    --btn-background: #333333cc;
-    --btn-text-color: #b4abab;
-    --footer-background: #333;
-    --a-hover-background: #444;
-    --text-color: #b4abab;
-    --text-color-logo: #7fc7f3;
-    --text-navbar: #70c2f5;
-    --text-color-footer: white;
-    --color-shadow: #040111;
+  --body-background: #2f0d96;
+  --div-background: #333333cc;
+  --btn-background: #333333cc;
+  --btn-text-color: #b4abab;
+  --footer-background: #333;
+  --a-hover-background: #444;
+  --text-color: #b4abab;
+  --text-color-logo: #7fc7f3;
+  --text-navbar: #70c2f5;
+  --text-color-footer: white;
+  --color-shadow: #040111;
 }
 
 /* estilos para el body del html index2.html*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url(../images/IMC.jpg);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../images/IMC.jpg);
 }
 
-
-.clase-imc 
-.input-imcPeso,
-.input-imcAltura
-{
-    font-size: 0.9em;
-    border-radius: 7px;
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 1em;
-    background-color: var(--div-background);
+.clase-imc .input-imcPeso,
+.input-imcAltura {
+  font-size: 0.9em;
+  border-radius: 7px;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 1em;
+  background-color: var(--div-background);
 }
 
-h2{
-    color:#50a7f9;
-    text-decoration: underline;
+h2 {
+  color: #50a7f9;
+  text-decoration: underline;
 }
 
-.clase-imc
-{
-    /* border: 2px solid var(--body-background) ; */
-    font-size: 1.2em;
-    justify-content: center;
-    align-items: center;
-    min-width: 250px;
-    max-width: 300px;
-    margin-top: 1em;
-    margin-bottom: 0.4em;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    border-radius: 20px;
-    line-height: 1em;
-    user-select: none;
-    box-shadow: 10px 10px 25px var(--color-shadow);
-    background-color: var(--div-background);
-    color: var(--text-color);
+.clase-imc {
+  /* border: 2px solid var(--body-background) ; */
+  font-size: 1.2em;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  max-width: 300px;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 20px;
+  line-height: 1em;
+  user-select: none;
+  box-shadow: 10px 10px 25px var(--color-shadow);
+  background-color: var(--div-background);
+  color: var(--text-color);
 }
 
-
-.label{
-    font-size: 12px;
+.label {
+  font-size: 12px;
 }
-
 
 .btn-cal-imc {
-    cursor: pointer;
-    font-size: 1em;
-    padding: 0 .8em;
-    border-radius: 0.3em;
-    color: var(--btn-text-color);
-    background-color: var(--btn-background);
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0 0.8em;
+  border-radius: 0.3em;
+  color: var(--btn-text-color);
+  background-color: var(--btn-background);
 }
 
-#resultado-imc{
-    margin-left: 2em;
-    text-align: center; 
+#resultado-imc {
+  margin-left: 2em;
+  text-align: center;
 }
-
-
 
 .modal {
-    display: block;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: var(--body-background);
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--body-background);
 }
 
-  /* Estilos del contenido del modal */
+/* Estilos del contenido del modal */
 .modal-content {
-    background-color: var(--div-background);
-    color:#8bd6f5 ;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #8bd6f5;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
-    border-radius: 0.8em;
-    user-select: none;
+  background-color: var(--div-background);
+  color: #8bd6f5;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #8bd6f5;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
+  border-radius: 0.8em;
+  user-select: none;
 }
-
-
 
 /* Botón de cerrar */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .close2 {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close2:hover,
 .close2:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-table, th, td, tr{
-    margin-left: 1em;
-    margin-bottom: 0.8em;
-    text-align: center;
+table,
+th,
+td,
+tr {
+  margin-left: 1em;
+  margin-bottom: 0.8em;
+  text-align: center;
 }
 
-h5{
-    margin-left: 0.8em;
+h5 {
+  margin-left: 0.8em;
 }
 
 .footer {
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    user-select: none;
-    font-size: 1.5em;
-    color: var(--text-color-footer);
-    background-color: var(--footer-background);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+  color: var(--text-color-footer);
+  background-color: var(--footer-background);
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    user-select: none;
-    background: linear-gradient(5deg, black,#222,#777);
-    background-color: var(--div-background);
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  user-select: none;
+  background: linear-gradient(5deg, black, #222, #777);
+  background-color: var(--div-background);
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #444;
 }
 
 .navbar a {
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-    font-size: 1.4em;
-    user-select: none;
-    color: var(--text-navbar);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  font-size: 1.4em;
+  user-select: none;
+  color: var(--text-navbar);
 }
 
 .navbar a:hover {
-    border-radius: 5px;
-    border: 1px solid var(--text-navbar);
-    background-color: var(--a-hover-background);
+  border-radius: 5px;
+  border: 1px solid var(--text-navbar);
+  background-color: var(--a-hover-background);
 }
 
 .navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
-    transition: 0.5s;
-    color: var(--text-color-logo);
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.5s;
+  color: var(--text-color-logo);
 }
 
 .navbar .logo:hover {
-    font-size: 2em;
-    font-weight: bold;
-    zoom: 1.1;
-    rotate: 360deg;
+  font-size: 2em;
+  font-weight: bold;
+  zoom: 1.1;
+  rotate: 360deg;
 }
 
 .navbar .menu {
-    display: flex;
+  display: flex;
 }
 
 .navbar .menu a {
-    display: none;
+  display: none;
 }
 
 .navbar .menu-icon {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
-    .navbar .menu a {
-        display: block;
-    }
+  .navbar .menu a {
+    display: block;
+  }
 
-    .navbar .menu-icon {
-        display: none;
-    }
+  .navbar .menu-icon {
+    display: none;
+  }
 }
 
 .navbar .menu.responsive {
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    flex-direction: column;
-    background-color: var(--footer-background);
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--footer-background);
 }
 
 .navbar .menu.responsive a {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .menu-icon {
-    color: #76c4f5;
+  color: #76c4f5;
 }
 
 .menu-icon2 {
-    color: #76c4f5;
+  color: #76c4f5;
 }
 .navbar .logo {
-    font-size: 2em;
-    font-weight: bold;
-    transition: 0.5s;
-    color: var(--text-color-logo);
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.5s;
+  color: var(--text-color-logo);
 }
 
 .navbar .logo:hover {
-    font-size: 2em;
-    cursor: pointer;
-    font-weight: bold;
-    transform: rotateY(360deg);
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: bold;
+  transform: rotateY(360deg);
 }

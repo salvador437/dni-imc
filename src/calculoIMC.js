@@ -8,7 +8,7 @@ const resultadoIMC = document.querySelector("#resultado-imc");
 btnCalImc.addEventListener("click", calcularIMC);
 // escuchando cuando tiene el foco el "inputImcPeso".
 inputImcPeso.addEventListener("focus", () => {
-  limpiar()
+  limpiar();
 });
 // escuchando cuando tiene el foco el inputImcAltura.
 inputImcAltura.addEventListener("focus", () => {
@@ -29,17 +29,15 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
-  if(event.key === "Enter"){
-    calcularIMC()
+  if (event.key === "Enter") {
+    calcularIMC();
   }
   if (event.ctrlKey && event.key === "z") {
-    window.open("./index.html")
+    window.open("./index.html");
   }
 });
 
-
-
-function limpiar(){
+function limpiar() {
   inputImcPeso.value = "";
   document.querySelector("#resultado-imc").textContent = "";
 }

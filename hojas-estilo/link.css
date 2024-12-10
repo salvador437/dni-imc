@@ -1,24 +1,25 @@
-body{
+body {
   background-color: #000;
-  display:flex;
+  display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
 
-ul li,a{
-  display:inline-flex;
+ul li,
+a {
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
   margin: 0;
   padding: 5px;
-  font-size:  2.0rem;
+  font-size: 2rem;
   text-decoration: none;
-  color:orangered;
+  color: orangered;
 }
 
-a:hover{
+a:hover {
   background-color: orangered;
   color: white;
   border-radius: 5px;
@@ -32,16 +33,16 @@ p::first-letter {
   font-size: 200%;
   padding: 6px 3px;
   margin-right: 6px;
-  float:unset;
+  float: unset;
 }
 
-.header{
+.header {
   border: 1px solid #d1740a;
   border-radius: 15px;
   margin-bottom: 30px;
 }
 
-.items{
+.items {
   color: #fff;
   background-color: rgb(18, 17, 19);
   display: flex;
@@ -53,34 +54,36 @@ p::first-letter {
   border-radius: 10px;
   padding-bottom: 10px;
   border: 1px solid #d1740a;
-  
 }
 
-.items:hover{
+.items:hover {
   background-color: orangered;
   color: white;
-  
 }
 
 .text {
-  font-size:2rem;
-  font-family:helvetica;
-  font-weight:bold;
-  color:orangered;
-  text-transform:uppercase;
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: bold;
+  color: orangered;
+  text-transform: uppercase;
   text-align: center;
 }
 .parpadea {
-  
   animation-name: parpadeo;
   animation-duration: 1s;
-  animation-timing-function:ease-in-out;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-
 }
 
-@keyframes parpadeo {  
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
