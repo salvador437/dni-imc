@@ -22,9 +22,6 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
-  if (event.ctrlKey && event.key === "z") {
-    window.open("./index.html");
-  }
 });
 
 function limpiar() {
