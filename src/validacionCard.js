@@ -20,7 +20,7 @@ document.addEventListener("keydown", function (event) {
     calcularValidacion();
   }
 
-  if (event.ctrlKey && event.key === "z") {
+  if (event.ctrlKey && event.key === "z"|| event.ctrlKey &&   event.key === "Z") {
     window.open("./index.html", (target = "_self"));
   }
 });

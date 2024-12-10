@@ -32,7 +32,7 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     calcularIMC();
   }
-  if (event.ctrlKey && event.key === "z") {
+  if (event.ctrlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
     window.open("./index.html");
   }
 });
