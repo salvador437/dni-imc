@@ -53,13 +53,13 @@ a: "input-dniNumero" , ".input-conversor"
 .conversor {
   display: flexbox;
   font-size: 1.2em;
-  justify-content: center;
-  align-items: center;
+  /* justify-content:left;
+  align-items: center; */
   /* width: 50%; */
-  min-width: 250px;
+  min-width: 200px;
   max-width: 300px;
-  margin-top: 1em;
-  margin-bottom: 1;
+  margin-top: 2em;
+  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;

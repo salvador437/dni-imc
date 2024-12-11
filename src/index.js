@@ -22,6 +22,9 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
+  if (event.key === "Enter") {
+    calcularIMC();
+  }
 });
 
 function limpiar() {

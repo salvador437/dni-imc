@@ -9,9 +9,9 @@
         <link rel="shortcut icon" sizes="64x64" type="image/svg" href="./images/logo-template.svg" />
     </head>
 
-    <body>
+    <body id="body">
         <!-- Contenido del modal -->
-        <div id="myModal" class="modal-content">
+        <div id="myModal" class="modal-content" onload="toggleFullScreen()">
             <span class="close">&times;</span>
             <h2>Error letra DNI-conversor temperatura</h2>
             <h4> Debe introducir 8 digitos numéricos para el DNI y un máximo de 5 digitos, contando con el punto
@@ -20,5 +20,4 @@
         </div>
         <script src="src/notificacionError.js" defer></script>
     </body>
-
 </html>
