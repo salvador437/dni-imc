@@ -4,6 +4,7 @@ const inputConversor = document.querySelector(".input-conversor");
 const btnCalcular = document.querySelector(".btn-calcular");
 const btnCalTemp = document.querySelector(".btn-cal-temp");
 
+
 // escuchando cuando se hace click en los botones.
 btnCalcular.addEventListener("click", calcularLetraDNI);
 btnCalTemp.addEventListener("click", calcularTemperaturaCF);
