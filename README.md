@@ -16,10 +16,10 @@ el siguiente mensage de error tanto para DNI-error como C/F-error
 
 
 
-Para la conversión de temperatura de grados celsius a grados
-farenheit debe introducir valor numerico de máximo 5 dígitos contando con el punto decimal si lo hay. Utilizando el algoritmo:
+Para la conversión de temperatura de grados celsius a grados farenheit debe introducir valor numerico de máximo 5 dígitos contando con el punto decimal si lo hay. Utilizando el algoritmo:
     gradosFarhengeis = (9 / 5) * gradosConversion + 32;
 Con la tecla ESCAPE podemos limpiar todos los valores escritos en los inputs.
+Y con las teclas Ctrl+z volveremos al home.
 
 Si no ha introducido crrectamente los datos le mostrará el  siguiente mensaje
 de error;
@@ -37,7 +37,7 @@ debe introducir el peso en kgrs. y la altura en cmts. ejemplo:(1.72m = 172cm).
 
 ![alt text](./images/image5.png)
 
-En el caso de no introducir los datos correctamente, le aoarecera el siguiente mensaje de error :
+En el caso de no introducir los datos correctamente, le aparecerá el siguiente mensaje de error :
 
 ![alt text](./images/image6.png)
 

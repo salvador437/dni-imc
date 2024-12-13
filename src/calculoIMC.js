@@ -39,6 +39,7 @@ document.addEventListener("keydown", function (event) {
 
 function limpiar() {
   inputImcPeso.value = "";
+  inputImcAltura.value =""
   document.querySelector("#resultado-imc").textContent = "";
 }
 
