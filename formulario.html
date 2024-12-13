@@ -7,30 +7,33 @@
 		<title>Validación de Formulario con Javascript</title>
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="hojas-estilo/estilos.css">
+		<link rel="stylesheet" href="hojas-estilo/formulario.css">
 	</head>
 
 	<body>
+		<h1>vipxclusivity.com</h1>
 		<div class="formulario">
-			<form action="/" method="post">
-				<span class="close4">&times;</span>
-				<div class="grupo-entradas">
-					<label for="nombre" class="grupo-entradas">Nombre:</label>
-					<input type="text" id="nombre" name="user_name" />
-				</div>
-				<div class="grupo-entradas">
-					<label for="mail" class="grupo-entradas" >Correo electrónico:</label>
-					<input type="email" id="mail" name="user_mail" />
-				</div>
-				<div class="grupo-entradas">
-					<textarea class="grupo-entradas"  id="msg" name="user_message" placeholder="Escriba aqui su nota"></textarea>
-				</div>
-				<div class="grupo-entradas">
-					<img src="./images/logo.svg" alt="">
-					<button type="submit" >Enviar</button>
-				</div>	
+			<form action="https://formsubmit.co/salvadorlopezsegura@gmail.com"method="post">
+					<span class="close4">&times;</span>
+					<div class="head">
+						<h4>Contacto usuario</h4>
+					</div>
+					<input class="grupo-entradas" type="text" id="nombre" name="nombre-usuario" placeholder="Nombre:" />
+					<input class="grupo-entradas" type="text" id="apellidos" name="apellidos-usuario" placeholder="Apellidos:" />
+					<input class="grupo-entradas" type="tel" id="telefono" name="telefono" placeholder="Telefono:" />
+					<input class="grupo-entradas" type="email" id="mail" name="mail-usuario" placeholder="Email:" />
+					<textarea class="grupo-entradas"  id="msg" name="mensaje-usuario" placeholder="Escriba aqui su nota"></textarea>
+					<input type="hidden" name="_next" value="http://127.0.0.1:5500/formulario.html">
+					<input type="hidden" name="_captcha" value="false">
+					<button class="boton" type="submit" >Enviar</button>
 			</form>
 		</div>
 		<script src="./src/formulario.js"></script>
-		</body>
+	</body>
+	<footer>
+		<div class="footer">
+			<!-- ciudad sin ley-->
+			Barberá del Vallés (BCN)
+		</div>
+	</footer>
 </html>
