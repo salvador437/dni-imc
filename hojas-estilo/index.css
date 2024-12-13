@@ -35,14 +35,11 @@ a: "input-dniNumero" , ".input-conversor"
 .input-conversor,
 .btn-calcular,
 .btn-cal-temp {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1em;
   font-size: 1.1em;
   border-radius: 7px;
   text-align: center;
   cursor: pointer;
-  margin-left: 15px;
   user-select: none;
   color: var(--text-color);
   background-color: var(--div-background);
@@ -51,28 +48,22 @@ a: "input-dniNumero" , ".input-conversor"
 /* damos reglas a la clase ".clase-dni" y ".conversor" */
 .clase-dni,
 .conversor {
-  display: flexbox;
   font-size: 1.2em;
   min-width: 200px;
   max-width: 300px;
   margin-top: 2em;
-  margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   border-radius: 20px;
-  line-height: 1em;
+  line-height: 0.5em;
   user-select: none;
   color: var(--text-color);
-  user-select: none;
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
 }
 
-#resultado-temperatura {
-  text-align: center;
-}
-
+#resultado-temperatura,
 #resultado {
   text-align: center;
 }
@@ -100,7 +91,6 @@ a: "input-dniNumero" , ".input-conversor"
   width: 100%;
   height: 100%;
   overflow: auto;
-  font-weight: 50;
   background-color: var(--body-background);
 }
 
@@ -116,7 +106,6 @@ a: "input-dniNumero" , ".input-conversor"
   user-select: none;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
   border-radius: 0.8em;
-  font-weight: 50;
 }
 
 .close {
