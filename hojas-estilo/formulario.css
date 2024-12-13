@@ -1,13 +1,13 @@
 :root {
   --boton-color:white;
-  --boton-background-color: #321dd3;
+  --boton-background-color: #222;
   --body-background: #321dd3;
   --close4-color: #aaa;
   --close4-hover-color: #000;
-  --form-background: #4c81f4;
+  --form-background: #333;
   --form-shadow: #030331;
   --footer-background: #333;
-  --h1-color: #2e45f6;
+  --h1-color: #444;
   --head-color: white;
   --text-color-footer: white;
 }
@@ -68,7 +68,7 @@ h1{
 .grupo-entradas {
   margin: 0.625em;
   width: 300px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .boton{

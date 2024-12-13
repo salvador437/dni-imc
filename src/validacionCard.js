@@ -37,14 +37,14 @@ function calcularValidacion() {
 
   if (valorValidacion.length < 16) {
     document.getElementById("resultado-validacion").style.color = "red";
-    resultadoValidacion.textContent = "Tarjeta rechazada";
+    resultadoValidacion.textContent = "Tarjeta rechazada.";
     window.open("./notificacionErrorValidacion.html", (target = "_self"));
     return;
   }
 
   if (validacion) {
     document.getElementById("resultado-validacion").style.color = "chartreuse";
-    resultadoValidacion.textContent = "Tarjeta valida";
+    resultadoValidacion.textContent = "Tarjeta válida.";
   } else {
     const valorValidacion = inputValidacion.value;
     document.getElementById("resultado-validacion").style.color = "red";

@@ -15,11 +15,10 @@
 
 /* estilos para el body del html index2.html*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "sans-serif";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: var(--body-background); */
   background-image: url(../images/card-credito.jpg);
 }
 

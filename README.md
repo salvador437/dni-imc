@@ -41,6 +41,9 @@ En el caso de no introducir los datos correctamente, le aoarecera el siguiente m
 
 ![alt text](./images/image6.png)
 
+con las teclas (Ctrl+z) volveremos a la página home.
+
+
 <hr>
 
 ## LISTA de archivos app DNI-IMC
@@ -48,13 +51,14 @@ En el caso de no introducir los datos correctamente, le aoarecera el siguiente m
 
 ### CARPETA hojas de estilo:
 - calculoIMC.css
-- estilos.css
+- formulario.css
 - index.css
 - link.css
 - template.css
 
 ## CARPETA images:
 - car-credito.jpg
+- contacto.jpg
 - DNI.jpg
 - dni2.jpg
 - image1.png
@@ -73,6 +77,7 @@ En el caso de no introducir los datos correctamente, le aoarecera el siguiente m
 - logo3.svg
 - salva.jpg
 - salva2.jpg
+- temperatura-alta.png
 
 
 ## CARPETA JACASCRIPT:

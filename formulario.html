@@ -11,18 +11,18 @@
 	</head>
 
 	<body>
-		<h1>vipxclusivity.com</h1>
+		<h1>Formulario de contacto</h1>
 		<div class="formulario">
 			<form action="https://formsubmit.co/salvadorlopezsegura@gmail.com"method="post">
 					<span class="close4">&times;</span>
 					<div class="head">
 						<h4>Contacto usuario</h4>
 					</div>
-					<input class="grupo-entradas" type="text" id="nombre" name="nombre-usuario" placeholder="Nombre:" />
-					<input class="grupo-entradas" type="text" id="apellidos" name="apellidos-usuario" placeholder="Apellidos:" />
-					<input class="grupo-entradas" type="tel" id="telefono" name="telefono" placeholder="Telefono:" />
-					<input class="grupo-entradas" type="email" id="mail" name="mail-usuario" placeholder="Email:" />
-					<textarea class="grupo-entradas"  id="msg" name="mensaje-usuario" placeholder="Escriba aqui su nota"></textarea>
+					<input class="grupo-entradas" type="text" id="nombre" name="nombre-usuario" placeholder="Nombre:" required />
+					<input class="grupo-entradas" type="text" id="apellidos" name="apellidos-usuario" placeholder="Apellidos:" required />
+					<input class="grupo-entradas" type="tel" id="telefono" name="telefono" placeholder="Telefono:" required />
+					<input class="grupo-entradas" type="email" id="mail" name="mail-usuario" placeholder="Email:" required />
+					<textarea class="grupo-entradas"  id="msg" name="mensaje-usuario" placeholder="Escriba aqui su nota" required></textarea>
 					<input type="hidden" name="_next" value="http://127.0.0.1:5500/formulario.html">
 					<input type="hidden" name="_captcha" value="false">
 					<button class="boton" type="submit" >Enviar</button>
