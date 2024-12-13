@@ -7,7 +7,7 @@
   --form-background: #333;
   --form-shadow: #030331;
   --footer-background: #333;
-  --h1-color: #444;
+  --h1-color: #999;
   --head-color: white;
   --text-color-footer: white;
 }
@@ -19,7 +19,7 @@
 body {
   font-family: "Roboto", "sans-serif";
   background-color: var(--body-background);
-  background-image: url(/images/contacto.jpg);
+  background-image: url(/images/contacto1.jpg);
 }
 
 h1{
@@ -28,6 +28,7 @@ h1{
   text-shadow: 0.625em 0.625em 2.19em var(--form-shadow);
   text-align: center;
   text-decoration: underline;
+  user-select: none;
 }
 
 .formulario {
@@ -49,6 +50,7 @@ h1{
   color: var(--head-color);
   margin-left: 0.625em;
   margin-right: 0.625em;
+  user-select: none;
 }
 
 .footer {
@@ -69,11 +71,14 @@ h1{
   margin: 0.625em;
   width: 300px;
   font-size: 1.1em;
+  user-select: none;
 }
 
 .boton{
   width: 300px;
   margin: 10px;
+  border-radius: 20px;
+  user-select: none;
   background-color: var(--boton-background-color);
   color: var(--boton-color);
   font-size: 1.5em;

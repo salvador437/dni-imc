@@ -44,7 +44,6 @@ a: "input-dniNumero" , ".input-conversor"
   cursor: pointer;
   margin-left: 15px;
   user-select: none;
-  user-select: none;
   color: var(--text-color);
   background-color: var(--div-background);
 }
@@ -54,9 +53,6 @@ a: "input-dniNumero" , ".input-conversor"
 .conversor {
   display: flexbox;
   font-size: 1.2em;
-  /* justify-content:left;
-  align-items: center; */
-  /* width: 50%; */
   min-width: 200px;
   max-width: 300px;
   margin-top: 2em;
@@ -69,7 +65,6 @@ a: "input-dniNumero" , ".input-conversor"
   user-select: none;
   color: var(--text-color);
   user-select: none;
-  /* border: 2px solid var(--text-color); */
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
 }
@@ -147,7 +142,6 @@ a: "input-dniNumero" , ".input-conversor"
   padding: 10px 20px;
   user-select: none;
   background: linear-gradient(5deg, black, #222, #777);
-
   background-color: var(--nav-background);
   border-bottom: 1px solid #000;
   border-top: 1px solid #444;
