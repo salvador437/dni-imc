@@ -1,4 +1,4 @@
-## 📌 Página SPA cálculo letra DNI conversor temperatura C/F
+## 📌 Cálculo letra DNI, conversor temperatura C/F, Links y validación BIN
 Esta es la barra de navegación del HOME que es el archivo index.html de la aplicación.
 
 ![alt text](./images/image1.png)
@@ -17,7 +17,7 @@ el siguiente mensage de error tanto para DNI-error como C/F-error
 
 
 Para la conversión de temperatura de grados celsius a grados farenheit debe introducir valor numerico de máximo 5 dígitos contando con el punto decimal si lo hay. Utilizando el algoritmo:
-    gradosFarhengeis = (9 / 5) * gradosConversion + 32;
+    gradosFarhengeis = (9 / 5) * gradosConversion + 32   
 Con la tecla ESCAPE podemos limpiar todos los valores escritos en los inputs.
 Y con las teclas Ctrl+z volveremos al home.
 
@@ -30,8 +30,7 @@ de error;
 ## 📌 Página SPA cálculo indice de masa corporal IMC.
 ![alt text](./images/image4.png)
 
-Esta es la barra de navegación del  cálculo IMC que es el archivo calculoIMC.html de la aplicación. Con la tecla ESCAPE podemos limpiar todos los valores escritos en los inputs, y con las teclas (Ctrl+z) volveremos a la página home. 
-Para el cálculo del indice de masa corporal IMC empleamos el siguiente algorritmo:
+Esta es la barra de navegación del  cálculo IMC que es el archivo calculoIMC.html de la aplicación. Con la tecla ESCAPE podemos limpiar todos los valores escritos en los inputs, y con las teclas (Ctrl+z) volveremos a la página home. Para el cálculo del indice de masa corporal IMC empleamos el siguiente algorritmo:
    imc = peso kg./altura<sup>2</sup> en metros.
 debe introducir el peso en kgrs. y la altura en cmts. ejemplo:(1.72m = 172cm).
 
@@ -46,7 +45,7 @@ con las teclas (Ctrl+z) volveremos a la página home.
 
 <hr>
 
-## LISTA de archivos app DNI-IMC
+## LISTA de archivos de la app 
 <hr>
 
 ### CARPETA hojas de estilo:
