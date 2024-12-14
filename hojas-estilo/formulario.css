@@ -7,6 +7,7 @@
   --form-background: #333;
   --form-shadow: #030331;
   --footer-background: #333;
+  --grupo-entradas-color: #999;
   --h1-color: #999;
   --head-color: white;
   --text-color-footer: white;
@@ -74,7 +75,7 @@ h1{
   user-select: none;
   background-color: var(--form-background);
   border-style: none;
-  color: #999;
+  color: var(--grupo-entradas-color);
   border-bottom: 1px solid white;
   border-top-style: none;
 }
