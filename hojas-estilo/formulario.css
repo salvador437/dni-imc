@@ -72,6 +72,25 @@ h1{
   width: 300px;
   font-size: 1.1em;
   user-select: none;
+  background-color: var(--form-background);
+  border-style: none;
+  color: #999;
+  border-bottom: 1px solid white;
+  border-top-style: none;
+}
+
+.grupo-entradas:active{
+  background-color: var(--form-background);
+  border-style: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.grupo-entradas:focus{
+  background-color: var(--form-background);
+  border-style: none;
+  outline: none;
+  border-bottom: 1px solid white;
 }
 
 .boton{
