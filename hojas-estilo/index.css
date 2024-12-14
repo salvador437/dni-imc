@@ -63,8 +63,9 @@ a: "input-dniNumero" , ".input-conversor"
   background-color: var(--div-background);
 }
 
-#resultado-temperatura,
-#resultado {
+#resultado,
+#resultado-temperatura
+{
   text-align: center;
 }
 
