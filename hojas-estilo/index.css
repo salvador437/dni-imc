@@ -1,9 +1,12 @@
 /* variables para estilos de color */
 :root {
   --body-background: #54bb0f;
+  --close-color: #aaa;
+  --close-hover-color: #000;
   --footer-background: #333;
   --div-background: #333333;
   --btn-background: #175131;
+  --h2-color: chartreuse;
   --nav-background: rgb(34, 34, 34, 0.8);
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
@@ -11,7 +14,7 @@
   --text-color-logo: #5ac47d;
   --text-navbar: #3ff172;
   --text-color-footer: white;
-  --color-shadow: #03290b;
+  --color-shadow: 10px 10px 25px #03290b;
 }
 
 /* estilos para el body del index.html*/
@@ -24,7 +27,7 @@ body {
 }
 
 h2 {
-  color: chartreuse;
+  color: var(--h2-color);
   text-decoration: underline;
 }
 
@@ -59,7 +62,7 @@ a: "input-dniNumero" , ".input-conversor"
   line-height: 0.5em;
   user-select: none;
   color: var(--text-color);
-  box-shadow: 10px 10px 25px var(--color-shadow);
+  box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
 }
 
@@ -105,12 +108,12 @@ a: "input-dniNumero" , ".input-conversor"
   width: 80%;
   max-width: 500px;
   user-select: none;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
+  box-shadow: 10px 10px 25px #0000009f;
   border-radius: 0.8em;
 }
 
 .close {
-  color: #aaa;
+  color:var(--close-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -118,7 +121,7 @@ a: "input-dniNumero" , ".input-conversor"
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--close-hover-color);
   text-decoration: none;
   cursor: pointer;
 }

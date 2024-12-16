@@ -1,6 +1,17 @@
+:root{
+  --body-background-color: #000;
+  --header-border-color: 1px solid #d1740a;
+  --items-color: #fff;
+  --items-background-color: #121113;
+}
+
+*{box-sizing: border-box;
+
+}
+
 body {
   font-family: "Roboto", "sans-serif";
-  background-color: #000;
+  background-color: var(--body-background-color);
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -38,23 +49,24 @@ p::first-letter {
 }
 
 .header {
-  border: 1px solid #d1740a;
+  border:  var(--header-border-color);
   border-radius: 15px;
   margin-bottom: 30px;
 }
 
 .items {
-  color: #fff;
-  background-color: rgb(18, 17, 19);
+  color: var(--items-color);
+  background-color: var(--items-background-color);
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 2em;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #d1740a;
+  border-radius: 0.325em;
+  padding-bottom: 7px;
+  padding-top: 10px;
+  border: var(--header-border-color);
 }
 
 .items:hover {
@@ -72,7 +84,7 @@ p::first-letter {
 }
 .parpadea {
   animation-name: parpadeo;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }

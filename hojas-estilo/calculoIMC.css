@@ -10,7 +10,7 @@
   --a-hover-background: #444;
   --h2-color:#50a7f9;
   --modal-borde-color: #8bd6f5;
-  --modal-box-shadow: #000;
+  --modal-box-shadow: 10px 10px 25px #000;
   --navbar-border-top-color: #444;
   --navbar-border-button-color: 1px solid #000;
   --navbar-background:linear-gradient(5deg, black, #222, #777);
@@ -105,7 +105,7 @@ h2 {
   border: 1px solido var(--modal-borde-color);
   width: 80%;
   max-width: 500px;
-  box-shadow: 10px 10px 25px var(--modal-box-shadow);
+  box-shadow:  var(--modal-box-shadow);
   border-radius: 0.8em;
   user-select: none;
 }
