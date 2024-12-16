@@ -1,4 +1,4 @@
-/* variables para estilos de color */
+/* variables para estilos de color de la página calculoIMC.html */
 :root {
   --body-background: #2f0d96;
   --div-background: #333333cc;
@@ -8,12 +8,14 @@
   --close-hover-color: #000;
   --footer-background: #333;
   --a-hover-background: #444;
-  --h2-color:#50a7f9;
-  --modal-borde-color: #8bd6f5;
+  --h2-color: #50a7f9;
+  --menu-icon-color:#76c4f5 ;
+  --modal-borde-color: 1px solid #8bd6f5;
   --modal-box-shadow: 10px 10px 25px #000;
-  --navbar-border-top-color: #444;
+  --modal-content-color: #8bd6f5;
+  --navbar-border-top-color: 1px solid #444;
   --navbar-border-button-color: 1px solid #000;
-  --navbar-background:linear-gradient(5deg, black, #222, #777);
+  --navbar-background: linear-gradient(5deg, black, #222, #777);
   --text-color: #b4abab;
   --text-color-logo: #7fc7f3;
   --text-navbar: #70c2f5;
@@ -21,7 +23,7 @@
   --color-shadow: #040111;
 }
 
-/* estilos para el body del html index2.html*/
+/* estilos para el body de la página calculoIMC.html*/
 body {
   font-family: "Roboto", "sans-serif";
   margin: 0;
@@ -30,29 +32,33 @@ body {
   background-image: url(../images/IMC.jpg);
 }
 
-.clase-imc .input-imcPeso,
+/* estilos para los inputs de la clase ".clase-imc" */
+.input-imcPeso,
 .input-imcAltura {
   font-size: 0.9em;
-  border-radius: 7px;
+  border-radius: 0.437em;
   color: var(--text-color);
   text-align: center;
   margin-bottom: 1em;
   background-color: var(--div-background);
 }
 
+/* estilos para la cabecera h2 del archivo notificacionErrorIMC */
 h2 {
   color: var(--h2-color);
   text-decoration: underline;
 }
 
-.clase-imc {
-  /* border: 2px solid var(--body-background) ; */
+/* estilos para la cabecera h5 de la clase ".clase-imc" */
+h5 {
+  text-align: center;
+}
 
+/* estilos para la  clase ".clase-imc" */
+.clase-imc {
   font-size: 1.2em;
-  justify-content: center;
-  align-items: center;
   min-width: 250px;
-  max-width: 300px;
+  max-width: 18em;
   margin-top: 2em;
   margin-bottom: 0.4em;
   margin-left: auto;
@@ -66,10 +72,12 @@ h2 {
   color: var(--text-color);
 }
 
+/* estilos para la  clase ".label" */
 .label {
-  font-size: 12px;
+  font-size: 14px;
 }
 
+/* estilos para la  clase ".btn-cal-imc" */
 .btn-cal-imc {
   cursor: pointer;
   font-size: 1em;
@@ -79,8 +87,8 @@ h2 {
   background-color: var(--btn-background);
 }
 
+
 #resultado-imc {
-  margin-left: 2em;
   text-align: center;
 }
 
@@ -96,39 +104,25 @@ h2 {
   background-color: var(--body-background);
 }
 
-/* Estilos del contenido del modal */
+/* Estilos del contenido de la clase  ".modal-content" */
 .modal-content {
   background-color: var(--div-background);
-  color: #8bd6f5;
+  color: var(--modal-content-color);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solido var(--modal-borde-color);
+  border: var(--modal-borde-color);
   width: 80%;
   max-width: 500px;
-  box-shadow:  var(--modal-box-shadow);
+  box-shadow: var(--modal-box-shadow);
   border-radius: 0.8em;
   user-select: none;
 }
 
-/* Botón de cerrar */
-.close {
-  color: var(--close-color);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--close-hover-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
+/* Botón de cerrar página notificacionErrorIMC.html*/
 .close2 {
   color: var(--close-color);
   float: right;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
 }
 
@@ -143,18 +137,14 @@ table,
 th,
 td,
 tr {
-  margin-left: 1em;
+  margin-left: 3em;
   margin-bottom: 0.8em;
   text-align: center;
 }
 
-h5 {
-  margin-left: 0.8em;
-}
-
 .footer {
   text-align: center;
-  padding: 10px 0;
+  padding: 0.625em 0;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -169,17 +159,17 @@ h5 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0.625em 1.25em;
   user-select: none;
   background: var(--navbar-background);
   background-color: var(--div-background);
   border-bottom: var(--navbar-border-button-color);
-  border-top: 1px solid var(--navbar-border-top-color);
+  border-top: var(--navbar-border-top-color);
 }
 
 .navbar a {
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 0.893em 1.25em;
   display: block;
   font-size: 1.4em;
   user-select: none;
@@ -187,7 +177,7 @@ h5 {
 }
 
 .navbar a:hover {
-  border-radius: 5px;
+  border-radius: 0.313em;
   border: 1px solid var(--text-navbar);
   background-color: var(--a-hover-background);
 }
@@ -216,7 +206,7 @@ h5 {
 
 .navbar .menu-icon {
   display: block;
-  font-size: 30px;
+  font-size: 1.875em;
   cursor: pointer;
 }
 
@@ -232,7 +222,7 @@ h5 {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 60px;
+  top: 0.625em;
   width: 100%;
   flex-direction: column;
   background-color: var(--footer-background);
@@ -243,13 +233,11 @@ h5 {
   text-align: center;
 }
 
-.menu-icon {
-  color: #76c4f5;
+.menu-icon,
+.menu-icon2 {
+  color: var(--menu-icon-color);
 }
 
-.menu-icon2 {
-  color: #76c4f5;
-}
 .navbar .logo {
   font-size: 2em;
   font-weight: bold;

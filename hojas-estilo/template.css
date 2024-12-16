@@ -7,17 +7,20 @@
   --close-color: #aaa;
   --close-hover-color: #555;
   --footer-background: #222;
+  --footer-text-color: white;
   --a-hover-background: #222;
+  --h2-color: orangered;
   --modal-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
   --modal-border-color: 1px solid #e8f803;
   --modal-color: #fff;
   --navbar-border-top-color: 1px solid #444;
   --navbar-border-botton-color: 1px solid #000;
   --navbar-background-color:linear-gradient(5deg, black, #222, #777);
+  --navbar-text-color: orangered;
   --text-color: orangered;
   --text-color-logo: orangered;
-  --text-navbar: orangered;
-  --text-color-footer: white;
+ 
+ 
   --color-shadow: #040111;
 }
 
@@ -31,7 +34,7 @@ body {
 }
 
 h2 {
-  color: orangered;
+  color: var(--h2-color);
   text-decoration: underline;
 }
 
@@ -139,7 +142,7 @@ h2 {
   width: 100%;
   user-select: none;
   font-size: 1.5em;
-  color: var(--text-color-footer);
+  color: var(--footer-text-color);
   background-color: var(--footer-background);
 }
 
@@ -161,7 +164,7 @@ h2 {
   display: block;
   font-size: 1.4em;
   user-select: none;
-  color: var(--text-navbar);
+  color: var(--navbar-text-color);
 }
 
 .navbar a:hover {

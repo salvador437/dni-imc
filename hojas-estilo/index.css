@@ -1,20 +1,21 @@
 /* variables para estilos de color */
 :root {
   --body-background: #54bb0f;
+  --btn-background: #333;
   --close-color: #aaa;
   --close-hover-color: #000;
+  --color-shadow: 10px 10px 25px #03290b;
+  --div-background: #333333cc;
   --footer-background: #333;
-  --div-background: #333333;
-  --btn-background: #175131;
   --h2-color: chartreuse;
-  --nav-background: rgb(34, 34, 34, 0.8);
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
+  --nav-background: rgb(34, 34, 34, 0.8);
   --text-color: #b4abab;
   --text-color-logo: #5ac47d;
   --text-navbar: #3ff172;
   --text-color-footer: white;
-  --color-shadow: 10px 10px 25px #03290b;
+  
 }
 
 /* estilos para el body del index.html*/
@@ -35,17 +36,25 @@ h2 {
 a: "input-dniNumero" , ".input-conversor" 
     "btn-calcular" y "btn-cal-tem"     */
 .input-dniNumero,
-.input-conversor,
-.btn-calcular,
-.btn-cal-temp {
+.input-conversor{
   margin-bottom: 1em;
-  font-size: 1.1em;
-  border-radius: 7px;
+  font-size: 1em;
+  border-radius: 0.437em;
   text-align: center;
   cursor: pointer;
   user-select: none;
   color: var(--text-color);
   background-color: var(--div-background);
+}
+
+.btn-calcular,
+.btn-cal-temp{
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0 0.8em;
+  border-radius: 0.3em;
+  color: var(--btn-text-color);
+  background-color: var(--btn-background);
 }
 
 /* damos reglas a la clase ".clase-dni" y ".conversor" */
@@ -108,14 +117,14 @@ a: "input-dniNumero" , ".input-conversor"
   width: 80%;
   max-width: 500px;
   user-select: none;
-  box-shadow: 10px 10px 25px #0000009f;
+  box-shadow: 10px 10px 25px #000;
   border-radius: 0.8em;
 }
 
 .close {
   color:var(--close-color);
   float: right;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
 }
 
