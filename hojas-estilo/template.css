@@ -19,9 +19,11 @@
   --navbar-text-color: orangered;
   --text-color: orangered;
   --text-color-logo: orangered;
- 
- 
   --color-shadow: #040111;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* estilos para el body del html index2.html*/
@@ -29,7 +31,6 @@ body {
   font-family: "Roboto", "sans-serif";
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-image: url(../images/card-credito.jpg);
 }
 

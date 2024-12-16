@@ -1,7 +1,10 @@
 /* variables para estilos de color */
 :root {
+  --a-hover-background: #444;
+  --a-hover-border-color: 1px solid #54bb0f;
   --body-background: #54bb0f;
   --btn-background: #333;
+  --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
   --color-shadow: 10px 10px 25px #03290b;
@@ -10,12 +13,18 @@
   --h2-color: chartreuse;
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
+  --modal-content-color: #fff;
+  --modal-content-border-color: 1px solid #03f828;
+  --modal-content-shadow-color: 10px 10px 25px #000;
   --nav-background: rgb(34, 34, 34, 0.8);
   --text-color: #b4abab;
   --text-color-logo: #5ac47d;
   --text-navbar: #3ff172;
   --text-color-footer: white;
-  
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* estilos para el body del index.html*/
@@ -32,9 +41,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* del div ".clase-dni" otorgamos reglas 
-a: "input-dniNumero" , ".input-conversor" 
-    "btn-calcular" y "btn-cal-tem"     */
+/* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  */
 .input-dniNumero,
 .input-conversor{
   margin-bottom: 1em;
@@ -61,13 +68,13 @@ a: "input-dniNumero" , ".input-conversor"
 .clase-dni,
 .conversor {
   font-size: 1.2em;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 12.5em;
+  max-width: 16em;
   margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 0.625em;
+  border-radius: 1em;
   line-height: 0.5em;
   user-select: none;
   color: var(--text-color);
@@ -84,7 +91,7 @@ a: "input-dniNumero" , ".input-conversor"
 /* damos reglas a la clase ".footer" */
 .footer {
   text-align: center;
-  padding: 10px 0;
+  padding: 0.625em 0;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -95,6 +102,7 @@ a: "input-dniNumero" , ".input-conversor"
   color: var(--text-color-footer);
 }
 
+/* damos reglas a la pantalla error IMC */
 .modal {
   display: block;
   position: fixed;
@@ -110,14 +118,14 @@ a: "input-dniNumero" , ".input-conversor"
 /* Estilos del contenido del modal */
 .modal-content {
   background-color: var(--div-background);
-  color: #ffffff;
+  color: var(--modal-content-color);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #03f828;
+  border: var(--modal-content-border-color);
   width: 80%;
-  max-width: 500px;
+  max-width: 31.25em;
   user-select: none;
-  box-shadow: 10px 10px 25px #000;
+  box-shadow: var(--modal-content-shadow-color);
   border-radius: 0.8em;
 }
 
@@ -141,7 +149,7 @@ a: "input-dniNumero" , ".input-conversor"
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0.625em 1.25em;
   user-select: none;
   background: linear-gradient(5deg, black, #222, #777);
   background-color: var(--nav-background);
@@ -153,7 +161,7 @@ a: "input-dniNumero" , ".input-conversor"
 /* sólo a los elementos "a", para ir a enlaces */
 a {
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 0.875em 1.25em;
   display: block;
   font-size: 1.4em;
   user-select: none;
@@ -162,8 +170,8 @@ a {
 
 a:hover {
   border-radius: 5px;
-  background-color: #444;
-  border: 1px solid #54bb0f;
+  background-color:var(--a-hover-background);
+  border: var(--a-hover-border-color);
 }
 
 .logo {
@@ -189,11 +197,11 @@ a:hover {
 
 .menu-icon {
   display: block;
-  font-size: 30px;
+  font-size: 1.875em;
   cursor: pointer;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 41em) {
   .menu a {
     display: block;
   }
@@ -205,7 +213,7 @@ a:hover {
 
 .menu.responsive {
   position: absolute;
-  top: 60px;
+  top: 3.75em;
   width: 100%;
   flex-direction: column;
   background-color: var(--menu-respon-backgraund);

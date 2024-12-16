@@ -10,7 +10,6 @@
   --form-shadow: #030331;
   --footer-background: #333;
   --grupo-entradas-color: #bbb;
-  --h1-color: #999;
   --head-color: #bbb;
   --text-color-footer: white;
 }
@@ -25,16 +24,6 @@ body {
   background-image: url(/images/contacto1.jpg);
 }
 
-h1{
-  color: var(--h1-color);
-  font-size: 3em;
-  text-shadow: 0.625em 0.625em 2.19em var(--form-shadow);
-  text-align: center;
-  text-decoration: underline;
-  user-select: none;
-  margin-top: 0.32em;
-}
-
 .formulario {
   display: flex;
   background-color: var(--form-background);
@@ -43,6 +32,7 @@ h1{
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1.25em;
   box-shadow: 1.6em 1.6em 2.2em var(--form-shadow);
 }
 

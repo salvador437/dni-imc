@@ -1,26 +1,32 @@
 /* variables para estilos de color de la página calculoIMC.html */
 :root {
+  --a-hover-background: #444;
+  --a-hover-border-color: 1px solid #70c2f5;
   --body-background: #2f0d96;
-  --div-background: #333333cc;
   --btn-background: #333333cc;
   --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
+  --color-shadow: 10px 10px 25px #040111;
+  --div-background: #333333cc;
   --footer-background: #333;
-  --a-hover-background: #444;
   --h2-color: #50a7f9;
+  --logo-text-color: #7fc7f3;
   --menu-icon-color:#76c4f5 ;
   --modal-borde-color: 1px solid #8bd6f5;
   --modal-box-shadow: 10px 10px 25px #000;
   --modal-content-color: #8bd6f5;
   --navbar-border-top-color: 1px solid #444;
   --navbar-border-button-color: 1px solid #000;
+  --navbar-text-color: #70c2f5;
   --navbar-background: linear-gradient(5deg, black, #222, #777);
   --text-color: #b4abab;
-  --text-color-logo: #7fc7f3;
   --text-navbar: #70c2f5;
   --text-color-footer: white;
-  --color-shadow: #040111;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* estilos para el body de la página calculoIMC.html*/
@@ -28,7 +34,6 @@ body {
   font-family: "Roboto", "sans-serif";
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-image: url(../images/IMC.jpg);
 }
 
@@ -64,10 +69,10 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 1em;
   line-height: 1em;
   user-select: none;
-  box-shadow: 10px 10px 25px var(--color-shadow);
+  box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
   color: var(--text-color);
 }
@@ -161,6 +166,7 @@ tr {
   align-items: center;
   padding: 0.625em 1.25em;
   user-select: none;
+  color: var(--text-navbar);
   background: var(--navbar-background);
   background-color: var(--div-background);
   border-bottom: var(--navbar-border-button-color);
@@ -173,20 +179,19 @@ tr {
   display: block;
   font-size: 1.4em;
   user-select: none;
-  color: var(--text-navbar);
+  color: var(--navbar-text-color);
 }
 
 .navbar a:hover {
   border-radius: 0.313em;
-  border: 1px solid var(--text-navbar);
+  border: var(--a-hover-border-color);
   background-color: var(--a-hover-background);
 }
 
 .navbar .logo {
   font-size: 2em;
   font-weight: bold;
-  transition: 0.5s;
-  color: var(--text-color-logo);
+  border : color var(--logo-text-color);
 }
 
 .navbar .logo:hover {
@@ -242,7 +247,7 @@ tr {
   font-size: 2em;
   font-weight: bold;
   transition: 0.5s;
-  color: var(--text-color-logo);
+  color: var(--logo-text-color);
 }
 
 .navbar .logo:hover {
