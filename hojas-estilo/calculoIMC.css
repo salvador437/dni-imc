@@ -4,8 +4,16 @@
   --div-background: #333333cc;
   --btn-background: #333333cc;
   --btn-text-color: #b4abab;
+  --close-color: #aaa;
+  --close-hover-color: #000;
   --footer-background: #333;
   --a-hover-background: #444;
+  --h2-color:#50a7f9;
+  --modal-borde-color: #8bd6f5;
+  --modal-box-shadow: #000;
+  --navbar-border-top-color: #444;
+  --navbar-border-button-color: 1px solid #000;
+  --navbar-background:linear-gradient(5deg, black, #222, #777);
   --text-color: #b4abab;
   --text-color-logo: #7fc7f3;
   --text-navbar: #70c2f5;
@@ -33,7 +41,7 @@ body {
 }
 
 h2 {
-  color: #50a7f9;
+  color: var(--h2-color);
   text-decoration: underline;
 }
 
@@ -94,17 +102,17 @@ h2 {
   color: #8bd6f5;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #8bd6f5;
+  border: 1px solido var(--modal-borde-color);
   width: 80%;
   max-width: 500px;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
+  box-shadow: 10px 10px 25px var(--modal-box-shadow);
   border-radius: 0.8em;
   user-select: none;
 }
 
 /* Botón de cerrar */
 .close {
-  color: #aaa;
+  color: var(--close-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -112,13 +120,13 @@ h2 {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: var(--close-hover-color);
   text-decoration: none;
   cursor: pointer;
 }
 
 .close2 {
-  color: #aaa;
+  color: var(--close-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -126,7 +134,7 @@ h2 {
 
 .close2:hover,
 .close2:focus {
-  color: #000;
+  color: var(--close-hover-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -163,10 +171,10 @@ h5 {
   align-items: center;
   padding: 10px 20px;
   user-select: none;
-  background: linear-gradient(5deg, black, #222, #777);
+  background: var(--navbar-background);
   background-color: var(--div-background);
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #444;
+  border-bottom: var(--navbar-border-button-color);
+  border-top: 1px solid var(--navbar-border-top-color);
 }
 
 .navbar a {
