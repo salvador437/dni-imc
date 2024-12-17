@@ -19,7 +19,7 @@
   --navbar-text-color: orangered;
   --text-color: orangered;
   --text-color-logo: orangered;
-  --color-shadow: #040111;
+  --color-shadow: 10px 10px 25px #040111;
 }
 
 * {
@@ -40,7 +40,7 @@ h2 {
 }
 
 .titulo{
-  font-size: 22px;
+  font-size: 1.375em;
 }
 
 .input-validacion {
@@ -59,8 +59,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding: 1.56em;
-  border-radius: 20px;
-  box-shadow: 10px 10px 25px var(--color-shadow);
+  border-radius: 1.25em;
+  box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
   color: var(--text-color);
   border: 1px solid orangered;
@@ -113,7 +113,7 @@ h2 {
   padding: 20px;
   border: var(--modal-border-color);
   width: 80%;
-  max-width: 500px;
+  max-width: 31.25em;
   box-shadow: var(--modal-box-shadow);
   border-radius: 0.8em;
   user-select: none;
@@ -127,7 +127,7 @@ h2 {
 .close3 {
   color: var(--close-color);
   float: right;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
 }
 
