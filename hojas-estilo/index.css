@@ -7,7 +7,7 @@
   --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
-  --color-shadow: 10px 10px 25px #03290b;
+  --color-shadow: 10px 10px 25px #000;
   --div-background: #333333cc;
   --footer-background: #333;
   --footer-text-color: white;
@@ -74,7 +74,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding: 0.625em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   line-height: 0.5em;
   user-select: none;
   color: var(--text-color);

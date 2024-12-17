@@ -7,7 +7,7 @@
   --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
-  --color-shadow: 10px 10px 25px #040111;
+  --color-shadow: 10px 10px 25px #000;
   --div-background: #333333cc;
   --footer-background: #333;
   --h2-color: #50a7f9;
@@ -70,7 +70,7 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   padding: 1.312em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   line-height: 1em;
   user-select: none;
   box-shadow:  var(--color-shadow);
