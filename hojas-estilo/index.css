@@ -45,7 +45,7 @@ h2 {
 /* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  */
 .input-dniNumero,
 .input-conversor{
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   font-size: 1em;
   border-radius: 0.437em;
   text-align: center;
@@ -183,7 +183,6 @@ a:hover {
     font-size: 2em;
     cursor: pointer;
     font-weight: bold;
-    zoom: 1.1;
     transform: rotate(360deg);
   }
 }

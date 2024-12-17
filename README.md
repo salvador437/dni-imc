@@ -61,12 +61,16 @@ En la barra de menú contamos con los sguientes enlaces:<br>
 
 ![alt text](./images/image7.png)
 
-- El enlace Home, oviamente, nos lleva al home de la  aplicación.<br><br>
+- El enlace Home, oviamente, nos lleva al home de la  aplicación.
 - El enlace vipexclusivity, nos lleva a la web de un producto imnovador para el sector del ócio.
-- El enlace mesa-vip
-<br><br>
+- El enlace mesa-vip le llevará a un video comercial de la mesa vip.
 
-- El enlace 
+- El enlace github le llevará a mis repositorios en github.
+- El enlace MDNmozilla irá a la documentacion MDN de mozilla.
+
+para salir de la página haciendo click en Home o bien con la combinación de teclas Ctrl+z
+
+
 
 ## LISTA de archivos de la app 
 
