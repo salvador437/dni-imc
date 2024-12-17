@@ -66,6 +66,11 @@ h2 {
   border: 1px solid orangered;
 }
 
+.clase-validacion-resultado{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .label {
   font-size: 16px;
 }
@@ -110,7 +115,7 @@ h2 {
   background-color: var(--div-background);
   color: var(--modal-color);
   margin: 15% auto;
-  padding: 20px;
+  padding: 1.25em;
   border: var(--modal-border-color);
   width: 80%;
   max-width: 31.25em;
@@ -140,7 +145,7 @@ h2 {
 
 .footer {
   text-align: center;
-  padding: 25px 0;
+  padding: 1.562em 0;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -155,7 +160,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0.625em 1.25em;
   user-select: none;
   background-color: var(--footer-background);
   border-bottom: var(--navbar-border-botton-color);
@@ -165,7 +170,7 @@ h2 {
 
 .navbar a {
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 0.875em 1.25em;
   display: block;
   font-size: 1.4em;
   user-select: none;
@@ -173,7 +178,7 @@ h2 {
 }
 
 .navbar a:hover {
-  border-radius: 5px;
+  border-radius: 0.312em;
   background-color: var(--a-hover-background);
   border: 1px solid orangered;
 }
@@ -202,11 +207,11 @@ h2 {
 
 .navbar .menu-icon {
   display: block;
-  font-size: 30px;
+  font-size: 1.875em;
   cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .navbar .menu a {
     display: block;
   }
