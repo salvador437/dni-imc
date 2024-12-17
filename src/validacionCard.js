@@ -6,10 +6,12 @@ const posibleNumero = document.querySelector("#posible-numero");
 
 // escuchando cuando se hace click  en el botón calcular
 btnValidacion.addEventListener("click", calcularValidacion);
+
 // escuchando cuando tiene el foco el input validación
 inputValidacion.addEventListener("focus", () => {
   limpiar();
 });
+
 // escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
@@ -27,27 +29,27 @@ document.addEventListener("keydown", function (event) {
 
 function limpiar() {
   inputValidacion.value = "";
-  document.querySelector("#resultado-validacion").textContent = "";
-  document.querySelector("#posible-numero").textContent = "";
+  resultadoValidacion.textContent = "";
+  posibleNumero.textContent = "";
 }
+
 // cálculo de la validación del número de la card
 function calcularValidacion() {
   const valorValidacion = inputValidacion.value;
   const validacion = ccTest(valorValidacion);
 
   if (valorValidacion.length < 16) {
-    document.getElementById("resultado-validacion").style.color = "red";
+    resultadoValidacion.style.color = "red";
     resultadoValidacion.textContent = "Tarjeta rechazada.";
     window.open("./notificacionErrorValidacion.html", (target = "_self"));
-    return;
   }
 
   if (validacion) {
-    document.getElementById("resultado-validacion").style.color = "chartreuse";
+    resultadoValidacion.style.color = "chartreuse";
     resultadoValidacion.textContent = "Tarjeta válida.";
   } else {
     const valorValidacion = inputValidacion.value;
-    document.getElementById("resultado-validacion").style.color = "red";
+    resultadoValidacion.style.color = "red";
     resultadoValidacion.textContent = "Tarjeta rechazada";
     posibleNumero.textContent = `Pruebe éste ${ccGen(valorValidacion)}`;
   }

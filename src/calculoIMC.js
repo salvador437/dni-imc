@@ -3,27 +3,23 @@ const inputImcPeso = document.querySelector(".input-imcPeso");
 const inputImcAltura = document.querySelector(".input-imcAltura");
 const btnCalImc = document.querySelector(".btn-cal-imc");
 const resultadoIMC = document.querySelector("#resultado-imc");
+const menu = document.getElementById("navbarMenu");
 
 // escuchando cuando se hace click en el botón "btnCalImc".
 btnCalImc.addEventListener("click", calcularIMC);
+
 // escuchando cuando tiene el foco el "inputImcPeso".
 inputImcPeso.addEventListener("focus", () => {
-  limpiar();
+  inputImcPeso.value = "";
+  resultadoIMC.textContent = "";
 });
+
 // escuchando cuando tiene el foco el inputImcAltura.
 inputImcAltura.addEventListener("focus", () => {
   inputImcAltura.value = "";
-  document.querySelector("#resultado-imc").textContent = "";
+  resultadoIMC.textContent = "";
 });
-// commutación menú hanburguesa y navegador.
-function toggleMenu() {
-  const menu = document.getElementById("navbarMenu");
-  if (menu.className === "menu") {
-    menu.className += " responsive";
-  } else {
-    menu.className = "menu";
-  }
-}
+
 // escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
@@ -39,15 +35,24 @@ document.addEventListener("keydown", function (event) {
 
 function limpiar() {
   inputImcPeso.value = "";
-  inputImcAltura.value =""
-  document.querySelector("#resultado-imc").textContent = "";
+  inputImcAltura.value = "";
+  resultadoIMC.textContent = "";
 }
 
-// calcula el indice de masa corporal IMC
+// commutación menú hanburguesa y navegador.
+function toggleMenu() {
+  if (menu.className === "menu") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "menu";
+  }
+}
+
+// calcula el índice de masa corporal IMC.
 function calcularIMC() {
-  // valores de los inputs peso y altura.
-  const valorPeso = document.querySelector(".input-imcPeso").value;
-  let valorAltura = document.querySelector(".input-imcAltura").value;
+  // obteniendo los valores de los inputs peso y altura.
+  const valorPeso = inputImcPeso.value;
+  let valorAltura = inputImcAltura.value;
 
   if (valorPeso.length < 1 || isNaN(valorPeso)) {
     window.open("./notificacionErrorIMC.html", (target = "_self"));
@@ -56,7 +61,7 @@ function calcularIMC() {
   if (valorAltura.length < 1 || isNaN(valorAltura)) {
     window.open("./notificacionErrorIMC.html", (target = "_self"));
   }
-
+// calculando el IMC
   valorAltura = valorAltura / 100;
   let valorResultado = valorPeso / valorAltura ** 2;
   // cambiando el punto por la coma en los decimales del resultado
@@ -64,6 +69,5 @@ function calcularIMC() {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
   });
-
   resultadoIMC.textContent = "El  IMC será de: " + valorResultado;
 }

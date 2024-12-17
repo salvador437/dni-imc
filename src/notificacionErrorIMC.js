@@ -1,6 +1,7 @@
 // Obtener elementos del DOM
 const modal = document.getElementById("myModal");
 const closeBtn = document.getElementsByClassName("close2")[0];
+
 document.addEventListener("keydown", function (event) {
   if (event.ctrlKey && event.key === "z") {
     window.open("./calculoIMC.html", (target = "_self"));

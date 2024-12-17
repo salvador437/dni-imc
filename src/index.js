@@ -3,6 +3,9 @@ const inputdni = document.querySelector(".input-dniNumero");
 const inputConversor = document.querySelector(".input-conversor");
 const btnCalcular = document.querySelector(".btn-calcular");
 const btnCalTemp = document.querySelector(".btn-cal-temp");
+const resultadoDni = document.querySelector("#resultado");
+const resultadoTemp = document.querySelector("#resultado-temperatura")
+const menu = document.getElementById("navbarMenu");
 
 
 // escuchando cuando se hace click en los botones.
@@ -18,23 +21,28 @@ inputdni.addEventListener("focus", () => {
 inputConversor.addEventListener("focus", () => {
   limpiar();
 });
-// escuchando cuando se pulsa una tecla
+
+/// escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
   if (event.key === "Enter") {
-    calcularIMC();
+    calcularLetraDNI();
+  }
+
+  if (event.altlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
+    window.open("./index.html", (target = "_self"));
   }
 });
 
 function limpiar() {
   inputdni.value = "";
   inputConversor.value = "";
-  document.querySelector("#resultado").textContent = "";
+  resultadoDni.textContent = "";
   inputConversor.value = "";
   inputdni.value = "";
-  document.querySelector("#resultado-temperatura").textContent = "";
+  resultadoTemp.textContent = "";
 }
 
 // escuchando cuando el input pierde el foco
@@ -43,13 +51,13 @@ inputConversor.addEventListener("blur", () => {
 });
 // commutación menú hanburguesa y navegador.
 function toggleMenu() {
-  const menu = document.getElementById("navbarMenu");
   if (menu.className === "menu") {
     menu.className += " responsive";
   } else {
     menu.className = "menu";
   }
 }
+
 // cálculo de la letra del DNI.
 function calcularLetraDNI() {
   const dniNumero = inputdni.value;
@@ -66,13 +74,13 @@ function calcularLetraDNI() {
   const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
   const indice = dniNumero % 23;
   const letraDNI = letras[indice];
-  document.querySelector("#resultado").textContent = ` El DNI 
+  resultadoDni.textContent = ` El DNI 
   completo es: ${dniNumero}-${letraDNI} `;
 }
 
 //Cálculo de la conversión de grados C => F.
 function calcularTemperaturaCF() {
-  const gradosConversion = document.querySelector(".input-conversor").value;
+  const gradosConversion = inputConversor.value;
   if (
     gradosConversion.length > 5 ||
     isNaN(gradosConversion) ||
@@ -86,8 +94,5 @@ function calcularTemperaturaCF() {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
   });
-
-  document.querySelector(
-    "#resultado-temperatura"
-  ).textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
+  resultadoTemp.textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
 }

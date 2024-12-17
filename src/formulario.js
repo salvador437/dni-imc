@@ -64,6 +64,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-closeBtn.onclick = function () {
+closeBtn.onclick = ()=> {
   open("./index.html", (target = "_self"));
 };
