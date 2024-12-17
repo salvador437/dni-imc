@@ -58,6 +58,11 @@ h2 {
 /* estilos para la cabecera h5 de la clase ".clase-imc" */
 h5 {
   text-align: center;
+  text-decoration: underline;
+}
+
+p{
+  text-decoration: underline;
 }
 
 /* estilos para la  clase ".clase-imc" */

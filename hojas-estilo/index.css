@@ -42,6 +42,10 @@ h2 {
   text-decoration: underline;
 }
 
+p{
+  text-decoration: underline;
+}
+
 /* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  */
 .input-dniNumero,
 .input-conversor{
