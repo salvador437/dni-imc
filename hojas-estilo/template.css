@@ -1,28 +1,33 @@
 /* variables para estilos de color */
 :root {
+  
   --body-background: #000;
-  --div-background: rgb(0, 0, 0, 0.8);
-  --btn-background: #222;
-  --btn-hover-background:orangered; 
-  --btn-text-color: orangered;
-  --btn-border-color: 1px solid orangered;
+  --btn-cal-validacion-background: #222;
+  --btn-hover-cal-validacion-background:orangered;
+  --btn-hover-cal-validacion-color: white;
+  --btn-cal-validacion-text-color: orangered;
+  --btn-cal-validacion-border-color: 1px solid orangered;
+  --clase-validacion-border-color: 1px solid orangered ;
+  --clase-validacion-text-color: orangered;
   --close-color: #aaa;
   --close-hover-color: #555;
+  --color-shadow: 10px 10px 25px #040111;
+  --div-background: rgb(0, 0, 0, 0.8);
   --footer-background: #222;
   --footer-text-color: white;
-  --a-hover-background: #222;
   --h2-color: orangered;
+  --logo-text-color: orangered;
+  --menu-icon-color: #76c4f5;
   --modal-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
-  --modal-border-color: 1px solid #e8f803;
+  --modal-border-color: 1px solid orangered;
   --modal-color: #fff;
+  --navbar-a-hover-background: #222;
+  --navbar-a-hover-border-color: 1px solid orangered;
   --navbar-border-top-color: 1px solid #444;
   --navbar-border-botton-color: 1px solid #000;
   --navbar-background-color:linear-gradient(5deg, black, #222, #777);
   --navbar-text-color: orangered;
-  --text-color: orangered;
-  --text-color-logo: orangered;
-  --clase-validacion-border-color: 1px solid orangered ;
-  --color-shadow: 10px 10px 25px #040111;
+  --resultado-validacion-color: #e8f803;
 }
 
 * {
@@ -43,7 +48,8 @@ h2 {
 }
 
 .titulo{
-  font-size: 1.375em;
+  font-size: 1.1em;
+  text-decoration: underline;
 }
 
 .input-validacion {
@@ -57,14 +63,14 @@ h2 {
 
 .clase-validacion {
   font-size: 1.3em;
-  max-width: 18.75em;
+  max-width: 17em;
   margin-top: 6.6em;
   margin-left: auto;
   margin-right: auto;
   border-radius: 1.25em;
   box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
-  color: var(--text-color);
+  color: var(--clase-validacion-text-color);
   border:  var(--clase-validacion-border-color);
 }
 
@@ -74,30 +80,30 @@ h2 {
 }
 
 .label {
-  font-size: 16px;
+  font-size: 0.85em;
 }
 
 .btn-cal-validacion {
   outline: invert;
-  border: var(--btn-border-color);
+  border: var(--btn-cal-validacion-border-color);
   cursor: pointer;
   font-size: 1em;
   padding: 0 0.8em;
   border-radius: 0.3em;
-  color: var(--btn-text-color);
-  background-color: var(--btn-background);
+  color: var(--btn-cal-validacion-text-color);
+  background-color: var(--btn-cal-validacion-background);
 }
 
 .btn-cal-validacion:hover {
-  color: white;
-  background-color: var(--btn-hover-background);
+  color: var(--btn-hover-cal-validacion-color);
+  background-color: var(--btn-hover-cal-validacion-background);
   cursor: pointer;
 }
 
 #resultado-validacion,
 #posible-numero {
   text-align: center;
-  color: #e8f803;
+  color: var(--resultado-validacion-color);
 }
 
 .modal {
@@ -124,10 +130,6 @@ h2 {
   box-shadow: var(--modal-box-shadow);
   border-radius: 0.8em;
   user-select: none;
-}
-
-#resultado-validacion {
-  text-align: center;
 }
 
 /* Botón de cerrar */
@@ -181,21 +183,20 @@ h2 {
 
 .navbar a:hover {
   border-radius: 0.312em;
-  background-color: var(--a-hover-background);
-  border: 1px solid orangered;
+  background-color: var(--navbar-a-hover-background);
+  border: var(--navbar-a-hover-border-color);
 }
 
 .navbar .logo {
   font-size: 2em;
   font-weight: bold;
   transition: 0.5s;
-  color: var(--text-color-logo);
+  color: var(--logo-text-color);
 }
 
 .navbar .logo:hover {
   font-size: 2em;
   font-weight: bold;
-  zoom: 1.1;
   rotate: 360deg;
 }
 
@@ -237,17 +238,17 @@ h2 {
 }
 
 .menu-icon {
-  color: #76c4f5;
+  color: var(--menu-icon-color);
 }
 
 .menu-icon2 {
-  color: #76c4f5;
+  color: var(--menu-icon-color);
 }
 .navbar .logo {
   font-size: 2em;
   font-weight: bold;
   transition: 0.5s;
-  color: var(--text-color-logo);
+  color: var(--logo-text-color);
 }
 
 .navbar .logo:hover {
@@ -291,7 +292,7 @@ h2 {
   font-size: 2em;
   font-weight: bold;
   transition: 0.5s;
-  color: var(--text-color-logo);
+  color: var(--logo-text-color);
 }
 
 .navbar .logo:hover {

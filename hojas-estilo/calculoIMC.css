@@ -27,13 +27,13 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* estilos para el body de la página calculoIMC.html*/
 body {
   font-family: "Roboto", "sans-serif";
-  margin: 0;
-  padding: 0;
   background-image: url(../images/IMC.jpg);
 }
 
@@ -197,7 +197,6 @@ tr {
 .navbar .logo:hover {
   font-size: 2em;
   font-weight: bold;
-  zoom: 1.1;
   rotate: 360deg;
 }
 
