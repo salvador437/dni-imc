@@ -1,8 +1,11 @@
 :root{
+  --a-hover-background-color: orangered;
+  --a-hover-color: white;
   --body-background-color: #000;
   --header-border-color: 1px solid #d1740a;
   --items-color: #fff;
   --items-background-color: #121113;
+  --li-color: orangered ;
 }
 
 *{box-sizing: border-box;
@@ -25,15 +28,15 @@ a {
   align-items: center;
   justify-items: center;
   margin: 0;
-  padding: 5px;
-  font-size: 2rem;
+  padding: 0.312em;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: orangered;
+  color: var(--li-color);
 }
 
 a:hover {
-  background-color: orangered;
-  color: white;
+  background-color: var(--a-hover-background-color);
+  color: var(--a-hover-color);
   border-radius: 5px;
 }
 
@@ -42,10 +45,10 @@ p::first-letter {
   background-color: orangered;
   border-radius: 5%;
   box-shadow: 3px 3px 0 black;
-  font-size: 200%;
+  font-size: 180%;
   padding: 6px 3px;
   margin-right: 6px;
-  float: unset;
+  float:unset;
 }
 
 .header {
@@ -60,12 +63,12 @@ p::first-letter {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.2em;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 0.325em;
   padding-bottom: 7px;
-  padding-top: 10px;
+  padding-top: 7px;
   border: var(--header-border-color);
 }
 
@@ -84,8 +87,8 @@ p::first-letter {
 }
 .parpadea {
   animation-name: parpadeo;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 

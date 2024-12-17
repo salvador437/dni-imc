@@ -120,7 +120,7 @@ h2 {
   background-color: var(--div-background);
   color: var(--modal-content-color);
   margin: 15% auto;
-  padding: 20px;
+  padding: 1.25em;
   border: var(--modal-content-border-color);
   width: 80%;
   max-width: 31.25em;
@@ -169,7 +169,7 @@ a {
 }
 
 a:hover {
-  border-radius: 5px;
+  border-radius: 0.312em;
   background-color:var(--a-hover-background);
   border: var(--a-hover-border-color);
 }

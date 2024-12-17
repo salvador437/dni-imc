@@ -1,9 +1,8 @@
 :root {
   --boton-color:#aaa;
   --boton-background-color: #222;
-  --input-border-boton-color: #888;
+  --input-border-boton-color: 1px solid #888;
   --input-placeholder-color: #555;
-  --body-background: #321dd3;
   --close4-color: #aaa;
   --close4-hover-color: #000;
   --form-background: #333;
@@ -69,7 +68,7 @@ body {
   background-color: var(--form-background);
   border-style: none;
   color: var(--grupo-entradas-color);
-  border-bottom: 1px solid var(--input-border-boton-color);
+  border-bottom:  var(--input-border-boton-color);
   border-top-style: none;
 }
 
@@ -77,14 +76,14 @@ body {
   background-color: var(--form-background);
   border-style: none;
   outline: none;
-  border-bottom: 1px solid var(--input-border-boton-color);
+  border-bottom:  var(--input-border-boton-color);
 }
 
 .grupo-entradas:focus{
   background-color: var(--form-background);
   border-style: none;
   outline: none;
-  border-bottom: 1px solid var(--input-border-boton-color);
+  border-bottom:  var(--input-border-boton-color);
 }
 
 .grupo-entradas::placeholder{

@@ -39,9 +39,13 @@ h2 {
   text-decoration: underline;
 }
 
-.clase-validacion .input-validacion {
+.titulo{
+  font-size: 22px;
+}
+
+.input-validacion {
   font-size: 0.9em;
-  border-radius: 7px;
+  border-radius: 0.43em;
   color: var(--text-color);
   text-align: center;
   margin-bottom: 1em;
@@ -49,12 +53,12 @@ h2 {
 }
 
 .clase-validacion {
-  font-size: 1.2em;
-  max-width: 300px;
+  font-size: 1.3em;
+  max-width: 18.75em;
   margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
+  padding: 1.56em;
   border-radius: 20px;
   box-shadow: 10px 10px 25px var(--color-shadow);
   background-color: var(--div-background);
