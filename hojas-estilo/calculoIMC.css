@@ -44,6 +44,7 @@ body {
   border-radius: 0.437em;
   color: var(--text-color);
   text-align: center;
+  margin-top: 1em;
   margin-bottom: 1em;
   background-color: var(--div-background);
 }
@@ -68,7 +69,7 @@ h5 {
   margin-bottom: 0.4em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.312em;
+  padding: 1.312em;
   border-radius: 1em;
   line-height: 1em;
   user-select: none;
@@ -142,8 +143,9 @@ table,
 th,
 td,
 tr {
-  margin-left: 3em;
+  margin-left: 1.5em;
   margin-bottom: 0.8em;
+  margin-top: 0.35em;
   text-align: center;
 }
 

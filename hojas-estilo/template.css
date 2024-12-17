@@ -226,7 +226,7 @@ h2 {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 60px;
+  top: 3.75em;
   width: 100%;
   flex-direction: column;
   background-color: var(--footer-background);
@@ -270,7 +270,7 @@ h2 {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 60px;
+  top: 3.75em;
   width: 100%;
   flex-direction: column;
   background-color: var(--footer-background);
@@ -282,11 +282,11 @@ h2 {
 }
 
 .menu-icon {
-  color: #76c4f5;
+  color: var(--menu-icon-color);
 }
 
 .menu-icon2 {
-  color: #76c4f5;
+  color: var(--menu-icon-color);
 }
 .navbar .logo {
   font-size: 2em;
