@@ -11,7 +11,7 @@
   --color-shadow: 10px 10px 25px #000;
   --div-background: #333333cc;
   --footer-background: #333;
-  --titulo-errorIMC-color: #50a7f9;
+  --inputs-text-color: #b4abab;
   --logo-text-color: #7fc7f3;
   --menu-icon-color:#76c4f5 ;
   --modal-borde-color: 1px solid #8bd6f5;
@@ -21,9 +21,9 @@
   --navbar-border-button-color: 1px solid #000;
   --navbar-text-color: #70c2f5;
   --navbar-background: linear-gradient(5deg, black, #222, #777);
-  --text-color: #b4abab;
   --text-navbar: #70c2f5;
   --text-color-footer: white;
+  --titulo-errorIMC-color: #50a7f9;
 }
 
 * {
@@ -42,7 +42,7 @@ body {
 .input-imcPeso,
 .input-imcAltura {
   font-size: 1em;
-  color: var(--text-color);
+  color: var(--inputs-text-color);
   text-align: center;
   margin: 0.5em 0;
   background-color: var(--div-background);
@@ -77,7 +77,7 @@ body {
   user-select: none;
   box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
-  color: var(--text-color);
+  color: var(--inputs-text-color);
 }
 
 /* estilos para la  clase ".label" */

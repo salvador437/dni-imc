@@ -8,10 +8,12 @@
   --close-color: #aaa;
   --close-hover-color: #000;
   --color-shadow: 10px 10px 25px #000;
-  --div-background: #333333cc;
+  --div-background-color:#222222cc ;
+  --inputs-background-color: #333333cc;
   --footer-background: #333;
   --footer-text-color: white;
-  --titulo-errorDNI-text-color: chartreuse;
+  --inputs-text-color: #b4abab;
+  --logo-text-color: #5ac47d;
   --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: rgb(7, 252, 39);
   --modal-content-color: #fff;
@@ -21,10 +23,8 @@
   --navbar-background-color:linear-gradient(5deg, black, #222, #777);
   --navbar-border-top-color: 1px solid #444;
   --navbar-border-botton-color: 1px solid #000;
-  --tituloDNI-text-color: #b4abab;
-  --logo-text-color: #5ac47d;
-  --text-navbar: #3ff172;
-  
+  --navbar-text-color: #3ff172;
+  --titulos-text-color: #b4abab;
 }
 
 * {
@@ -48,7 +48,7 @@ body {
 .tituloDNI,
 .tituloTemperatura{
   font-size: 1em;
-  color: var(--tituloDNI-text-color);
+  color: var(--titulos-text-color);
   text-decoration: underline;
 }
 
@@ -60,8 +60,8 @@ body {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  color: var(--text-color);
-  background-color: var(--div-background);
+  color: var(--inputs-text-color);
+  background-color: var(--inputs-background-color);
 }
 
 .btn-calcular,
@@ -87,9 +87,9 @@ body {
   border-radius: 0.5em;
   line-height: 0.5em;
   user-select: none;
-  color: var(--text-color);
+  color: var(--inputs-text-color);
   box-shadow:  var(--color-shadow);
-  background-color: var(--div-background);
+  background-color: var(--div-background-color);
 }
 
 #resultado,
@@ -123,7 +123,7 @@ body {
 
 /* Estilos del contenido del modal */
 .modal-content {
-  background-color: var(--div-background);
+  background-color: var(--div-background-color);
   color: var(--modal-content-color);
   margin: 15% auto;
   padding: 1.25em;
@@ -170,7 +170,7 @@ a {
   padding: 0.4em 1em;
   font-size: 1.4em;
   user-select: none;
-  color: var(--text-navbar);
+  color: var(--navbar-text-color);
 }
 
 a:hover {
