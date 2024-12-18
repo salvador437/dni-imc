@@ -1,8 +1,9 @@
 /* variables para estilos de color de la página calculoIMC.html */
 :root {
-  --a-hover-background: #444;
+  --a-hover-background-color: #444;
   --a-hover-border-color: 1px solid #70c2f5;
   --body-background: #2f0d96;
+  --body-background-image: url(../images/IMC.jpg);
   --btn-background-color: #333333cc;
   --btn-text-color: #b4abab;
   --close-color: #aaa;
@@ -34,7 +35,7 @@
 /* estilos para el body de la página calculoIMC.html*/
 body {
   font-family: "Roboto", "sans-serif";
-  background-image: url(../images/IMC.jpg);
+  background-image: var(--body-background-image);
 }
 
 /* estilos para los inputs de la clase ".clase-imc" */
@@ -43,8 +44,7 @@ body {
   font-size: 1em;
   color: var(--text-color);
   text-align: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   background-color: var(--div-background);
 }
 
@@ -186,7 +186,7 @@ tr {
 .navbar a:hover {
   border-radius: 0.313em;
   border: var(--a-hover-border-color);
-  background-color: var(--a-hover-background);
+  background-color: var(--a-hover-background-color);
 }
 
 .navbar .logo {
