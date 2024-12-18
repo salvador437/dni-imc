@@ -27,10 +27,7 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
-  if (event.key === "Enter") {
-    calcularLetraDNI();
-  }
-
+  
   if (event.altlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
     window.open("./index.html", (target = "_self"));
   }

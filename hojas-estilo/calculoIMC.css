@@ -130,13 +130,11 @@ body {
   float: right;
   font-size: 1.75em;
   font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: var(--close-hover-color);
-  text-decoration: none;
-  cursor: pointer;
+  &:hover{
+    color: var(--close-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 table,
@@ -181,24 +179,22 @@ tr {
   font-size: 1.4em;
   user-select: none;
   color: var(--navbar-text-color);
-}
-
-.navbar a:hover {
-  border-radius: 0.313em;
-  border: var(--a-hover-border-color);
-  background-color: var(--a-hover-background-color);
+  &:hover{
+    border-radius: 0.313em;
+    border: var(--a-hover-border-color);
+    background-color: var(--a-hover-background-color);
+  }
 }
 
 .navbar .logo {
   font-size: 2em;
   font-weight: bold;
   border : color var(--logo-text-color);
-}
-
-.navbar .logo:hover {
-  font-size: 2em;
-  font-weight: bold;
-  rotate: 360deg;
+  &:hover{
+    font-size: 2em;
+    font-weight: bold;
+    rotate: 360deg;
+  }
 }
 
 .navbar .menu {
@@ -248,11 +244,10 @@ tr {
   font-weight: bold;
   transition: 0.5s;
   color: var(--logo-text-color);
-}
-
-.navbar .logo:hover {
-  font-size: 2em;
-  cursor: pointer;
-  font-weight: bold;
-  transform: rotateY(360deg);
+  &:hover{
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transform: rotateY(360deg);
+  }
 }

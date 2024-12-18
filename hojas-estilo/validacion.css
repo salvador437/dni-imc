@@ -90,12 +90,11 @@ h2 {
   border-radius: 0.3em;
   color: var(--btn-cal-validacion-text-color);
   background-color: var(--btn-cal-validacion-background);
-}
-
-.btn-cal-validacion:hover {
-  color: var(--btn-hover-cal-validacion-color);
-  background-color: var(--btn-hover-cal-validacion-background);
-  cursor: pointer;
+  &:hover{
+    color: var(--btn-hover-cal-validacion-color);
+    background-color: var(--btn-hover-cal-validacion-background);
+    cursor: pointer;
+  }
 }
 
 #resultado-validacion,
@@ -132,13 +131,11 @@ h2 {
   float: right;
   font-size: 1.75em;
   font-weight: bold;
-}
-
-.close3:hover,
-.close3:focus {
-  color: var(--close-hover-color);
-  text-decoration: none;
-  cursor: pointer;
+  &:hover{
+    color: var(--close-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 .footer {
@@ -172,12 +169,11 @@ h2 {
   font-size: 1.4em;
   user-select: none;
   color: var(--navbar-text-color);
-}
-
-.navbar a:hover {
-  border-radius: 0.312em;
-  background-color: var(--navbar-a-hover-background);
-  border: var(--navbar-a-hover-border-color);
+  &:hover{
+    border-radius: 0.312em;
+    background-color: var(--navbar-a-hover-background);
+    border: var(--navbar-a-hover-border-color);
+  }
 }
 
 .navbar .logo {
@@ -185,13 +181,13 @@ h2 {
   font-weight: bold;
   transition: 0.5s;
   color: var(--logo-text-color);
-}
-
-.navbar .logo:hover {
-  font-size: 2em;
+  &:hover{
+    font-size: 2em;
   font-weight: bold;
   rotate: 360deg;
+  }
 }
+
 
 .navbar .menu {
   display: flex;
@@ -286,11 +282,10 @@ h2 {
   font-weight: bold;
   transition: 0.5s;
   color: var(--logo-text-color);
-}
-
-.navbar .logo:hover {
-  font-size: 2em;
-  cursor: pointer;
-  font-weight: bold;
-  transform: rotateY(360deg);
+  &:hover{
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transform: rotateY(360deg);
+  }
 }

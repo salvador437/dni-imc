@@ -140,13 +140,11 @@ body {
   float: right;
   font-size: 1.75em;
   font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--close-hover-color);
-  text-decoration: none;
-  cursor: pointer;
+  &:hover{
+    color: var(--close-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 /* damos reglas a la clase ".navbar" que es */
@@ -171,12 +169,11 @@ a {
   font-size: 1.4em;
   user-select: none;
   color: var(--navbar-text-color);
-}
-
-a:hover {
-  border-radius: 0.312em;
-  background-color:var(--a-hover-background);
-  border: var(--a-hover-border-color);
+  &:hover{
+    border-radius: 0.312em;
+    background-color:var(--a-hover-background);
+    border: var(--a-hover-border-color);
+  }
 }
 
 .logo {
@@ -237,11 +234,10 @@ a:hover {
   font-weight: bold;
   transition: 0.5s;
   color: var(--logo-text-color);
-}
-
-.logo:hover {
-  font-size: 2em;
-  cursor: pointer;
-  font-weight: bold;
-  transform: rotateY(360deg);
+  &:hover{
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transform: rotateY(360deg);
+  }
 }
