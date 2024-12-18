@@ -1,6 +1,5 @@
 /* variables para estilos de color */
 :root {
-  
   --body-background: #000;
   --btn-cal-validacion-background: #222;
   --btn-hover-cal-validacion-background:orangered;
@@ -12,7 +11,7 @@
   --close-color: #aaa;
   --close-hover-color: #555;
   --color-shadow: 10px 10px 25px #040111;
-  --div-background: rgb(0, 0, 0, 0.8);
+  --div-background: #000000cc;
   --footer-background: #222;
   --footer-text-color: white;
   --h2-color: orangered;
@@ -48,7 +47,7 @@ h2 {
 }
 
 .titulo{
-  font-size: 1.1em;
+  font-size: 1em;
   text-decoration: underline;
 }
 
@@ -61,7 +60,7 @@ h2 {
 }
 
 .clase-validacion {
-  font-size: 1.3em;
+  font-size: 1.2em;
   max-width: 17em;
   margin-top: 6.6em;
   margin-left: auto;
@@ -106,14 +105,11 @@ h2 {
 }
 
 .modal {
-  display: block;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: var(--body-background);
 }
 
@@ -165,7 +161,7 @@ h2 {
   align-items: center;
   padding: 0.625em 1.25em;
   user-select: none;
-  background-color: var(--footer-background);
+  background-color: var(--navbar-background);
   border-bottom: var(--navbar-border-botton-color);
   border-top: var(--navbar-border-top-color);
   background: var(--navbar-background-color);
@@ -173,8 +169,7 @@ h2 {
 
 .navbar a {
   text-decoration: none;
-  padding: 0.875em 1.25em;
-  display: block;
+  padding: 0.4em 1em;
   font-size: 1.4em;
   user-select: none;
   color: var(--navbar-text-color);

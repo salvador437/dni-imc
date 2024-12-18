@@ -3,14 +3,14 @@
   --a-hover-background: #444;
   --a-hover-border-color: 1px solid #70c2f5;
   --body-background: #2f0d96;
-  --btn-background: #333333cc;
+  --btn-background-color: #333333cc;
   --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
   --color-shadow: 10px 10px 25px #000;
   --div-background: #333333cc;
   --footer-background: #333;
-  --h2-color: #50a7f9;
+  --titulo-errorIMC-color: #50a7f9;
   --logo-text-color: #7fc7f3;
   --menu-icon-color:#76c4f5 ;
   --modal-borde-color: 1px solid #8bd6f5;
@@ -49,34 +49,31 @@ body {
 }
 
 /* estilos para la cabecera h2 del archivo notificacionErrorIMC */
-h2 {
-  color: var(--h2-color);
+.titulo-errorIMC {
+  color: var(--titulo-errorIMC-color);
   margin: 0.625em 0;
   text-decoration: underline;
 }
 
 /* estilos para la cabecera h5 de la clase ".clase-imc" */
-h5 {
+.tituloIMC,
+.titulo-tablaIMC{
+  font-size: 1em;
   text-align: center;
-  text-decoration: underline;
-}
-
-p{
   text-decoration: underline;
 }
 
 /* estilos para la  clase ".clase-imc" */
 .clase-imc {
-  font-size: 1.2em;
+  font-size: 1.15em;
   min-width: 15.625em;
   max-width: 18em;
-  margin-top: 2em;
+  margin-top: 1.8em;
   margin-bottom: 0.4em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.312em;
   border-radius: 0.5em;
-  line-height: 1em;
   user-select: none;
   box-shadow:  var(--color-shadow);
   background-color: var(--div-background);
@@ -92,12 +89,12 @@ p{
 .btn-cal-imc {
   cursor: pointer;
   font-size: 1em;
+  margin-top: 1.2em;
   padding: 0 0.8em;
   border-radius: 0.3em;
   color: var(--btn-text-color);
-  background-color: var(--btn-background);
+  background-color: var(--btn-background-color);
 }
-
 
 #resultado-imc {
   margin-top: 0.625em;
@@ -105,14 +102,11 @@ p{
 }
 
 .modal {
-  display: block;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: var(--body-background);
 }
 
@@ -183,8 +177,7 @@ tr {
 
 .navbar a {
   text-decoration: none;
-  padding: 0.893em 1.25em;
-  display: block;
+  padding: 0.4em 1em;
   font-size: 1.4em;
   user-select: none;
   color: var(--navbar-text-color);
