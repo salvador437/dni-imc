@@ -17,11 +17,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "formulario.html");
+  res.sendFile(__dirname + "validacion.html");
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "validacion.html");
+  res.sendFile(__dirname + "formulario.html");
 });
 
 app.use((req, res) => {

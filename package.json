@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "name": "dni-imc",
+  "version": "1.0.0",
+  "description": "Esta es la barra de navegación del HOME que es el archivo index.html de la aplicación.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "salva",
+  "license": "ISC"
 }
