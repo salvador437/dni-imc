@@ -17,7 +17,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  res.sendFile(__dirname + "calculoIMC.html");
+});
+
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "validacion.html");
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "formulario.html");
 });
 
 app.use((req, res) => {
