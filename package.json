@@ -7,8 +7,11 @@
   "description": "Esta es la barra de navegación del HOME que es el archivo index.html de la aplicación.",
   "main": "app.js",
   "scripts": {
+    "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "salva",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "keywords": []
 }

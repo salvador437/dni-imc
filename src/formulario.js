@@ -1,3 +1,4 @@
+import { pantallaCompleta } from "./fullscreen";
 
 const closeBtn = document.getElementsByClassName("close4")[0];
 const inputNombre = document.querySelector("#nombre");
@@ -66,6 +67,10 @@ document.addEventListener("keydown", function (event) {
     inputPais.value = "";
     inputMensaje.value = "";
   }
+
+  if (event.key === "p" ) {
+      pantallaCompleta()
+    }
 });
 
 closeBtn.onclick = ()=> {
