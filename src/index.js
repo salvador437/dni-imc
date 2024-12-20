@@ -32,7 +32,7 @@ document.addEventListener("keydown", function (event) {
   }
 
   if (event.key === "p" ) {
-    pantallaCompleta();
+    
   }
   
   if (event.ctrlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {

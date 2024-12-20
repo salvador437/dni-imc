@@ -32,7 +32,7 @@ document.addEventListener("keydown", function (event) {
     calcularIMC();
   }
   if (event.key === "p" || event.key === "P") {
-    pantallaCompleta()
+    
   }
   if (
     (event.ctrlKey && event.key === "z") ||
