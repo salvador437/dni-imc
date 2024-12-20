@@ -1,4 +1,4 @@
-const {fullScreen} = require("../src/fullscreen.");
+const {fullScreen} = require("../src/fullscreen");
 // asignando en constantes los  elementos HTML.
 const inputValidacion = document.querySelector(".input-validacion");
 const btnValidacion = document.querySelector(".btn-cal-validacion");

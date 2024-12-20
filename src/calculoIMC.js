@@ -1,4 +1,4 @@
-const {fullScreen} = require("../src/fullscreen.");
+const {fullScreen} = require("../src/fullscreen");
 // asignando en constantes los  elementos HTML.
 const inputImcPeso = document.querySelector(".input-imcPeso");
 const inputImcAltura = document.querySelector(".input-imcAltura");
