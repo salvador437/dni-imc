@@ -1,4 +1,4 @@
-import { pantallaCompleta } from "./fullscreen";
+
 
 const closeBtn = document.getElementsByClassName("close4")[0];
 const inputNombre = document.querySelector("#nombre");

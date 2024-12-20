@@ -1,5 +1,5 @@
-// const { pantallaCompleta } = require("./fullscreen.js");
-import { pantallaCompleta } from "./fullscreen";
+
+
 // asignando en constantes los  elementos HTML implicados.
 const inputdni = document.querySelector(".input-dniNumero");
 const inputConversor = document.querySelector(".input-conversor");
