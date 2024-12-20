@@ -1,4 +1,5 @@
-const {fullScreen} = require( "../src/fullscreen");
+// const { pantallaCompleta } = require("./fullscreen.js");
+
 // asignando en constantes los  elementos HTML implicados.
 const inputdni = document.querySelector(".input-dniNumero");
 const inputConversor = document.querySelector(".input-conversor");
@@ -8,6 +9,26 @@ const resultadoDni = document.querySelector("#resultado");
 const resultadoTemp = document.querySelector("#resultado-temperatura")
 const menu = document.getElementById("navbarMenu");
 
+function pantallaCompleta() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
+      (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
+}
 
 // escuchando cuando se hace click en los botones.
 btnCalcular.addEventListener("click", calcularLetraDNI);
@@ -29,11 +50,11 @@ document.addEventListener("keydown", function (event) {
     limpiar();
   }
 
-  if (event.key === "p" || event.key === "P") {
-    fullScreen()
+  if (event.key === "p" ) {
+    pantallaCompleta();
   }
   
-  if (event.altlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
+  if (event.ctrlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
     window.open("./index.html", (target = "_self"));
   }
 });

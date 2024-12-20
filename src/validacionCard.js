@@ -1,5 +1,4 @@
-const {fullScreen} = require("../src/fullscreen");
-// asignando en constantes los  elementos HTML.
+
 const inputValidacion = document.querySelector(".input-validacion");
 const btnValidacion = document.querySelector(".btn-cal-validacion");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
@@ -23,11 +22,11 @@ document.addEventListener("keydown", function (event) {
   }
 
   if (event.key === "Enter") {
-    calcularValidacion();
+    
   }
 
   if (event.key === "p" || event.key === "P") {
-    fullScreen();
+    
   }
 
   if (

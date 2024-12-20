@@ -1,5 +1,5 @@
 
-function fullScreen() {
+function pantallaCompleta() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
       (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
     if (document.documentElement.requestFullScreen) {
@@ -20,4 +20,4 @@ function fullScreen() {
   }
 }
 
-module.exports = fullScreen;
+module.exports = pantallaCompleta;

@@ -24,8 +24,12 @@ app.get("/formulario.html", (req, res) => {
   res.sendFile(__dirname + "formulario.html");
 });
 
+
 app.use((req, res) => {
-  console.log("error")
+  if(err){
+    throw(err)
+  }
+    
 });
 
 const PUERTO = 3000;
