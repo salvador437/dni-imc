@@ -1,3 +1,4 @@
+
 // asignando en constantes los  elementos HTML implicados.
 const inputdni = document.querySelector(".input-dniNumero");
 const inputConversor = document.querySelector(".input-conversor");
@@ -6,6 +7,29 @@ const btnCalTemp = document.querySelector(".btn-cal-temp");
 const resultadoDni = document.querySelector("#resultado");
 const resultadoTemp = document.querySelector("#resultado-temperatura")
 const menu = document.getElementById("navbarMenu");
+
+
+function fullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
+      (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
+}
+
 
 
 // escuchando cuando se hace click en los botones.
@@ -26,6 +50,10 @@ inputConversor.addEventListener("focus", () => {
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
+  }
+
+  if (event.key === "p" || event.key === "P") {
+    fullScreen()
   }
   
   if (event.altlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {

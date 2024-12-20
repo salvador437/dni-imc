@@ -1,9 +1,31 @@
+
 // asignando en constantes los  elementos HTML.
 const inputImcPeso = document.querySelector(".input-imcPeso");
 const inputImcAltura = document.querySelector(".input-imcAltura");
 const btnCalImc = document.querySelector(".btn-cal-imc");
 const resultadoIMC = document.querySelector("#resultado-imc");
 const menu = document.getElementById("navbarMenu");
+
+function fullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
+      (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
+}
 
 // escuchando cuando se hace click en el botón "btnCalImc".
 btnCalImc.addEventListener("click", calcularIMC);
@@ -28,7 +50,13 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     calcularIMC();
   }
-  if (event.ctrlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
+  if (event.key === "p" || event.key === "P") {
+    fullScreen();
+  }
+  if (
+    (event.ctrlKey && event.key === "z") ||
+    (event.ctrlKey && event.key === "Z")
+  ) {
     window.open("./index.html", (target = "_self"));
   }
 });
@@ -61,7 +89,7 @@ function calcularIMC() {
   if (valorAltura.length < 1 || isNaN(valorAltura)) {
     window.open("./notificacionErrorIMC.html", (target = "_self"));
   }
-// calculando el IMC
+  // calculando el IMC
   valorAltura = valorAltura / 100;
   let valorResultado = valorPeso / valorAltura ** 2;
   // cambiando el punto por la coma en los decimales del resultado
