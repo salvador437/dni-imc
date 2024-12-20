@@ -1,4 +1,4 @@
-
+const {fullScreen} = require("../src/fullscreen.");
 // asignando en constantes los  elementos HTML.
 const inputImcPeso = document.querySelector(".input-imcPeso");
 const inputImcAltura = document.querySelector(".input-imcAltura");
@@ -6,26 +6,7 @@ const btnCalImc = document.querySelector(".btn-cal-imc");
 const resultadoIMC = document.querySelector("#resultado-imc");
 const menu = document.getElementById("navbarMenu");
 
-function fullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
-      (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
-    if (document.documentElement.requestFullScreen) {
-      document.documentElement.requestFullScreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullScreen) {
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-  } else {
-    if (document.cancelFullScreen) {
-      document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-      document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-      document.webkitCancelFullScreen();
-    }
-  }
-}
+
 
 // escuchando cuando se hace click en el botón "btnCalImc".
 btnCalImc.addEventListener("click", calcularIMC);

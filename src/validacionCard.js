@@ -1,30 +1,11 @@
-
+const {fullScreen} = require("../src/fullscreen.");
 // asignando en constantes los  elementos HTML.
 const inputValidacion = document.querySelector(".input-validacion");
 const btnValidacion = document.querySelector(".btn-cal-validacion");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
 const posibleNumero = document.querySelector("#posible-numero");
 
-function fullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
-      (!document.mozFullScreen && !document.webkitIsFullScreen)) {               // metodos actuales
-    if (document.documentElement.requestFullScreen) {
-      document.documentElement.requestFullScreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullScreen) {
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-  } else {
-    if (document.cancelFullScreen) {
-      document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-      document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-      document.webkitCancelFullScreen();
-    }
-  }
-}
+
 
 
 // escuchando cuando se hace click  en el botón calcular
