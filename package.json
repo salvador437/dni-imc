@@ -1,0 +1,16 @@
+{
+  "name": "dni-imc",
+  "version": "1.0.0",
+  "description": "Esta es la barra de navegación del HOME que es el archivo index.html de la aplicación.",
+  "main": "index.js",
+  "scripts": {
+    "type": "module",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^23.5.0"
+  }
+}

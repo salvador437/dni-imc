@@ -31,8 +31,8 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     calcularIMC();
   }
-  if (event.key === "p" || event.key === "P") {
-    
+  if ( event.altKey &&  event.key === "ñ" ) {
+    pantallaCompleta();
   }
   if (
     (event.ctrlKey && event.key === "z") ||
@@ -80,3 +80,4 @@ function calcularIMC() {
   });
   resultadoIMC.textContent = "El  IMC será de: " + valorResultado;
 }
+

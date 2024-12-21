@@ -68,11 +68,12 @@ document.addEventListener("keydown", function (event) {
     inputMensaje.value = "";
   }
 
-  if (event.key === "p" ) {
+  if (event.altKey && event.key === "p" ) {
       pantallaCompleta()
-    }
+    } 
 });
 
 closeBtn.onclick = ()=> {
   open("./index.html", (target = "_self"));
 };
+

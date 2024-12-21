@@ -22,11 +22,11 @@ document.addEventListener("keydown", function (event) {
   }
 
   if (event.key === "Enter") {
-    
+    calcularValidacion()
   }
 
-  if (event.key === "p" || event.key === "P") {
-    
+  if (event.altKey && event.key === "p" ) {
+    pantallaCompleta()
   }
 
   if (
@@ -119,3 +119,4 @@ function ccGen(bin) {
   }
   return cc;
 }
+

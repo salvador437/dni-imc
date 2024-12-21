@@ -6,7 +6,7 @@ const inputConversor = document.querySelector(".input-conversor");
 const btnCalcular = document.querySelector(".btn-calcular");
 const btnCalTemp = document.querySelector(".btn-cal-temp");
 const resultadoDni = document.querySelector("#resultado");
-const resultadoTemp = document.querySelector("#resultado-temperatura")
+const resultadoTemp = document.querySelector("#resultado-temperatura");
 const menu = document.getElementById("navbarMenu");
 
 
@@ -31,23 +31,17 @@ document.addEventListener("keydown", function (event) {
     limpiar();
   }
 
-  if (event.key === "p" ) {
-    
-  }
+  if (event.altKey && event.key === "ñ") {
   
-  if (event.ctrlKey && event.key === "z"|| event.ctrlKey && event.key === "Z") {
+  }
+
+  if (
+    (event.ctrlKey && event.key === "z") ||
+    (event.ctrlKey && event.key === "Z")
+  ) {
     window.open("./index.html", (target = "_self"));
   }
 });
-
-function limpiar() {
-  inputdni.value = "";
-  inputConversor.value = "";
-  resultadoDni.textContent = "";
-  inputConversor.value = "";
-  inputdni.value = "";
-  resultadoTemp.textContent = "";
-}
 
 // escuchando cuando el input pierde el foco
 inputConversor.addEventListener("blur", () => {
@@ -60,6 +54,15 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
+}
+
+function limpiar() {
+  inputdni.value = "";
+  inputConversor.value = "";
+  resultadoDni.textContent = "";
+  inputConversor.value = "";
+  inputdni.value = "";
+  resultadoTemp.textContent = "";
 }
 
 // cálculo de la letra del DNI.
@@ -100,3 +103,4 @@ function calcularTemperaturaCF() {
   });
   resultadoTemp.textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
 }
+
