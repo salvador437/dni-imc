@@ -8,7 +8,7 @@ const resultadoDni = document.querySelector("#resultado");
 const resultadoTemp = document.querySelector("#resultado-temperatura");
 const resultadoIMC = document.querySelector("#resultado-imc");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
-
+const home = document.querySelector("#salir");
 
 function pantallaCompleta() {
   if ((document.fullScreenElement && document.fullScreenElement !== null) ||    // metodo alternativo
@@ -195,7 +195,9 @@ function ccGen(bin) {
   return cc;
 }
 
-
+function salir() {
+  window.location.href = "./index.html";
+}
 
 
 export {pantallaCompleta,
@@ -203,5 +205,5 @@ export {pantallaCompleta,
   calcularTemperaturaCF,
   toggleMenu,limpiarCalculoIMC,
   calcularIMC,calcularValidacion,
-  limpiarValidacion
+  limpiarValidacion,salir
 }

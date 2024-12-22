@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./hojas-estilo/link.css">
   </head>
 
-  <body onload="alterna_modo_de_pantalla()">
+  <body >
     <h1 class="parpadea text">javascript--vanilla &copy;</h1>
     <header>
       <nav>
@@ -21,7 +21,8 @@
             <li>
               <a href="https://vipexclusivity.com" id="about-link" target="_blank">vipexclusivity</a>
             </li>
-            <li><a href="https://www.youtube.com/watch?v=oZoEP0dIep4" id="contact-link" target="_blank">mesa-vip</a></li>
+            <li><a href="https://www.youtube.com/watch?v=oZoEP0dIep4" id="contact-link" target="_blank">mesa-vip</a>
+            </li>
             <li>
               <a href="https://github.com/salvador437?tab=repositories" id="faq-link" target="_blank">github</a>
             </li>
@@ -53,11 +54,12 @@
       </div>
     </header>
     <script>
-      document.addEventListener("keydown", (event) =>{
-        if (event.ctrlKey && event.key === "z" || event.ctrlKey && event.key === "Z")  {
+      document.addEventListener("keydown", (event) => {
+        if (event.ctrlKey && event.key === "z" || event.ctrlKey && event.key === "Z") {
           window.open("./index.html");
         }
       });
-    </script> 
+    </script>
   </body>
+
 </html>

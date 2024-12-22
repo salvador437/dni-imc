@@ -1,0 +1,50 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #222;
+}
+
+h1{
+  text-align: center;
+  color:orangered;
+  font-size: 8rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+a{
+  font-size: rem;
+  color: #ccc;
+  &:hover{
+    color:orangered;
+  }
+}
+.error404{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid orangered;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

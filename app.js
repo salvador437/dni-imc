@@ -25,11 +25,9 @@ app.get("/formulario.html", (req, res) => {
 });
 
 
+// Middleware para manejar rutas no definidas (404)
 app.use((req, res) => {
-  if(err){
-    throw(err)
-  }
-    
+  res.status(404).sendFile(path.join(__dirname, 'error404.html'));
 });
 
 const PUERTO = 3000;
