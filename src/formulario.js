@@ -1,4 +1,4 @@
-
+import  { pantallaCompleta }  from "./funciones.js";
 
 const closeBtn = document.getElementsByClassName("close4")[0];
 const inputNombre = document.querySelector("#nombre");
@@ -56,7 +56,7 @@ inputTelefono.addEventListener("keydown", function (event) {
 
 document.addEventListener("keydown", function (event) {
   if (event.ctrlKey && event.key === "z") {
-    window.open("./index.html", (target = "_self"));
+    window.open("./index.html","_self");
   }
   if (event.altKey &&  event.key === "b") {
     inputNombre.value = "";
@@ -68,12 +68,21 @@ document.addEventListener("keydown", function (event) {
     inputMensaje.value = "";
   }
 
-  if (event.altKey && event.key === "p" ) {
-      pantallaCompleta()
-    } 
+  if ((event.altKey &&  event.key === "p" ) ||
+      (event.altKey &&  event.key === "P"
+  ) ) {
+    pantallaCompleta();
+  }
+
+  if (
+    (event.ctrlKey && event.key === "z") ||
+    (event.ctrlKey && event.key === "Z")
+  ) {
+    window.open("./index.html", "_self", "", true);
+  }
 });
 
 closeBtn.onclick = ()=> {
-  open("./index.html", (target = "_self"));
+  window.open("./index.html","_self","",true);
 };
 

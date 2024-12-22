@@ -1,10 +1,14 @@
-
+import  { 
+  pantallaCompleta,
+  limpiarCalculoIMC, 
+  calcularIMC, 
+}  from "./funciones.js";
 
 const inputImcPeso = document.querySelector(".input-imcPeso");
 const inputImcAltura = document.querySelector(".input-imcAltura");
 const btnCalImc = document.querySelector(".btn-cal-imc");
 const resultadoIMC = document.querySelector("#resultado-imc");
-const menu = document.getElementById("navbarMenu");
+
 
 
 
@@ -26,58 +30,25 @@ inputImcAltura.addEventListener("focus", () => {
 // escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
-    limpiar();
+    limpiarCalculoIMC();
   }
   if (event.key === "Enter") {
     calcularIMC();
   }
-  if ( event.altKey &&  event.key === "ñ" ) {
+  if ( (event.altKey &&  event.key === "p" ) ||
+        (event.altKey &&  event.key === "P"
+  ) ) {
     pantallaCompleta();
   }
   if (
     (event.ctrlKey && event.key === "z") ||
     (event.ctrlKey && event.key === "Z")
   ) {
-    window.open("./index.html", (target = "_self"));
+    window.open("./index.html","_self","",true);
   }
 });
 
-function limpiar() {
-  inputImcPeso.value = "";
-  inputImcAltura.value = "";
-  resultadoIMC.textContent = "";
-}
 
-// commutación menú hanburguesa y navegador.
-function toggleMenu() {
-  if (menu.className === "menu") {
-    menu.className += " responsive";
-  } else {
-    menu.className = "menu";
-  }
-}
 
-// calcula el índice de masa corporal IMC.
-function calcularIMC() {
-  // obteniendo los valores de los inputs peso y altura.
-  const valorPeso = inputImcPeso.value;
-  let valorAltura = inputImcAltura.value;
 
-  if (valorPeso.length < 1 || isNaN(valorPeso)) {
-    window.open("./notificacionErrorIMC.html", (target = "_self"));
-  }
-
-  if (valorAltura.length < 1 || isNaN(valorAltura)) {
-    window.open("./notificacionErrorIMC.html", (target = "_self"));
-  }
-  // calculando el IMC
-  valorAltura = valorAltura / 100;
-  let valorResultado = valorPeso / valorAltura ** 2;
-  // cambiando el punto por la coma en los decimales del resultado
-  valorResultado = valorResultado.toLocaleString("es-ES", {
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  });
-  resultadoIMC.textContent = "El  IMC será de: " + valorResultado;
-}
 
