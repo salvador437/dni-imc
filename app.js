@@ -12,7 +12,6 @@ app.get("/calculoIMC.html", (req, res) => {
   res.sendFile(path.join(__dirname + "calculoIMC.html"));
 });
 
-
 app.get("/link.html", (req, res) => {
   res.sendFile(path.join(__dirname + "link.html"));
 });
@@ -38,5 +37,5 @@ app.use((req, res) => {
 const PUERTO = 3000;
 
 app.listen(PUERTO, () => {
-  console.log(`escuchando por el puerto ${PUERTO} `);
+  console.log(`escuchando por el puerto ${PUERTO}`);
 });
