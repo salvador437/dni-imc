@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Error IMC</title>
+        <link rel="stylesheet" href="hojas-estilo/calculoIMC.css">
+        <link rel="shortcut icon" sizes="64x64" type="image/svg" href="./images/logo-validacionCard.svg" />
+    </head>
+
+    <body>
+        <!-- Contenido del modal -->
+        <div id="myModal" class="modal-content">
+            <span class="close2">&times;</span>
+            <h2 class="titulo-errorIMC">Error entrada de datos IMC</h2>
+            <h4>
+                Debe introducir valores numéricos para el peso (en kgr.) y también para la altura (en cm.)
+            </h4>
+        </div>
+        <script type="module" src="src/notificacionErrorIMC.js" defer></script>
+        <script type="module" defer src="./src/funciones.js"></script>
+    </body>
+
+</html>
