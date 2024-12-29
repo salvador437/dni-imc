@@ -37,5 +37,5 @@ app.use((req, res) => {
 const PUERTO = 3000;
 
 app.listen(PUERTO, () => {
-  console.log(`escuchando por el puerto ${PUERTO}`);
+  console.log(`escuchando por el puerto ${PUERTO} `);
 });
