@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "type": "module",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:3000 & nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["dni", "imc", "home"],
+  "author": "", 
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
     "node": "^23.5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
