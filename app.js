@@ -1,8 +1,7 @@
 const express = require("express");
-  app = express();
-  path = require("path");
-  PUERTO = 3000;
-  
+const app = express();
+const path = require("path");
+
 app.use(express.static("./"));
 
 app.get("/index.html", (req, res) => {
@@ -31,11 +30,10 @@ app.get("/readme.html", (req, res) => {
 
 // Middleware para manejar rutas no definidas (404)
 app.use((req, res) => {
-  console.log(error);
   res.status(404).sendFile(path.join(__dirname, "error404.html"));
 });
 
-
+const PUERTO = 3000;
 
 app.listen(PUERTO, () => {
   console.log(`escuchando por el puerto ${PUERTO}`);

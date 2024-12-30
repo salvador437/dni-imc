@@ -9,29 +9,34 @@ const resultadoTemp = document.querySelector("#resultado-temperatura");
 const resultadoIMC = document.querySelector("#resultado-imc");
 const resultadoValidacion = document.querySelector("#resultado-validacion");
 const posibleNumero = document.querySelector("#posible-numero");
-const home = document.querySelector("#salir");
 const menu = document.querySelector(".menu")
 
 
 
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
-  
+  // obteniendo los valores de los inputs peso y altura.
+  const valorPeso = inputImcPeso.value;
   let valorAltura = inputImcAltura.value;
+
   if (valorPeso.length < 1 || isNaN(valorPeso)) {
     window.open("./notificacionErrorIMC.html","_self","",true);
   }
+
   if (valorAltura.length < 1 || isNaN(valorAltura)) {
     window.open("./notificacionErrorIMC.html","_self","",true);
   }
+  
   valorAltura = valorAltura / 100;
   let valorResultado = valorPeso / valorAltura ** 2;
+  
   valorResultado = valorResultado.toLocaleString("es-ES", {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
   });
   resultadoIMC.textContent = "El  IMC será de: " + valorResultado;
 }
+
 
 // cálculo de la letra del DNI. 
 function calcularLetraDNI() {
@@ -148,8 +153,6 @@ function limpiar() {
   inputdni.value = "";
   inputConversor.value = "";
   resultadoDni.textContent = "";
-  inputConversor.value = "";
-  inputdni.value = "";
   resultadoTemp.textContent = "";
 }
 
