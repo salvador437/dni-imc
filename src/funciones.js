@@ -16,21 +16,16 @@ const menu = document.querySelector(".menu")
 
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
-  // obteniendo los valores de los inputs peso y altura.
-  const valorPeso = inputImcPeso.value;
+  
   let valorAltura = inputImcAltura.value;
-
   if (valorPeso.length < 1 || isNaN(valorPeso)) {
     window.open("./notificacionErrorIMC.html","_self","",true);
   }
-
   if (valorAltura.length < 1 || isNaN(valorAltura)) {
     window.open("./notificacionErrorIMC.html","_self","",true);
   }
-  // calculando el IMC
   valorAltura = valorAltura / 100;
   let valorResultado = valorPeso / valorAltura ** 2;
-  // cambiando el punto por la coma en los decimales del resultado
   valorResultado = valorResultado.toLocaleString("es-ES", {
     minimumFractionDigits: 1,
     maximumFractionDigits: 1,
