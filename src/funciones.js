@@ -13,95 +13,6 @@ const home = document.querySelector("#salir");
 const menu = document.querySelector(".menu")
 
 
-// activa la pantalla a fullscreen
-function pantallaCompleta() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-      (!document.mozFullScreen && !document.webkitIsFullScreen)) {              
-    if (document.documentElement.requestFullScreen) {
-      document.documentElement.requestFullScreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullScreen) {
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-    }
-  } else {
-    if (document.cancelFullScreen) {
-      document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-      document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-      document.webkitCancelFullScreen();
-    }
-  }
-}
-
-//limpia elementos de los inputs y resultados.
-// de la página HOME
-function limpiar() {
-  inputdni.value = "";
-  inputConversor.value = "";
-  resultadoDni.textContent = "";
-  inputConversor.value = "";
-  inputdni.value = "";
-  resultadoTemp.textContent = "";
-}
-
-//limpia elementos de los inputs y resultados.
-// de la página Calculo IMC
-function limpiarCalculoIMC() {
-  inputImcPeso.value = "";
-  inputImcAltura.value = "";
-  resultadoIMC.textContent = "";
-}
-
-//limpia elementos de los inputs y resultados.
-// de la página validacion BIN
-function limpiarValidacion() {
-  inputValidacion.value = "";
-  resultadoValidacion.textContent = "";
-  posibleNumero.textContent = "";
-}
-
-// cálculo de la letra del DNI.
-// de la página HOME
-function calcularLetraDNI() {
-  const dniNumero = inputdni.value;
-  inputdni.addEventListener("input", function (event) {
-    if (/^[0-9]$/.test(event.key)) {
-      event.preventDefault();
-    }
-  });
-  // Verificar que el DNI sea un número de 8 dígitos
-  if (dniNumero.length !== 8 || isNaN(dniNumero)) {
-    window.open("./notificacionError.html","_self","",true);
-  }
-  // Seleccionar la letra mediate el algorritmo aplicado.
-  const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
-  const indice = dniNumero % 23;
-  const letraDNI = letras[indice];
-  resultadoDni.textContent = ` El DNI 
-  completo es: ${dniNumero}-${letraDNI} `;
-}
-
-//Cálculo de la conversión de grados C => F.
-// de la página HOME
-function calcularTemperaturaCF() {
-  const gradosConversion = inputConversor.value;
-  if (
-    gradosConversion.length > 5 ||
-    isNaN(gradosConversion) ||
-    gradosConversion.length < 1
-  ) {
-    window.open("./notificacionError.html","_self","",true);
-  }
-
-  let gradosFarhengeis = (9 / 5) * gradosConversion + 32;
-  gradosFarhengeis = gradosFarhengeis.toLocaleString("es-ES", {
-    minimumFractionDigits: 1,
-    maximumFractionDigits: 1,
-  });
-  resultadoTemp.textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
-}
 
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
@@ -127,14 +38,45 @@ function calcularIMC() {
   resultadoIMC.textContent = "El  IMC será de: " + valorResultado;
 }
 
-// commutación menú hanburguesa y navegador.
-function toggleMenu() {
-  if (menu.className === "menu") {
-    menu.className += " responsive";
-  } else {
-    menu.className = "menu";
+// cálculo de la letra del DNI. 
+function calcularLetraDNI() {
+  const dniNumero = inputdni.value;
+  inputdni.addEventListener("input", function (event) {
+    if (/^[0-9]$/.test(event.key)) {
+      event.preventDefault();
+    }
+  });
+  
+  if (dniNumero.length !== 8 || isNaN(dniNumero)) {
+    window.open("./notificacionError.html","_self","",true);
   }
+  
+  const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+  const indice = dniNumero % 23;
+  const letraDNI = letras[indice];
+  resultadoDni.textContent = ` El DNI completo es: ${dniNumero}-${letraDNI} `;
 }
+
+
+//Cálculo de la conversión de grados C => F.
+function calcularTemperaturaCF() {
+  const gradosConversion = inputConversor.value;
+  if (
+    gradosConversion.length > 5 ||
+    isNaN(gradosConversion) ||
+    gradosConversion.length < 1
+  ) {
+    window.open("./notificacionError.html","_self","",true);
+  }
+
+  let gradosFarhengeis = (9 / 5) * gradosConversion + 32;
+  gradosFarhengeis = gradosFarhengeis.toLocaleString("es-ES", {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
+  resultadoTemp.textContent = `${gradosConversion} grados C son ${gradosFarhengeis} F `;
+}
+
 
 // cálculo de la validación del número de la card
 function calcularValidacion() {
@@ -158,24 +100,6 @@ function calcularValidacion() {
   }
 }
 
-// cálculo de la validación del número de la card
-function ccTest(cc) {
-  let sumaPar = 0;
-  let sumaImpar = 0; 
-  
-  for (let i = 0; i < cc.length; i++) {
-    if (i % 2 == 0) {
-      if (parseInt(cc.substring(i, i + 1)) * 2 > 9)
-        sumaImpar += parseInt(cc.substring(i, i + 1)) * 2 - 9;
-      else sumaImpar += parseInt(cc.substring(i, i + 1)) * 2;
-    } else sumaPar += parseInt(cc.substring(i, i + 1));
-  }
-  let suma = sumaPar + sumaImpar;
-  let MOD = suma % 10;
-  if (MOD == 0) return true;
-  else return false;
-}
-
 // genera un número de tarjeta válido
 function ccGen(bin) {
   let cc = "";
@@ -190,7 +114,6 @@ function ccGen(bin) {
     }
   }
 
-  
   function ccGenX(bin, xInd) {
     let cc = "";
     for (let i = 0; i < 16; i++) {
@@ -207,11 +130,84 @@ function ccGen(bin) {
   return cc;
 }
 
+// cálculo de la validación del número de la card
+function ccTest(cc) {
+  let sumaPar = 0;
+  let sumaImpar = 0; 
+  
+  for (let i = 0; i < cc.length; i++) {
+    if (i % 2 == 0) {
+      if (parseInt(cc.substring(i, i + 1)) * 2 > 9)
+        sumaImpar += parseInt(cc.substring(i, i + 1)) * 2 - 9;
+      else sumaImpar += parseInt(cc.substring(i, i + 1)) * 2;
+    } else sumaPar += parseInt(cc.substring(i, i + 1));
+  }
+  let suma = sumaPar + sumaImpar;
+  let MOD = suma % 10;
+  if (MOD == 0) return true;
+  else return false;
+} 
+
+//limpia elementos de los inputs y resultados.
+function limpiar() {
+  inputdni.value = "";
+  inputConversor.value = "";
+  resultadoDni.textContent = "";
+  inputConversor.value = "";
+  inputdni.value = "";
+  resultadoTemp.textContent = "";
+}
+
+//limpia elementos de los inputs y resultados.
+function limpiarCalculoIMC() {
+  inputImcPeso.value = "";
+  inputImcAltura.value = "";
+  resultadoIMC.textContent = "";
+}
+
+//limpia elementos de los inputs y resultados.
+function limpiarValidacion() {
+  inputValidacion.value = "";
+  resultadoValidacion.textContent = "";
+  posibleNumero.textContent = "";
+}
+
+// activa la pantalla a fullscreen
+function pantallaCompleta() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+      (!document.mozFullScreen && !document.webkitIsFullScreen)) {              
+    if (document.documentElement.requestFullScreen) {
+      document.documentElement.requestFullScreen();
+    } else if (document.documentElement.mozRequestFullScreen) {
+      document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullScreen) {
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.cancelFullScreen) {
+      document.cancelFullScreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitCancelFullScreen) {
+      document.webkitCancelFullScreen();
+    }
+  }
+}
+
 function salir() {
   window.location.href = "./index.html";
 }
 
+// commutación menú hanburguesa y navegador.
+function toggleMenu() {
+  if (menu.className === "menu") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "menu";
+  }
+}
 
+// exportación de funciones
 export {pantallaCompleta,
   limpiar,calcularLetraDNI,
   calcularTemperaturaCF,
