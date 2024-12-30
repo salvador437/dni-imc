@@ -7,7 +7,9 @@
   --btn-text-color: #b4abab;
   --close-color: #aaa;
   --close-hover-color: #000;
+  --color-resultados: #f4f803;
   --color-shadow: 10px 10px 25px #000;
+  --div-border-color: #54bb0f;
   --div-background-color:#222222cc ;
   --inputs-background-color: #333333cc;
   --footer-background: #333;
@@ -86,7 +88,7 @@ body {
   margin-right: auto;
   padding: 0.625em;
   border-radius: 0.5em;
-  border: 1px solid #54bb0f;
+  border: 1px solid var(--div-border-color);
   line-height: 0.5em;
   user-select: none;
   color: var(--inputs-text-color);
@@ -98,6 +100,7 @@ body {
 #resultado-temperatura
 {
   text-align: center;
+  color:var(--color-resultados);
 }
 
 /* damos reglas a la clase ".footer" */
