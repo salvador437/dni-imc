@@ -1,9 +1,9 @@
 :root{
   --a-color: #ccc;
-  --a-hover-color:orangered;
+  --a-hover-color:#0044ff;
   --color-fondo: #000;
-  --color-borde: 1px solid orangered;
-  --h1-color: orangered;
+  --color-borde: 1px solid #0044ff;
+  --h1-color: #0044ff;
   --p-color: #f7f463;
 }
 
