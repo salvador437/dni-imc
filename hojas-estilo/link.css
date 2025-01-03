@@ -57,6 +57,13 @@ p::first-letter {
   margin-bottom: 30px;
 }
 
+.logo{
+  width: auto;
+  padding-right: 30px;
+  display: flex;
+  
+}
+
 .items {
   color: var(--items-color);
   background-color: var(--items-background-color);

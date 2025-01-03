@@ -24,7 +24,7 @@
   --nav-background: #222222cc;
   --navbar-background-color:linear-gradient(5deg, black, #222, #777);
   --navbar-border-top-color: 1px solid #444;
-  --navbar-border-botton-color: 1px solid #000;
+  --navbar-border-botton-color: 1px solid #111;
   --navbar-text-color: #3ff172;
   --titulo-errorDNI-text-color: #03f828;
   --titulos-text-color: #b4abab;
@@ -156,6 +156,7 @@ body {
 /* la barra de navegación  */
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   user-select: none;
