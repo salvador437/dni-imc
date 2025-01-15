@@ -1,0 +1,115 @@
+:root {
+  --a-hover-background-color: orangered;
+  --a-hover-color: white;
+  --body-background-color: #000;
+  --header-border-color: 1px solid #d1740a;
+  --items-color: #fff;
+  --items-background-color: #121113;
+  --li-color: orangered;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", "sans-serif";
+  background-color: var(--body-background-color);
+  flex-direction: column-reverse;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li,
+a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--li-color);
+  padding: 5px;
+  &:hover {
+    background-color: var(--a-hover-background-color);
+    color: var(--a-hover-color);
+    border-radius: 5px;
+  }
+}
+
+header{
+  margin-top: 50px;
+}
+
+p::first-letter {
+  color: black;
+  background-color: orangered;
+  border-radius: 5%;
+  box-shadow: 3px 3px 0 black;
+  font-size: 180%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: unset;
+}
+
+.header {
+  border: var(--header-border-color);
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: auto;
+  padding-right: 30px;
+  display: flex;
+}
+
+.items {
+  color: var(--items-color);
+  background-color: var(--items-background-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.325em;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border: var(--header-border-color);
+  &:hover {
+    background-color: orangered;
+    color: white;
+  }
+}
+
+.text {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: bold;
+  color: orangered;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

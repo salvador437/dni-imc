@@ -1,0 +1,66 @@
+:root{
+  --a-color: #ccc;
+  --a-hover-color:#0044ff;
+  --color-fondo: #000;
+  --color-borde: 1px solid #0044ff;
+  --h1-color: #0044ff;
+  --p-color: #f7f463;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color:  var(--color-fondo);
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  
+}
+
+.error-message{
+  text-align: center;
+  color:var(--h1-color);
+  font-size: 8rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+p{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--p-color);
+}
+
+a{
+  font-size: 2rem;
+  color: var(--a-color);
+  &:hover{
+    color: var(--a-hover-color);
+  }
+}
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  border: var(--color-borde);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

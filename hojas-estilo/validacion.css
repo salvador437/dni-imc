@@ -1,0 +1,299 @@
+/* variables para estilos de color */
+:root {
+  --body-background-image: url(../images/card-credito.jpg);
+  --btn-cal-validacion-background: #222;
+  --btn-hover-cal-validacion-background: orangered;
+  --btn-hover-cal-validacion-color: white;
+  --btn-cal-validacion-text-color: orangered;
+  --btn-cal-validacion-border-color: 1px solid orangered;
+  --clase-validacion-border-color: 1px solid orangered;
+  --clase-validacion-text-color: orangered;
+  --close-color: #aaa;
+  --close-hover-color: #555;
+  --color-shadow: 10px 10px 25px #040111;
+  --div-background: #000000cc;
+  --footer-background: #222;
+  --footer-text-color: white;
+  --h2-color: orangered;
+  --logo-text-color: orangered;
+  --menu-icon-color: orangered;
+  --modal-box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.623);
+  --modal-border-color: 1px solid orangered;
+  --modal-color: #fff;
+  --navbar-a-hover-background: #222;
+  --navbar-a-hover-border-color: 1px solid orangered;
+  --navbar-border-top-color: 1px solid #444;
+  --navbar-border-botton-color: 1px solid #000;
+  --navbar-background-color: linear-gradient(5deg, black, #222, #777);
+  --navbar-text-color: orangered;
+  --resultado-validacion-color: #e8f803;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* estilos para el body del html index2.html*/
+body {
+  font-family: "Roboto", "sans-serif";
+  margin: 0;
+  padding: 0;
+  background-image: var(--body-background-image);
+}
+
+h2 {
+  color: var(--h2-color);
+  text-decoration: underline;
+}
+
+.titulo {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.input-validacion {
+  font-size: 0.9em;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 1em;
+  background-color: var(--div-background);
+}
+
+.clase-validacion {
+  font-size: 1.2em;
+  max-width: 17em;
+  margin-top: 6.6em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5em;
+  box-shadow: var(--color-shadow);
+  background-color: var(--div-background);
+  color: var(--clase-validacion-text-color);
+  border: var(--clase-validacion-border-color);
+}
+
+.clase-validacion-resultado {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  font-size: 0.85em;
+}
+
+.btn-cal-validacion {
+  outline: invert;
+  border: var(--btn-cal-validacion-border-color);
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0 0.8em;
+  border-radius: 0.3em;
+  color: var(--btn-cal-validacion-text-color);
+  background-color: var(--btn-cal-validacion-background);
+  &:hover {
+    color: var(--btn-hover-cal-validacion-color);
+    background-color: var(--btn-hover-cal-validacion-background);
+    cursor: pointer;
+  }
+}
+
+#resultado-validacion,
+#posible-numero {
+  text-align: center;
+  color: var(--resultado-validacion-color);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos del contenido del modal */
+.modal-content {
+  background-color: var(--div-background);
+  color: var(--modal-color);
+  margin: 15% auto;
+  padding: 1.25em;
+  border: var(--modal-border-color);
+  width: 80%;
+  max-width: 31.25em;
+  box-shadow: var(--modal-box-shadow);
+  border-radius: 0.8em;
+  user-select: none;
+}
+
+/* Botón de cerrar */
+.close3 {
+  color: var(--close-color);
+  float: right;
+  font-size: 1.75em;
+  font-weight: bold;
+  &:hover {
+    color: var(--close-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1.562em 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+  color: var(--footer-text-color);
+  background-color: var(--footer-background);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
+  height: 67px;
+  background-color: var(--navbar-background);
+  border-bottom: var(--navbar-border-botton-color);
+  border-top: var(--navbar-border-top-color);
+  background: var(--navbar-background-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.4em 1em;
+  font-size: 1.4em;
+  user-select: none;
+  color: var(--navbar-text-color);
+  &:hover {
+    border-radius: 0.312em;
+    transition: 0.3s;
+    background-color: var(--navbar-a-hover-background);
+    border: var(--navbar-a-hover-border-color);
+  }
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--logo-text-color);
+  &:hover {
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotateZ(-5deg);
+    transition-duration: 0.1s;
+  }
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .menu a {
+  display: none;
+}
+
+.navbar .menu-icon {
+  display: block;
+  font-size: 1.875em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 37.5em) {
+  .navbar .menu a {
+    display: block;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+.navbar .menu.responsive {
+  position: absolute;
+  top: 3.75em;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--footer-background);
+}
+
+.navbar .menu.responsive a {
+  display: block;
+  text-align: center;
+}
+
+.menu-icon {
+  color: var(--menu-icon-color);
+}
+
+.menu-icon2 {
+  color: var(--menu-icon-color);
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+
+  color: var(--logo-text-color);
+}
+
+.navbar .logo:hover {
+  font-size: 2em;
+  cursor: pointer;
+  font-weight: bold;
+  transform: rotateZ(-5deg);
+  transition-duration: 0.1s;
+}
+
+.logo p{
+  color: var(--navbar-text-color);
+  text-shadow: #bbb 2px 2px 5px;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar .menu a {
+    display: block;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+.navbar .menu.responsive {
+  position: absolute;
+  top: 3.75em;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--footer-background);
+}
+
+.navbar .menu.responsive a {
+  display: block;
+  text-align: center;
+}
+
+.menu-icon {
+  color: var(--menu-icon-color);
+}
+
+.menu-icon2 {
+  color: var(--menu-icon-color);
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--logo-text-color);
+  &:hover {
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transform: rotateZ(-5deg);
+    transition-duration: 0.1s;
+  }
+}

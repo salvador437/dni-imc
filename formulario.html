@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Validación del Formulario</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="hojas-estilo/formulario.css">
+	</head>
+
+	<body title="Ctrl+z para ir al home">
+		
+		<div class="formulario">
+			
+			<form action="https://formsubmit.co/salvadorlopezsegura@gmail.com" method="post">
+				<span class="close4">&times;</span>
+				<div class="head">
+					<h4>Contacto usuario</h4>
+				</div>
+				<input class="grupo-entradas" type="text" id="nombre" name="nombre-usuario" placeholder="Nombre:" required
+					autocomplete="off" title="" />
+				<input class="grupo-entradas" type="text" id="apellidos" name="apellidos-usuario" placeholder="Apellidos:"
+					required autocomplete="off" title="" />
+				<input class="grupo-entradas" type="tel" id="telefono" name="telefono" placeholder="Teléfono:" required
+					autocomplete="off" title="" />
+				<input class="grupo-entradas" type="email" id="mail" name="mail-usuario" placeholder="Email:" required
+					autocomplete="off" title="" />
+				<input class="grupo-entradas" type="text" id="ciudad" name="ciudad" placeholder="Ciudad:" required
+					autocomplete="off" title="" />
+				<input class="grupo-entradas" type="text" id="pais" name="pais" placeholder="País:" Pais: autocomplete="off"
+					title="" />
+				<textarea class="grupo-entradas" id="msg" name="mensaje-usuario" placeholder="Escríba aquí su nota:" required
+					title=""></textarea>
+				<input type="hidden" name="_next" value="http://127.0.0.1:3000/formulario.html">
+				<input type="hidden" name="_captcha" value="false">
+				<button class="boton" type="submit">Enviar</button>
+				<button class="boton" type="reset">Borrar todo</button>
+			</form>
+		</div>
+		<script type="module" src="./src/formulario.js"></script>
+		<script type="module" src="./src/funciones.js"></script>
+	</body>
+	<footer>
+		<div class="footer">
+			<!-- ciudad sin ley-->
+			Barberá del Vallés (BCN)
+		</div>
+	</footer>
+
+</html>

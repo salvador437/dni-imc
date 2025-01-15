@@ -1,0 +1,130 @@
+:root {
+  --boton-color:#aaa;
+  --boton-background-color: #222;
+  --input-border-boton-color: 1px solid #888;
+  --input-placeholder-color: #555;
+  --close4-color: #aaa;
+  --close4-hover-color: #000;
+  --form-background: #333;
+  --form-shadow: #030331;
+  --footer-background: #333;
+  --grupo-entradas-color: #bbb;
+  --head-color: #bbb;
+  --text-color-footer: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", "sans-serif";
+  background-color: var(--body-background);
+  background-image: url(/images/contacto1.jpg);
+}
+
+.formulario {
+  display: flex;
+  border: 1px solid rgb(16, 87, 158);
+  background-color: var(--form-background);
+  border-radius: 0.9em;
+  max-width: 20em;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  box-shadow: 1.6em 1.6em 2.2em var(--form-shadow);
+}
+
+.head{
+  margin: 0.625em;
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--head-color);
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  user-select: none;
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.625em 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+  background-color: var(--footer-background);
+  color: var(--text-color-footer);
+}
+
+.grupo-entradas {
+  margin: 0.625em;
+  width: 16.7em;
+  font-size: 1.1em;
+  user-select: none;
+  background-color: var(--form-background);
+  border-style: none;
+  color: var(--grupo-entradas-color);
+  border-bottom:  var(--input-border-boton-color);
+  border-top-style: none;
+}
+
+.grupo-entradas:active{
+  background-color: var(--form-background);
+  border-style: none;
+  outline: none;
+  border-bottom:  var(--input-border-boton-color);
+}
+
+.grupo-entradas:focus{
+  background-color: var(--form-background);
+  border-style: none;
+  outline: none;
+  border-bottom:  var(--input-border-boton-color);
+}
+
+.grupo-entradas::placeholder{
+  color: var(--input-placeholder-color);
+}
+
+.boton{
+  width: 43%;
+  margin: 0.5em;
+  border-radius: 0.625em;
+  user-select: none;
+  background-color: var(--boton-background-color);
+  color: var(--boton-color);
+  font-size: 1em;
+  padding: 0.312em 0em;
+  justify-content: center;
+}
+
+textarea {
+  margin-bottom: 0px;
+  width: 15.2em;
+  height: 4.2em;
+  max-height: 4.2em;
+  min-width: 11.2em;
+  min-height: 4.2em;
+  resize: none;
+}
+
+.close4 {
+  color: var(--close4-color);
+  float: right;
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-right: 0.75em;
+}
+
+.close4:hover,
+.close4:focus {
+  color: var(--close4-hover-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+

@@ -1,0 +1,264 @@
+/* variables para estilos de color de la página calculoIMC.html */
+:root {
+  --a-hover-background-color: #444;
+  --a-hover-border-color: 1px solid #70c2f5;
+  --body-background: #2f0d96;
+  --body-background-image: url(../images/IMC.jpg);
+  --btn-background-color: #333333cc;
+  --btn-text-color: #b4abab;
+  --close-color: #aaa;
+  --close-hover-color: #000;
+  --color-shadow: 10px 10px 25px #000;
+  --div-background: #333333cc;
+  --footer-background: #333;
+  --inputs-text-color: #b4abab;
+  --logo-text-color: #7fc7f3;
+  --menu-icon-color: #76c4f5;
+  --modal-borde-color: 1px solid #8bd6f5;
+  --modal-box-shadow: 10px 10px 25px #000;
+  --modal-content-color: #8bd6f5;
+  --navbar-border-top-color: 1px solid #444;
+  --navbar-border-button-color: 1px solid #000;
+  --navbar-text-color: #70c2f5;
+  --navbar-background: linear-gradient(5deg, black, #222, #777);
+  --text-navbar: #70c2f5;
+  --text-color-footer: white;
+  --titulo-errorIMC-color: #50a7f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilos para el body de la página calculoIMC.html*/
+body {
+  font-family: "Roboto", "sans-serif";
+  background-image: var(--body-background-image);
+}
+
+/* estilos para los inputs de la clase ".clase-imc" */
+.input-imcPeso,
+.input-imcAltura {
+  font-size: 1em;
+  color: var(--inputs-text-color);
+  text-align: center;
+  margin: 0.5em 0;
+  background-color: var(--div-background);
+}
+
+/* estilos para la cabecera h2 del archivo notificacionErrorIMC */
+.titulo-errorIMC {
+  color: var(--titulo-errorIMC-color);
+  margin: 0.625em 0;
+  text-decoration: underline;
+}
+
+/* estilos para la cabecera h5 de la clase ".clase-imc" */
+.tituloIMC,
+.titulo-tablaIMC {
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* estilos para la  clase ".clase-imc" */
+.clase-imc {
+  font-size: 1.15em;
+  min-width: 15.625em;
+  max-width: 18em;
+  margin-top: 1.8em;
+  margin-bottom: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.312em;
+  border-radius: 0.5em;
+  border: 1px solid #76c4f5;
+  user-select: none;
+  box-shadow: var(--color-shadow);
+  background-color: var(--div-background);
+  color: var(--inputs-text-color);
+}
+
+/* estilos para la  clase ".label" */
+.label {
+  font-size: 0.875em;
+}
+
+/* estilos para la  clase ".btn-cal-imc" */
+.btn-cal-imc {
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 1.2em;
+  padding: 0 0.8em;
+  border-radius: 0.3em;
+  color: var(--btn-text-color);
+  background-color: var(--btn-background-color);
+}
+
+#resultado-imc {
+  margin-top: 0.625em;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-background);
+}
+
+/* Estilos del contenido de la clase  ".modal-content" */
+.modal-content {
+  background-color: var(--div-background);
+  color: var(--modal-content-color);
+  margin: 15% auto;
+  padding: 1.25em;
+  border: var(--modal-borde-color);
+  width: 80%;
+  max-width: 31.25em;
+  box-shadow: var(--modal-box-shadow);
+  border-radius: 0.8em;
+  user-select: none;
+}
+
+/* Botón de cerrar página notificacionErrorIMC.html*/
+.close2 {
+  color: var(--close-color);
+  float: right;
+  font-size: 1.75em;
+  font-weight: bold;
+  &:hover {
+    color: var(--close-hover-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+table,
+th,
+td,
+tr {
+  margin-left: 1.5em;
+  margin-bottom: 0.8em;
+  margin-top: 0.35em;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.625em 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+  color: var(--text-color-footer);
+  background-color: var(--footer-background);
+}
+
+.logo p{
+  color: var(--navbar-text-color);
+  text-shadow: #bbb 2px 2px 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  user-select: none;
+  color: var(--text-navbar);
+  background: var(--navbar-background);
+  background-color: var(--div-background);
+  border-bottom: var(--navbar-border-button-color);
+  border-top: var(--navbar-border-top-color);
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0.4em 1em;
+  font-size: 1.4em;
+  user-select: none;
+  color: var(--navbar-text-color);
+  &:hover {
+    border-radius: 0.313em;
+    transition: 0.3s;
+    border: var(--a-hover-border-color);
+    background-color: var(--a-hover-background-color);
+  }
+}
+
+.navbar p{
+  margin: 0px 0;
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  border: color var(--logo-text-color);
+  &:hover {
+    font-size: 2em;
+    font-weight: bold;
+    transform: rotateZ(-5deg);
+    transition-duration: 0.1s;
+  }
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.navbar .menu a {
+  display: none;
+}
+
+.navbar .menu-icon {
+  display: block;
+  font-size: 1.875em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 41em) {
+  .navbar .menu a {
+    display: block;
+  }
+
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+
+.navbar .menu.responsive {
+  position: absolute;
+  top: 0.625em;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--footer-background);
+}
+
+.navbar .menu.responsive a {
+  display: block;
+  text-align: center;
+}
+
+.menu-icon,
+.menu-icon2 {
+  color: var(--menu-icon-color);
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--logo-text-color);
+  &:hover {
+    font-size: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    transform: rotateZ(-5deg);
+    transition-duration: 0.1s;
+  }
+}

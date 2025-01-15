@@ -1,0 +1,30 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    width="65"
+    height="65"
+    viewBox="0 0 300 300">
+    <!-- Fondo del círculo -->
+    <circle cx="150" cy="150" r="195" fill="#4a38e400" />
+    
+    <!-- Símbolo del rayo -->
+    <polygon points="110,20 90,80 120,80 80,180 100,110 70,110" fill="#ffcc00" />
+    
+    <!-- Líneas de circuito -->
+    <line x1="100" y1="40" x2="100" y2="10" stroke="#00ff99" stroke-width="4"/>
+    <line x1="100" y1="160" x2="100" y2="190" stroke="#00ff99" stroke-width="4"/>
+    <line x1="40" y1="100" x2="10" y2="100" stroke="#00ff99" stroke-width="4"/>
+    <line x1="160" y1="100" x2="190" y2="100" stroke="#00ff99" stroke-width="4"/>
+    
+    <!-- Pequeños círculos en los extremos de las líneas de circuito -->
+    <circle cx="100" cy="10" r="5" fill="#00ff99" />
+    <circle cx="100" cy="190" r="5" fill="#00ff99" />
+    <circle cx="10" cy="100" r="5" fill="#00ff99" />
+    <circle cx="190" cy="100" r="5" fill="#00ff99" />
+    
+    <!-- Texto debajo del símbolo -->
+    <text x="50%" y="90%" font-family="Arial, sans-serif" font-size="70" fill="#ffffff" text-anchor="middle">
+        Telacojo
+    </text>
+</svg>

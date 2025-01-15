@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cálculo IMC</title>
+    <link rel="shortcut icon" sizes="64x64" type="image/svg" href="./images/logo-validacionCard.svg" />
+    <link rel="stylesheet" href="/hojas-estilo/calculoIMC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <script type="text/javascript" defer>
+    window.history.forward(1);
+  </script>
+
+  <body>
+    <header>
+      <!-- menu de navegación -->
+      <div class="navbar">
+        <img src="images/logo.svg" alt="">
+        <div class="logo"><p>🍰-IMC-</p>  </div>
+        <div class="menu" id="navbarMenu">
+          <a href="./index-grid.html">HOME</a>
+          <a href="./index.html" title="calculo letra DNI">Cálculo DNI</a>
+          <a href="./link.html" title="misLinks">misLinks</a>
+          <a href="./validacion.html" title="template">Luhn-Algorithm</a>
+          <a href="./formulario.html" title="formulario"> Contacto </a>
+          <a href="readme.html" title="readme" target="_self"> help </a>
+        </div>
+        <div class="menu-icon">&#9776;</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- card IMC -->
+      <div class="clase-imc">
+        <center>
+          <p class="tituloIMC">Cálculo índice masa corporal IMC:</p>
+          <label class="label" for="input-imcPeso">Peso..</label>
+          <input type="text" class="input-imcPeso" placeholder=" intro. peso en kgrs." maxlength="5"><br>
+
+          <label class="label" for="input-imcAltura">Altura</label>
+          <input type="text" class="input-imcAltura" placeholder=" intro. altura en cm." maxlength="5">
+
+          <button class="btn-cal-imc">calcular</button>
+        </center>
+
+        <div class="clase-imc-resultado">
+          <p id="resultado-imc"></p>
+        </div>
+      </div>
+
+      <div class="clase-imc">
+        <p class="titulo-tablaIMC">
+          Tabla índice masa corporal
+        </p>
+        <table border="1">
+          <tr>
+            <th>índices</th>
+            <th>Descripción</th>
+          </tr>
+          <tr>
+            <td>menor 18.5</td>
+            <td>Peso insuficiente</td>
+          </tr>
+          <tr>
+            <td>18.5 – 24.9</td>
+            <td>Peso normal.</td>
+          </tr>
+          <tr>
+            <td>25.0 – 29.9</td>
+            <td>Sobrepeso.</td>
+          </tr>
+          <tr>
+            <td>30.0 o más</td>
+            <td>Obesidad</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <!-- pie de página (footer) -->
+    <footer>
+      <div class="footer">
+        <!-- ciudad sin ley  -->
+        Barberá del Vallés (BCN)👀
+      </div>
+    </footer>
+    <script type="module" src="/src/calculoIMC.js" defer></script>
+    <script type="module" src="/src/funciones.js" defer></script>
+  </body>
+
+</html>

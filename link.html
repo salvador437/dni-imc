@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LINK</title>
+    <link rel="stylesheet" href="./hojas-estilo/link.css">
+  </head>
+
+  <body >
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo3">
+      <h1 class="parpadea text">javascript--vanilla &copy;</h1>
+    </div>
+    <header>
+      <nav>
+        <div class="header">
+          <ul>
+            <li><a href="./index-grid.html" id="home-link" target="_self">
+                <p>Home</p>
+              </a></li>
+            <li>
+              <a href="https://vipexclusivity.com" id="about-link" target="_self">vipexclusivity</a>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=oZoEP0dIep4" id="contact-link" target="_blank">mesa-vip</a>
+            </li>
+            <li>
+              <a href="https://github.com/salvador437?tab=repositories" id="faq-link" target="_blank">github</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" id="faq-link"
+                target="_blank">MDNmozilla</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="items">
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">1- CSS es más complejo que la carrera de
+          Física Nuclear.......</a>
+      </div>
+      <div class="items">
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS/Specificity" target="_blank">2- También su especificidad
+          (yá te digo) ................................</a>
+      </div>
+      <div class="items">
+        <a href="https://www.typescriptlang.org/es/" target="_blank">3- Typescript no existiriá si no existiese la
+          inferencia de tipos</a>
+      </div>
+      <div class="items">
+        <a href="https://developer.mozilla.org/es/docs/Glossary/Hoisting" target="_blank">4- El hoisting no deja pensar
+          para ser un buen programador... </a>
+      </div>
+      <div class="items">
+        <a href="https://es.wikipedia.org/wiki/Idioma_chino" target="_blank">
+          5- El lenguaje Chino, es más sencillo.......................................
+        </a>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("keydown", (event) => {
+        if (event.ctrlKey && event.key === "z" || event.ctrlKey && event.key === "Z") {
+          window.open("./index-grid.html","_self","",true);
+        }
+      });
+    </script>
+  </body>
+
+</html>
