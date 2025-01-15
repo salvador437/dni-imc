@@ -8,12 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start http://localhost:3000/index-grid.html & nodemon app.js"
   },
-  "keywords": ["dni", "imc", "home"],
-  "author": "", 
+  "keywords": [
+    "dni",
+    "imc",
+    "home"
+  ],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
-    
+    "express": "^4.21.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
