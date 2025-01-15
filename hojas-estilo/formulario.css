@@ -48,6 +48,34 @@ body {
   text-decoration: underline;
 }
 
+.div2 {
+  position: fixed;
+  padding: 5px;
+  height: 100%;
+  font-size: 1.5em;
+  color: white;
+  gap: 4px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
+  grid-row: span 6 / span 9;
+  grid-row-start: 2;
+}
+
+a {
+  color: #d8d2d2;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  &:hover {
+    border-left: 3px solid white;
+    transition: 0.3s;
+    border-radius: 15px solid white;
+    background-color: #333;
+  }
+}
+
 .footer {
   text-align: center;
   padding: 0.625em 0;
