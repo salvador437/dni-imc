@@ -1,8 +1,8 @@
 {
   "name": "dni-imc",
   "version": "1.0.0",
-  "description": "Aplicacion donde pruebo lo estudiado sobre HTML-CSS-JS.",
-  "main": "index.js",
+  "description": "Aplicación donde pruebo lo estudiado sobre HTML-CSS-JS.",
+  "main": "app.js",
   "scripts": {
     "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1",
