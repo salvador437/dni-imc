@@ -1,7 +1,7 @@
 {
   "name": "dni-imc",
   "version": "1.0.0",
-  "description": "Esta es la barra de navegación del HOME que es el archivo index.html de la aplicación.",
+  "description": "Aplicacion donde pruebo lo estudiado sobre HTML-CSS-JS.",
   "main": "index.js",
   "scripts": {
     "type": "module",
@@ -11,9 +11,10 @@
   "keywords": [
     "dni",
     "imc",
-    "home"
+    "home",
+    "BIN tarjetas"
   ],
-  "author": "",
+  "author": "Salvador",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
