@@ -10,6 +10,10 @@ import {
   inputMensaje,
 } from "./funciones.js";
 
+document.addEventListener("submit",()=>{
+  alert("El formulario se enviará en unos segundos ");
+})
+
 inputNombre.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     inputNombre.value = "";
@@ -39,6 +43,7 @@ inputCiudad.addEventListener("keydown", function (event) {
     inputCiudad.value = "";
   }
 });
+
 
 inputPais.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
