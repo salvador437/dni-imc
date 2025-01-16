@@ -43,11 +43,16 @@ body {
   background-image: var(--body-background-image);
 }
 
+/* otorgamos reglas a: ".titulo-errorDNI"   
+del archivo notificacionError.html*/
 .titulo-errorDNI {
   color: var(--titulo-errorDNI-text-color);
   text-decoration: underline;
 }
 
+
+/* otorgamos reglas a: ".tituloDNI" , ".tituloTemperatura"  
+del archivo index.html*/
 .tituloDNI,
 .tituloTemperatura {
   font-size: 1em;
@@ -55,7 +60,8 @@ body {
   text-decoration: underline;
 }
 
-/* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  */
+/* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  
+del archivo index.html*/
 .input-dniNumero,
 .input-conversor {
   margin-bottom: 1.2em;
@@ -67,6 +73,9 @@ body {
   background-color: var(--inputs-background-color);
 }
 
+
+/* otorgamos reglas a: ".btn-calcular" , ".btn-cal-temp"  
+del archivo index.html*/
 .btn-calcular,
 .btn-cal-temp {
   cursor: pointer;
@@ -77,7 +86,9 @@ body {
   background-color: var(--btn-background);
 }
 
-/* damos reglas a la clase ".clase-dni" y ".conversor" */
+/* damos reglas a la clase ".clase-dni" y ".conversor" 
+del archivo index.html
+*/
 .clase-dni,
 .conversor {
   font-size: 1.2em;
@@ -96,13 +107,18 @@ body {
   background-color: var(--div-background-color);
 }
 
+/* damos reglas al ID "#resultado" y "#resultado-temperatura" 
+del archivo index.html
+*/
 #resultado,
 #resultado-temperatura {
   text-align: center;
   color: var(--color-resultados);
 }
 
-/* damos reglas a la clase ".footer" */
+/* damos reglas a la clase ".footer" 
+del archivo index.html
+*/
 .footer {
   text-align: center;
   padding: 0.625em 0;
@@ -185,13 +201,15 @@ a {
   }
 }
 
+/* damos reglas a la clase ".logo" 
+del archivo index.html
+*/
 .logo {
   font-size: 2em;
   font-weight: bold;
   color: var(--logo-text-color);
   & .logo:hover {
     font-size: 2em;
-    cursor: pointer;
     font-weight: bold;
     transform: rotateZ(-5deg);
     transition-duration: 0.1s;

@@ -97,8 +97,9 @@ a {
 .footer {
   display: flex;
   margin: 0;
-  height: 50px;
   position: fixed;
+  text-align: center;
+  padding: 0.625em 0;
   bottom: 0;
   left: 0;
   z-index: 9;
