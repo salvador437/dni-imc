@@ -40,6 +40,7 @@
 
 a {
   color: #d8d2d2;
+  text-shadow: 2px 2px 5px #aaa;
   padding: 20px;
   text-align: left;
   text-decoration: none;
@@ -53,6 +54,7 @@ a {
 
 .div2 {
   position: fixed;
+  top: 60px;  
   padding: 5px;
   height: 100%;
   font-size: 1.5em;
