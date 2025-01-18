@@ -2,11 +2,11 @@
   "name": "dni-imc",
   "version": "1.0.0",
   "description": "Aplicación donde pruebo lo estudiado sobre HTML-CSS-JS.",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start http://localhost:3000/index-grid.html & nodemon app.js"
+    "start": "start http://localhost:3000/index.html & nodemon app.js"
   },
   "keywords": [
     "dni",
