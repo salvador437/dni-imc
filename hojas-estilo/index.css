@@ -54,7 +54,7 @@ a {
 
 .div2 {
   position: fixed;
-  top: 60px;  
+  top: 0;  
   padding: 5px;
   height: 100%;
   font-size: 1.5em;
@@ -86,7 +86,7 @@ a {
   grid-column: span 4 / span 4;
   grid-row: span 8 / span 8;
   grid-column-start: 2;
-  grid-row-start: 2;
+  grid-row-start: 1;
   color: white;
   width: 100%;
   max-width: 100%;
