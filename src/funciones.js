@@ -100,6 +100,8 @@ function calcularValidacion() {
   const valorValidacion = inputValidacion.value;
   const validacion = ccTest(valorValidacion);
 
+  
+
   if (valorValidacion.length < 16) {
     resultadoValidacion.style.color = "red";
     resultadoValidacion.textContent = "Tarjeta rechazada.";
@@ -208,7 +210,6 @@ function pantallaCompleta() {
     }
   }
 }
-
 
 function salir() {
   window.location.href = "./index.html";
