@@ -11,8 +11,8 @@ app.get("/index.html", (req, res) => {
   res.sendFile(path.join(__dirname + "index.html"));
 });
 
-app.get("/index-grid.html", (req, res) => {
-  res.sendFile(path.join(__dirname + "index.html"));
+app.get("/dni-temp.html", (req, res) => {
+  res.sendFile(path.join(__dirname + "dni-temp.html"));
 });
 
 app.get("/calculoIMC.html", (req, res) => {

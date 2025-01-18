@@ -211,7 +211,7 @@ function pantallaCompleta() {
 
 
 function salir() {
-  window.location.href = "./index-grid.html";
+  window.location.href = "./index.html";
 }
 
 // commutación menú hanburguesa y navegador.

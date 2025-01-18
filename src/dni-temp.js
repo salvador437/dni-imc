@@ -9,7 +9,7 @@ import  {
 
 
 // asignando en constantes los  elementos HTML implicados.
- const menu = document.querySelector(".menu-icon")
+const menu = document.querySelector(".menu-icon")
 
 menu.addEventListener("click",toggleMenu)
 
@@ -27,7 +27,7 @@ inputConversor.addEventListener("focus", () => {
   limpiar();
 });
 
-/// escuchando cuando se pulsa una tecla
+// escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
@@ -43,7 +43,7 @@ document.addEventListener("keydown", function (event) {
     (event.ctrlKey && event.key === "z") ||
     (event.ctrlKey && event.key === "Z")
   ) {
-    window.open("./index-grid.html", "_self", "", true);
+    window.open("./index.html", "_self", "", true);
   }
 });
 

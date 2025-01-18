@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo DNI</title>
+    <link rel="shortcut icon" sizes="64x64" type="image/svg" href="./images/logo-template.svg" />
+    <link rel="stylesheet" href="/hojas-estilo/dni-temp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+  </head>
+
+  
+
+  <body>
+    <header>
+      <!-- ----- menu de navegación -----  -->
+      <div class="navbar">
+        <img src="images/logo.svg" alt="logo3">
+        <div class="logo"><p>💳LETRA DNI </p></div>
+        <div class="menu" id="navbarMenu">
+          <a href="./index.html">🏠HOME</a>
+          <a href="./calculoIMC.html" title="cálculo IMC">🍰Cálculo IMC</a>
+          <a href="./link.html" title="misLinks">
+            👪misLinks</a>
+          <a href="./validacion.html" title="validacionCard">💳Luhn-Algorithm</a>
+          <a href="./formulario.html" title="formulario"> 📞Contacto </a>
+          <a href="readme.html" title="readme" target="_self"> 🙏help </a>
+        </div>
+        <div class="menu-icon" >&#9776;</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- -------- card DNI -------- -->
+      <div class="container-flex">
+        <div class="clase-dni">
+          <center>
+            <p class="tituloDNI">Cálculo letra del DNI:</p>
+            <input type="text" class="input-dniNumero" placeholder="   introduzca nº DNI" maxlength="8">
+            <button class="btn-calcular" accesskey="l">calcular</button>
+          </center>
+          <div class="clase-dni-resultado">
+            <p id="resultado"></p>
+          </div>
+        </div>
+        <!--  card conversor temperatura C/F -->
+        <div class="conversor">
+          <center>
+            <p class="tituloTemperatura">Conversor de temperatura C/F:</p>
+            <input type="text" class="input-conversor" placeholder=" introduzca grados C" maxlength="5">
+            <button class="btn-cal-temp">calcular</button>
+          </center>
+          <div class="clase-conversor-resultado">
+            <p id="resultado-temperatura"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- pie de página (footer) -->
+    <footer>
+      <div class="footer">
+        <!-- ciudad sin ley-->
+        Barberá del Vallés (BCN)&nbsp&nbsp&nbsp👀
+      </div>
+    </footer>
+    <script type="module" defer src="./src/dni-temp.js"></script>
+    <script type="module" defer src="./src/funciones.js"></script>
+    <script type="text/javascript" defer>
+      window.history.forward(1);
+    </script>  
+  </body>
+
+</html>

@@ -59,7 +59,7 @@ inputMensaje.addEventListener("keydown", function (event) {
 
 document.addEventListener("keydown", function (event) {
   if (event.ctrlKey && event.key === "z") {
-    window.open("./index-grid.html", "_self", "", true);
+    window.open("./index.html", "_self", "", true);
   }
   if (event.altKey && event.key === "b") {
     inputNombre.value = "";
@@ -82,10 +82,10 @@ document.addEventListener("keydown", function (event) {
     (event.ctrlKey && event.key === "z") ||
     (event.ctrlKey && event.key === "Z")
   ) {
-    window.open("./index-grid.html", "_self", "", true);
+    window.open("./index.html", "_self", "", true);
   }
 });
 
 closeBtn.onclick = () => {
-  window.open("./index-grid.html", "_self", "", true);
+  window.open("./index.html", "_self", "", true);
 };

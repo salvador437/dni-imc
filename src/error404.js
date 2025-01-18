@@ -9,6 +9,6 @@ if (home) {
 
 document.addEventListener("keydown", (event) => {
   if (event.ctrlKey && event.key === "z" || event.ctrlKey && event.key === "Z") {
-    window.open("./index.grid.html","_self","",true);
+    window.open("./index.html","_self","",true);
   }
 });

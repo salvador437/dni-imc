@@ -1,271 +1,192 @@
-/* variables para estilos de color */
 :root {
-  --a-hover-background: #444;
-  --a-hover-border-color: 1px solid #54bb0f;
-  --body-background-image: url(../images/dni2.jpg);
-  --btn-background: #333;
-  --btn-text-color: #b4abab;
-  --close-color: #aaa;
-  --close-hover-color: #000;
-  --color-resultados: #f4f803;
-  --color-shadow: 10px 10px 25px #000;
-  --div-border-color: #54bb0f;
-  --div-background-color: #222222cc;
-  --inputs-background-color: #333333cc;
+  --text-color-footer: white;
   --footer-background: #333;
-  --footer-text-color: white;
-  --inputs-text-color: #b4abab;
-  --logo-text-color: #5ac47d;
-  --menu-respon-backgraund: #1f1142;
   --menu-icono-hambur-color: #07fc27;
-  --modal-content-color: #fff;
-  --modal-content-border-color: 1px solid #03f828;
-  --modal-content-shadow-color: 10px 10px 25px #000;
-  --nav-background: #222222cc;
-  --navbar-background-color: linear-gradient(5deg, black, #222, #777);
-  --navbar-border-top-color: 1px solid #444;
-  --navbar-border-botton-color: 1px solid #111;
-  --navbar-text-color: #3ff172;
-  --titulo-errorDNI-text-color: #03f828;
-  --titulos-text-color: #b4abab;
+  --navbar-background: linear-gradient(5deg, #111, #222, #777);
+  --logo-text-color: #7fc7f3;
 }
 
 * {
-  box-sizing: border-box;
-}
-
-/* estilos para el body del index.html*/
-body {
-  font-family: "Roboto", "sans-serif";
-  font-size: 1em;
   margin: 0;
   padding: 0;
-  background-image: var(--body-background-image);
+  box-sizing: border-box;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-/* otorgamos reglas a: ".titulo-errorDNI"   
-del archivo notificacionError.html*/
-.titulo-errorDNI {
-  color: var(--titulo-errorDNI-text-color);
-  text-decoration: underline;
+.parent {
+  background-image: url(../images/fondo-grid.png);
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 
-
-/* otorgamos reglas a: ".tituloDNI" , ".tituloTemperatura"  
-del archivo index.html*/
-.tituloDNI,
-.tituloTemperatura {
-  font-size: 1em;
-  color: var(--titulos-text-color);
-  text-decoration: underline;
-}
-
-/* otorgamos reglas a: "input-dniNumero" , ".input-conversor"  
-del archivo index.html*/
-.input-dniNumero,
-.input-conversor {
-  margin-bottom: 1.2em;
-  font-size: 1em;
+.div1 {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding-left: 10px;
+  font-size: 2rem;
   text-align: center;
-  cursor: pointer;
-  user-select: none;
-  color: var(--inputs-text-color);
-  background-color: var(--inputs-background-color);
+  color: white;
+  background: var(--navbar-background);
+  grid-column: span 5 / span 5;
 }
 
-
-/* otorgamos reglas a: ".btn-calcular" , ".btn-cal-temp"  
-del archivo index.html*/
-.btn-calcular,
-.btn-cal-temp {
-  cursor: pointer;
-  font-size: 1em;
-  padding: 0 0.8em;
-  border-radius: 0.3em;
-  color: var(--btn-text-color);
-  background-color: var(--btn-background);
+a {
+  color: #d8d2d2;
+  text-shadow: 2px 2px 5px #aaa;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  &:hover {
+    border-left: 3px solid white;
+    transition: 0.3s;
+    border-radius: 15px solid white;
+    background-color: #333;
+  }
 }
 
-/* damos reglas a la clase ".clase-dni" y ".conversor" 
-del archivo index.html
-*/
-.clase-dni,
-.conversor {
-  font-size: 1.2em;
-  min-width: 12.5em;
-  max-width: 16em;
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.625em;
-  border-radius: 0.5em;
-  border: 1px solid var(--div-border-color);
-  line-height: 0.5em;
-  user-select: none;
-  color: var(--inputs-text-color);
-  box-shadow: var(--color-shadow);
-  background-color: var(--div-background-color);
+.div2 {
+  position: fixed;
+  top: 60px;  
+  padding: 5px;
+  height: 100%;
+  font-size: 1.5em;
+  color: white;
+  gap: 4px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
+  grid-row: span 6 / span 9;
+  grid-row-start: 2;
 }
 
-/* damos reglas al ID "#resultado" y "#resultado-temperatura" 
-del archivo index.html
-*/
-#resultado,
-#resultado-temperatura {
-  text-align: center;
-  color: var(--color-resultados);
+.div3 {
+  margin: 0;
+  left: 0;
+  border: 1px solid #ebe1e1;
+  border-radius: 10px;
+  border: 1px solid white;
+  align-items: center;
+  grid-column: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 10;
+  grid-auto-columns: auto;
 }
 
-/* damos reglas a la clase ".footer" 
-del archivo index.html
-*/
+.div4 {
+  display: grid;
+  grid-column: span 4 / span 4;
+  grid-row: span 8 / span 8;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  min-width: 400px;
+  z-index: 8;
+}
+
 .footer {
+  display: flex;
+  margin: 0;
+  position: fixed;
   text-align: center;
   padding: 0.625em 0;
-  position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   user-select: none;
   font-size: 1.5em;
+  color: var(--text-color-footer);
   background-color: var(--footer-background);
-  color: var(--footer-text-color);
 }
 
-/* damos reglas a la pantalla error IMC */
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Estilos del contenido del modal */
-.modal-content {
-  background-color: var(--div-background-color);
-  color: var(--modal-content-color);
-  margin: 15% auto;
-  padding: 1.25em;
-  border: var(--modal-content-border-color);
-  width: 80%;
-  max-width: 31.25em;
+.logo {
+  font-size: 1em;
   user-select: none;
-  box-shadow: var(--modal-content-shadow-color);
-  border-radius: 0.8em;
-}
-
-.close {
-  color: var(--close-color);
-  float: right;
-  font-size: 1.75em;
+  padding-left: 100px;
+  align-content: center;
   font-weight: bold;
+  border: color var(--logo-text-color);
   &:hover {
-    color: var(--close-hover-color);
-    text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
+    transform: rotateZ(-5deg);
+    transition-duration: 0.1s;
   }
 }
 
-/* damos reglas a la clase ".navbar" que es */
-/* la barra de navegación  */
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.logo p{
+  color: #ddd;
+  text-shadow: #bbb 2px 2px 5px;
+}
+
+.parrafos {
+  
+  font-size: 1.2em;
+  font-weight: 100;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: auto;
+  color: #afaea5;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
   user-select: none;
-  background: var(--navbar-background-color);
-  background-color: var(--nav-background);
-  border-bottom: var(--navbar-border-botton-color);
-  border-top: var(--navbar-border-top-color);
-  & p{
-    margin: 0;  
-  }
 }
 
+.parrafo-1,
+.parrafo-2,
+.parrafo-3,
+.parrafo-4,
+.parrafo-5 {
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 100;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: auto;
+  color: #afaea5;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  user-select: none;
+}
 
-/* damos reglas dentro del menú de navegación */
-/* sólo a los elementos "a", para ir a enlaces */
-a {
-  text-decoration: none;
-  padding: 0.4em 1em;
+.titulo-parrafo{
+  color: #999;
   font-size: 1.4em;
-  user-select: none;
-  color: var(--navbar-text-color);
-  &:hover {
-    border-radius: 0.312em;
-    transition: 0.3s;
-    background-color: var(--a-hover-background);
-    border: var(--a-hover-border-color);
-  }
+  text-shadow: #bbb 2px 2px 5px;
 }
 
-/* damos reglas a la clase ".logo" 
-del archivo index.html
-*/
-.logo {
-  font-size: 2em;
-  font-weight: bold;
-  color: var(--logo-text-color);
-  & .logo:hover {
-    font-size: 2em;
-    font-weight: bold;
-    transform: rotateZ(-5deg);
-    transition-duration: 0.1s;
-  }
-    & p{
-      color: var(--navbar-text-color);
-      text-shadow: #bbb 2px 2px 5px;
-    }
-}
-
-.menu {
+.video{
+  width: 600px;
+  height: 400px;
   display: flex;
-  & a{
-    display: none;
-  }
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.menu-icon {
-  display: block;
-  font-size: 1.875em;
-  cursor: pointer;
-  color: var(--menu-icono-hambur-color);
+.laVega {
+  margin-left: 300px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-@media screen and (min-width: 41em) {
-  .menu a {
-    display: block;
-  }
 
-  .menu-icon {
-    display: none;
-    color: var(--menu-icono-hambur-color);
-  }
-}
 
-.menu.responsive {
-  position: absolute;
-  top: 3.75em;
-  width: 100%;
-  flex-direction: column;
-  background-color: var(--menu-respon-backgraund);
-  & a{
-    display: block;
-    text-align: center;
-  }
-}
-
-.logo {
-  font-size: 2em;
-  font-weight: bold;
-  color: var(--logo-text-color);
-  &:hover {
-    font-size: 2em;
-    cursor: pointer;
-    font-weight: bold;
-    transform: rotateZ(-5deg);
-    transition-duration: 0.1s;
-  }
-}
