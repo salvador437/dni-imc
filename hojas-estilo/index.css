@@ -14,6 +14,10 @@
     sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .parent {
   background-image: url(../images/fondo-grid.png);
   display: grid;
@@ -186,6 +190,7 @@ a {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 
 
 
