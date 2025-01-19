@@ -24,7 +24,7 @@
 }
 
 .div1 {
-  position: sticky;
+  position: fixed;
   z-index: 10;
   top: 0;
   display: flex;
@@ -54,7 +54,7 @@ a {
 
 .div2 {
   position: fixed;
-  top: 0;  
+  top: 60px;  
   padding: 5px;
   height: 100%;
   font-size: 1.5em;
@@ -133,14 +133,13 @@ a {
 }
 
 .parrafos {
-  
   font-size: 1.2em;
   font-weight: 100;
   border-radius: 10px;
   border: 1px solid white;
   width: auto;
   color: #afaea5;
-  margin-top: 20px;
+  margin-top: 90px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 20px;
