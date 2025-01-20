@@ -1,5 +1,7 @@
-import  {toggleMenu}  from "./funciones.js";
 
+const menu = document.querySelector(".menu-icon")
+menu.addEventListener("click", goto);
 
-menu.addEventListener("click", toggleMenu);
-
+function goto(){
+  window.open("./dni-temp.html","_self","",true);
+}

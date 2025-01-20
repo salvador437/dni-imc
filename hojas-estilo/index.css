@@ -40,7 +40,7 @@
   & .logo {
     font-size: 1em;
     user-select: none;
-    padding-left: 100px;
+    padding-left: 20px;
     align-content: center;
     font-weight: bold;
     border: color var(--logo-text-color);
@@ -75,7 +75,8 @@
   & a {
     color: #d8d2d2;
     text-shadow: 2px 2px 5px #aaa;
-    padding: 20px;
+    margin-top: 30px;
+    padding: 10px;
     text-align: left;
     text-decoration: none;
     &:hover {
@@ -182,15 +183,14 @@
 
 @media (max-width: 668px) {
   .menu-lateral{
-    display: none;
-  }
+  display: none;
+}
   
-
   .navbar .menu-icon {
     display: flex;
     margin-top: 20px;
     margin-left: 75px;
-
+    cursor: pointer;
     user-select: none;
   }
 
@@ -216,10 +216,16 @@
   
   }
 
-  
+  .images{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   
 }
-
 
 
 

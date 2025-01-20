@@ -222,7 +222,6 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
-  console.log(menu.className);
 }
 
 // exportación de funciones
@@ -238,5 +237,5 @@ export {pantallaCompleta,
   inputConversor,btnCalTemp,btnCalcular,
   closeBtn,inputNombre,inputApellidos,
   inputMail,inputTelefono,inputCiudad,
-  inputPais,inputMensaje
+  inputPais,inputMensaje,menu
 }

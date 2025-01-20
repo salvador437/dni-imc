@@ -159,3 +159,10 @@ textarea {
   cursor: pointer;
 }
 
+
+@media (max-width: 668px) {
+  .div2{
+  display: none;
+}
+
+}

@@ -20,7 +20,7 @@
         <div class="logo">
           <p>🏠&nbsp&nbsp&nbspHOME</p>
         </div>
-        <div class="menu-icon">&#9776;</div>
+        <div class="menu-icon" title="Salir de home">&#9776;</div>
       </div>
       <div class="menu-lateral">
         <a href="./dni-temp.html" title="calculo letra DNI">💳Cálculo DNI</a>
@@ -168,34 +168,34 @@
           <p>
             Aunque el título del artículo es el Nullish Coalescing, en este artículo vamos realmente a hablar de cuatro operadores diferentes, que tienen bastante relación entre sí:
           </p><br>
-          <img src="./images/nullist.png" alt="nullist"><br>
+          <img  class="images" src="./images/nullist.png" alt="nullist"><br>
           <p class="titulo-parrafo">💻Operador OR lógico.</p><br><br>
           <p>
             El operador lógico OR (||) establece una condición donde devolverá el primer valor si es true o el segundo si el primero es false. Esto se puede leer de forma sencilla de la siguiente forma: «devuelve a (si es verdadero), o si no, b»<div class="br"></div>
 
             Veamos algunos ejemplos reales, primero con boolean que es más sencillo de entender: 
           </p><br>
-          <img src="./images/nullist2.png" alt="nullish2">
+          <img class="images" src="./images/nullist2.png" alt="nullish2">
           <p>
             Sin embargo, ten en cuenta que podemos utilizar este operador con otros tipos de datos y no sólo con . En el anterior, los valores repetidos no hay que diferenciarlos: si false || false te da igual que false devuelva, simplemente es false.
 
             Esto no ocurre con otros tipos de datos. Recuerda que en programación, cualquier valor numérico superior a 0 es considerado true como y que cualquier valor que sea 0 o falsy, es false. <br><br>
 
             Veamos algunos ejemplos: <br>
-            <img src="./images/nullist3.png" alt=""><br><br>
+            <img class="images" src="./images/nullist3.png" alt=""><br><br>
             <p>
               Teniendo todo esto en cuenta, el operador || nos podría venir bastante bien para situaciones donde, por ejemplo, tenemos una variable name que no sabemos a ciencia cierta si está definida y queremos crear una nueva variable userName con el valor de name, o sino, un valor por defecto "Unknown name": <br><br>
-              <img src="./images/image4.png" alt=""><br><br>
+              <img class="images" src="./images/image4.png" alt=""><br><br>
               <p class="titulo-parrafo">💻Asignación lógica.</p><br><br>
               <p>
                 Igual que tenemos la posibilidad de realizar asignaciones como += que son la mezcla de una asignación con una operación de suma, también podemos hacer lo propio con el operador lógico de asignación ||=, que une un operador lógico con una asignación. <br><br>
 
                 Observa el siguiente fragmento de código: <br>
-                <img src="./images/nullist5.png" alt=""><br><br>
+                <img class="images" src="./images/nullist5.png" alt=""><br><br>
                 <p>
                   Este código, podemos simplificarlo utilizando el operador lógico OR de asignación ||=:
                 </p><br>
-                <img src="./images/nullist6.png" alt=""><br><br>
+                <img class="images" src="./images/nullist6.png" alt=""><br><br>
                 <p>
                   Con ||= conseguimos que si el valor inicial de userName es un valor que se evalua como falso como null, undefined, 0, false o "", entonces realizará la asignación con el valor de la derecha. En caso contrario, si ya tiene un valor establecido que no es falso, no hará nada.
                 </p><br><br>
@@ -205,12 +205,12 @@
 
                   Dicho de otra forma, funciona igual que el operador OR, pero sólo para valores que sean undefined o null, en lugar de la amplia gama de valores que se pueden evaluar como falso. <br><br>
                   Veamoslo con un ejemplo para ver la diferencia con el anterior: <br>
-                  <img src="./images/nullist7.png" alt=""> <br><br>
+                  <img class="images"  src="./images/nullist7.png" alt=""> <br><br>
                   <p>
                     Dependiendo del caso, podría interesarnos utilizar el operador ?? o el operador ||. Veamos un ejemplo algo diferente. Imagina que tenemos un objeto data donde tenemos almacenado la cantidad de balas que le quedan a un personaje de un videojuego. <br><br>
 
                     Si necesitamos mostrar al usuario visualmente en el menú que se ha quedado sin balas, quizás nos podría interesar utilizar el operador ||. Por otro lado, si lo que queremos es mostrar el total numérico de balas, quizás nos interesaría más utilizar el operador ??. <br><br>
-                    <img src="./images/nullist8.png" alt="">
+                    <img  class="images"src="./images/nullist8.png" alt="">
                     <p>Ten en cuenta que en el segundo caso, la propiedad ammo es undefined,  ya   que no está definida.
                     </p> <br><br>
                     <p class="titulo-parrafo">💻Asignación lógica nula.</p><br>
@@ -218,11 +218,11 @@
                       Al igual que pasó con el operador OR lógico, también tenemos una mezcla del nullish coalescing y una asignación. Este operador es bastante interesante para algunas operaciones muy frecuentes en Javascript. <br><br>
 
                       Existen ciertos casos donde, si una variable tiene valores null o undefined (valores nullish) y sólo en esos casos, queremos cambiar su valor. Veamos como se haría sin utilizar la asignación lógica nula y como podríamos resumirlo utilizándola: <br><br>
-                      <img src="./images/nullist9.png" alt="">
+                      <img class="images" src="./images/nullist9.png" alt="">
                       <p>
                         Como puedes ver, utilizando el operador ??= podemos simplificar mucho nuestro código. Recuerda que a ??= b es equivalente a a ?? (a = b). Esto puede ser super útil para simplificar casos como el siguiente:
                       </p> <br><br>
-                      <img src="./images/nullist10.png" alt=""> <br><br>
+                      <img class="images" src="./images/nullist10.png" alt=""> <br><br>
                       <p>Observa que la función resetConfig() obtiene un objeto por parámetro y en el caso de tener una de las propiedades life o level a null o no existir (o valer undefined), las reseteará al valor indicado.</p>
                     </p>
                   </p>
