@@ -222,6 +222,7 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
+  console.log(menu.className);
 }
 
 // exportación de funciones

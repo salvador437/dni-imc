@@ -10,13 +10,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 .parent {
   background-image: url(../images/fondo-grid.png);
@@ -27,7 +23,8 @@ html {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.div1 {
+/* reglas para la barra navegacion superior */
+.navbar {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -40,23 +37,28 @@ html {
   color: white;
   background: var(--navbar-background);
   grid-column: span 5 / span 5;
-}
-
-a {
-  color: #d8d2d2;
-  text-shadow: 2px 2px 5px #aaa;
-  padding: 20px;
-  text-align: left;
-  text-decoration: none;
-  &:hover {
-    border-left: 3px solid white;
-    transition: 0.3s;
-    border-radius: 15px solid white;
-    background-color: #333;
+  & .logo {
+    font-size: 1em;
+    user-select: none;
+    padding-left: 100px;
+    align-content: center;
+    font-weight: bold;
+    border: color var(--logo-text-color);
+    & p{
+      color: #ddd;
+      text-shadow: #bbb 2px 2px 5px;
+    }
+    &:hover {
+      cursor: pointer;
+      font-weight: bold;
+      transform: rotateZ(-5deg);
+      transition-duration: 0.1s;
+    }
   }
 }
 
-.div2 {
+/* reglas para el menu lateral */
+.menu-lateral {
   position: fixed;
   top: 60px;  
   padding: 5px;
@@ -70,20 +72,22 @@ a {
   background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
   grid-row: span 6 / span 9;
   grid-row-start: 2;
+  & a {
+    color: #d8d2d2;
+    text-shadow: 2px 2px 5px #aaa;
+    padding: 20px;
+    text-align: left;
+    text-decoration: none;
+    &:hover {
+      border-left: 3px solid white;
+      transition: 0.3s;
+      border-radius: 15px solid white;
+      background-color: #333;
+    }
+  }
+  
 }
 
-.div3 {
-  margin: 0;
-  left: 0;
-  border: 1px solid #ebe1e1;
-  border-radius: 10px;
-  border: 1px solid white;
-  align-items: center;
-  grid-column: span 4 / span 4;
-  grid-column-start: 2;
-  grid-row-start: 10;
-  grid-auto-columns: auto;
-}
 
 .div4 {
   display: grid;
@@ -98,43 +102,22 @@ a {
   z-index: 8;
 }
 
-.footer {
+.video{
+  width: 600px;
+  height: 400px;
   display: flex;
-  margin: 0;
-  position: fixed;
-  text-align: center;
-  padding: 0.625em 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  user-select: none;
-  font-size: 1.5em;
-  color: var(--text-color-footer);
-  background-color: var(--footer-background);
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.logo {
-  font-size: 1em;
-  user-select: none;
-  padding-left: 100px;
-  align-content: center;
-  font-weight: bold;
-  border: color var(--logo-text-color);
-  &:hover {
-    cursor: pointer;
-    font-weight: bold;
-    transform: rotateZ(-5deg);
-    transition-duration: 0.1s;
-  }
+.laVega {
+  margin-left: 300px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.logo p{
-  color: #ddd;
-  text-shadow: #bbb 2px 2px 5px;
-}
 
 .parrafos {
   font-size: 1.2em;
@@ -170,25 +153,71 @@ a {
 }
 
 .titulo-parrafo{
-  color: #999;
+  color: #aaa;
   font-size: 1.4em;
   text-shadow: #bbb 2px 2px 5px;
 }
 
-.video{
-  width: 600px;
-  height: 400px;
+.footer {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin: 0;
+  position: fixed;
+  text-align: center;
+  padding: 0.625em 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  user-select: none;
+  font-size: 1.5em;
+  color: var(--text-color-footer);
+  background-color: var(--footer-background);
 }
 
-.laVega {
-  margin-left: 300px;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+.navbar .menu-icon {
+  display: none;
+}
+
+@media (max-width: 668px) {
+  .menu-lateral{
+    display: none;
+  }
+  
+
+  .navbar .menu-icon {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 75px;
+
+    user-select: none;
+  }
+
+  .div4 {
+    display: block;
+    grid-column: span 4 / span 4;
+    grid-row: span 8 / span 8;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 8;
+  }
+
+  .video{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  
+  
 }
 
 
