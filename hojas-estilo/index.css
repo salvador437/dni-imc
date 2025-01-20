@@ -180,8 +180,7 @@
 .navbar .menu-icon {
   display: none;
 }
-
-@media (max-width: 668px) {
+@media (max-width: 668px){
   .menu-lateral{
   display: none;
 }
