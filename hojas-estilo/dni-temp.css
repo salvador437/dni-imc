@@ -208,7 +208,7 @@ del archivo index.html
   font-size: 2em;
   font-weight: bold;
   color: var(--logo-text-color);
-  & .logo:hover {
+  &:hover {
     font-size: 2em;
     font-weight: bold;
     transform: rotateZ(-5deg);
