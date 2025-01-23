@@ -254,7 +254,7 @@ h2 {
   text-shadow: #bbb 2px 2px 5px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 41em) {
   .navbar .menu a {
     display: block;
   }
@@ -267,14 +267,14 @@ h2 {
 .navbar .menu.responsive {
   position: absolute;
   top: 3.75em;
-  width: 100%;
+  width: 50%;
   flex-direction: column;
   background-color: var(--footer-background);
 }
 
 .navbar .menu.responsive a {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-icon {

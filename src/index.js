@@ -1,7 +1,26 @@
+import  {
+  pantallaCompleta,
+  toggleMenu2
+}  from "./funciones.js";
 
-const menu = document.querySelector(".menu-icon")
-menu.addEventListener("click", goto);
+const menu2 = document.querySelector(".menu-icon");
+const subir = document.querySelector(".subir");
 
-function goto(){
-  window.open("./dni-temp.html","_self","",true);
-}
+menu2.addEventListener("click",toggleMenu2);
+
+subir.addEventListener("click", ()=>{
+  window.location.reload();
+});
+
+// escuchando cuando se pulsa una tecla
+document.addEventListener("keydown", function (event) {
+  
+  if ( (event.altKey &&  event.key === "p" ) ||
+        (event.altKey &&  event.key === "P"
+  ) ) {
+    pantallaCompleta();
+  }
+
+});
+
+

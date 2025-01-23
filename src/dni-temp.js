@@ -27,11 +27,22 @@ inputConversor.addEventListener("focus", () => {
   limpiar();
 });
 
+// escuchando cuando el input pierde el foco
+inputConversor.addEventListener("blur", () => {
+  btnCalTemp.style.display = "inline-block";
+});
+
+
 // escuchando cuando se pulsa una tecla
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiar();
   }
+
+  if (event.key === "Enter") {
+    calcularLetraDNI();
+  }
+  
 
   if ( (event.altKey &&  event.key === "p" ) ||
         (event.altKey &&  event.key === "P"
@@ -47,10 +58,6 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// escuchando cuando el input pierde el foco
-inputConversor.addEventListener("blur", () => {
-  btnCalTemp.style.display = "inline-block";
-});
 
 
 

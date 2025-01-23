@@ -14,6 +14,7 @@
   --inputs-text-color: #b4abab;
   --logo-text-color: #7fc7f3;
   --menu-icon-color: #76c4f5;
+  --menu-respon-backgraund: #1f1142;
   --modal-borde-color: 1px solid #8bd6f5;
   --modal-box-shadow: 10px 10px 25px #000;
   --modal-content-color: #8bd6f5;
@@ -237,15 +238,15 @@ tr {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 0.625em;
-  width: 100%;
+  top: 4.2em;
+  width: 50%;
   flex-direction: column;
-  background-color: var(--footer-background);
+  background-color: var(--menu-respon-backgraund);
 }
 
 .navbar .menu.responsive a {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-icon,

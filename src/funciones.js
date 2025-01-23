@@ -29,7 +29,7 @@ const inputPais = document.querySelector("#pais");
 const inputMensaje = document.querySelector("#msg");
 
 const menu = document.querySelector(".menu")
-
+const menu2 = document.querySelector(".menu-lateral")
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
   // obteniendo los valores de los inputs peso y altura.
@@ -221,13 +221,24 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
+  
+}
+
+function toggleMenu2() {
+  if (menu2.className === "menu-lateral") {
+    menu2.className += " responsive";
+  } else {
+    menu2.className = "menu-lateral";
+  }
+  
 }
 
 // exportación de funciones
 export {pantallaCompleta,
   limpiar,calcularLetraDNI,
   calcularTemperaturaCF,
-  toggleMenu,limpiarCalculoIMC,
+  toggleMenu,toggleMenu2,
+  limpiarCalculoIMC,
   calcularIMC,calcularValidacion,
   limpiarValidacion,salir,ccGen,
   ccTest,inputValidacion,btnValidacion,
