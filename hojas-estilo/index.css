@@ -1,9 +1,16 @@
 :root {
-  --text-color-footer: white;
-  --footer-background: #333;
-  --menu-icono-hambur-color: #07fc27;
-  --navbar-background: linear-gradient(5deg, #111, #222, #777);
+  --div4-color: white ;
+  --footer-background: #222;
   --logo-text-color: #7fc7f3;
+  --menu-icono-hambur-color: #07fc27;
+  --menu-lateral-color:white;
+  --menu-lateral-background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
+  --navbar-background: linear-gradient(5deg, #111, #222, #777);
+  --parrafos-color: #afaea5;
+  --parrafo-1-2-3-4-5-color:#afaea5; 
+  --text-color-footer: white;
+  --titulo-parrafo-color: #aaa;
+  
 }
 
 
@@ -65,13 +72,13 @@
   top: 60px;  
   height: 100%;
   font-size: 1.5em;
-  color: white;
+  color: var(--menu-lateral-color);
   gap: 4px;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   flex-direction: column;
-  background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
+  background: var(--menu-lateral-background);
   grid-row: span 6 / span 9;
   grid-row-start: 2;
   
@@ -96,11 +103,12 @@
 
 .div4 {
   display: grid;
+  grid-auto-flow: row;
   grid-column: span 4 / span 4;
   grid-row: span 8 / span 8;
   grid-column-start: 2;
   grid-row-start: 1;
-  color: white;
+  color: var(--div4-color);
   width: 100%;
   max-width: 100%;
   min-width: 400px;
@@ -128,7 +136,7 @@
   font-size: 1.4em;
   font-weight: 100;
   width: auto;
-  color: #afaea5;
+  color: var(--parrafos-color);
   margin-top: 90px;
   margin-left: 10px;
   margin-right: 10px;
@@ -145,7 +153,7 @@
   text-align: center;
   font-weight: 100;
   width: auto;
-  color: #afaea5;
+  color: var(--parrafo-1-2-3-4-5-color);
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -156,7 +164,7 @@
 .titulo-parrafo{
   color: #aaa;
   font-size: 1.6em;
-  text-shadow: #bbb 2px 2px 5px;
+  text-shadow: #fff 2px 2px 15px;
 }
 
 .footer {
@@ -182,6 +190,49 @@
 .navbar .menu-icon {
   display: none;
 }
+
+span{
+  color:#dcce6f;
+}
+
+@media (max-width: 1100px){
+  .video{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .images{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 800px){
+  .video{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+
+  .images{
+    width: 450px;
+    height: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 667px){
   
   .menu-lateral {
