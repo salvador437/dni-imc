@@ -103,9 +103,8 @@ a {
   text-decoration: none;
   border-radius: 1px solid white;
   &:hover {
-    border-: 1px solid white;
-    transition: 0.3s;
-    border-radius: 15px solid white;
+    border: 1px solid white;
+    border-radius: 10px;
     background-color: #060346;
   }
 }
@@ -118,7 +117,6 @@ a {
 }
 
 /* Tareas individuales */
-
 .tarea {
   width: 100%;
   min-height: 70px;
