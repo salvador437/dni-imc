@@ -1,6 +1,6 @@
 import  {
-  agregarTarea,input,
-  close,boton,pantallaCompleta
+  agregarTarea, input,
+  close, boton, pantallaCompleta
 }  from "./funciones.js";
 
 

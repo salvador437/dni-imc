@@ -232,12 +232,20 @@ function toggleMenu() {
   
 }
 
+// commutación menú hanburguesa y navegador.
 function toggleMenu2() {
   if (menu2.className === "menu-lateral") {
     menu2.className += " responsive";
   } else {
     menu2.className = "menu-lateral";
   }
+}
+
+function subirTodo(){
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth' 
+  });
 }
 
 function agregarTarea() {
@@ -301,7 +309,5 @@ export {pantallaCompleta,
   closeBtn,inputNombre,inputApellidos,
   inputMail,inputTelefono,inputCiudad,
   inputPais,inputMensaje,menu,input,
-  close,boton,menu2
-
-
+  close,boton,menu2,subirTodo
 }
