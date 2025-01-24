@@ -91,8 +91,7 @@
     text-decoration: none;
     &:hover {
       cursor: pointer;
-      border-left: 3px solid white;
-      transition: 0.3s;
+      border-left: 2px solid white;
       border-radius: 15px solid white;
       background-color: #333;
     }
@@ -243,7 +242,7 @@ span{
     display: flex;
     position: fixed;
     margin-top: 20px;
-    margin-left: 275px;
+    margin-left: 375px;
     cursor: pointer;
     user-select: none;
   }

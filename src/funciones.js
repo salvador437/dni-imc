@@ -301,7 +301,7 @@ export {pantallaCompleta,
   closeBtn,inputNombre,inputApellidos,
   inputMail,inputTelefono,inputCiudad,
   inputPais,inputMensaje,menu,input,
-  close,boton,menu2,
-  completarTarea,eliminarTarea
+  close,boton,menu2
+
 
 }

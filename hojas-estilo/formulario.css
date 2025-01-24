@@ -72,8 +72,7 @@ a {
   text-align: left;
   text-decoration: none;
   &:hover {
-    border-left: 3px solid white;
-    transition: 0.3s;
+    border-left: 2px solid white;
     border-radius: 15px solid white;
     background-color: #333;
   }

@@ -31,6 +31,10 @@ app.get("/formulario.html", (req, res) => {
   res.sendFile(path.join(__dirname + "formulario.html"));
 });
 
+app.get("/lista-tareas.html", (req, res) => {
+  res.sendFile(path.join(__dirname + "lista-tareas.html"));
+});
+
 app.get("/readme.html", (req, res, next) => {
   res.sendFile(path.join(__dirname + "readme.html"));
 });

@@ -22,8 +22,12 @@ close.addEventListener('click', () => {
   window.open("./index.html","_self","",true);
 })
 
-// Crear y agreagar una tarea a la lista de tareas
-// en el DOM.
+// escuchando cuando tiene el foco el "input-lista-tareas".
+input.addEventListener("focus", () => {
+  input.value = "";
+});
+
+
 
 
 

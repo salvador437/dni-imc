@@ -125,7 +125,7 @@ a {
   padding: 10px;
   margin-top: 10px;
   color: white;
-  background-color: #2a044c;
+  background-color: #180d69;
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
@@ -138,7 +138,7 @@ a {
 
 .tarea.completada {
   text-decoration: line-through;
-  background-color: black;
+  background-color: rgb(249, 3, 3);
   border: none;
 }
 
@@ -155,7 +155,7 @@ i {
 }
 
 .icono-completar {
-  color: rgb(0, 255, 0);
+  color: #038cfd;
 }
 
 .icono-eliminar {
@@ -164,13 +164,13 @@ i {
 
 .icono-completar:hover,
 .icono-eliminar:hover {
-  background-color: rgba(255, 255, 255, 0.523);
+  zoom: 1.3;
 }
 
 .close5{
   display: none;
   font-size: 3em;
-  color:white;
+  color:#061bfc;
   position: fixed;
   top:5px;
   right: 20px;
@@ -184,7 +184,7 @@ i {
 .close5{
   display: flex;
   font-size: 3em;
-  color:white;
+  color:#061bfc;
   position: fixed;
   top:5px;
   right: 20px;
