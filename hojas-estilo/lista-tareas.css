@@ -39,6 +39,7 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   color:#0c087f;
+  user-select: none;
   text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
 }
 
