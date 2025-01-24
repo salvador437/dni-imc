@@ -1,0 +1,211 @@
+/* Estilos generales */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 0;
+  text-align: center;
+  background: url(../images/fondo-lista-tareas.jpg) center center/cover no-repeat;
+}
+
+/* Contenedor principal */
+
+.contenedor {
+  width: 600px;
+  min-height: 350px;
+  margin:0 10px;
+  background-color: #1803fa;
+  padding: 40px;
+  border: 2px solid #2e76fb;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titulo */
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:#0c087f;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
+}
+
+/* Ingresar texto */ 
+
+input {
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  color:white;
+  border-style: none;
+  border-style: inset;
+  background-color: transparent;
+  border: 3px solid #50a8ef;
+  border-radius: 10px;
+}
+
+/* Boton */
+
+button {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: white;
+  background-color: #110c76;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid #2e76fb;
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    color:rgb(220, 210, 210);
+    background-color: #145dd2;
+  }
+}
+
+.div2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  height: 100vh;
+  font-size: 1.5em;
+  color: white;
+  gap: 30px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background: linear-gradient(60deg, rgb(7, 7, 48), #0f1495, #4477e6);
+  grid-row: span 6 / span 9;
+  grid-row-start: 2;
+}
+
+a {
+  color: #d8d2d2;
+  text-shadow: 2px 2px 5px #aaa;
+  padding: 20px 0;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 1px solid white;
+  &:hover {
+    border-: 1px solid white;
+    transition: 0.3s;
+    border-radius: 15px solid white;
+    background-color: #060346;
+  }
+}
+
+/* Lista de tareas */
+
+#lista-de-tareas {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/* Tareas individuales */
+
+.tarea {
+  width: 100%;
+  min-height: 70px;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: #2a044c;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* Estilo para tarea completada */
+
+.tarea.completada {
+  text-decoration: line-through;
+  background-color: black;
+  border: none;
+}
+
+.tarea p {
+  max-width: 350px;
+}
+
+/* Iconos */
+
+i {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icono-completar {
+  color: rgb(0, 255, 0);
+}
+
+.icono-eliminar {
+  color: rgb(255, 255, 255);
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+  background-color: rgba(255, 255, 255, 0.523);
+}
+
+.close5{
+  display: none;
+  font-size: 3em;
+  color:white;
+  position: fixed;
+  top:5px;
+  right: 20px;
+}
+
+@media (max-width: 1100px) {
+  .div2{
+  display: none;
+}
+
+.close5{
+  display: flex;
+  font-size: 3em;
+  color:white;
+  position: fixed;
+  top:5px;
+  right: 20px;
+  &:hover{
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.contenedor{
+  width: 100%;
+  min-height: 150px;
+  margin:0 10px;
+  background-color: #1803fa;
+  padding: 40px;
+  border: 2px solid #2e76fb;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+}

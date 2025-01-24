@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./hojas-estilo/lista-tareas.css">
+    <title>Mi Lista de Tareas</title>
+  </head>
+
+  <body>
+    <div class="div2" class="menu-lateral">
+			<a href="./index.html">🏠_HOME_</a>
+			<a href="./dni-temp.html" title="calculo letra DNI">💳Cálculo DNI</a>
+			<a href="./calculoIMC.html" title="cálculo IMC">🍰Cálculo IMC</a>
+			<a href="./link.html" title="misLinks"> 👪misLinks</a>
+			<a href="./validacion.html" title="validacionCard">💳Luhn-Algorithm</a>
+			<a href="readme.html" title="readme" target="_self"> 🙏help </a>
+		</div>
+    
+    <div class="contenedor">
+      <span class="close5" title="ir a home">&times;</span>
+      <h1>Tareas pendientes</h1>
+      <input id="ingresar-tarea">
+      <button type="submit">Nueva Tarea</button>
+      <div id="lista-de-tareas"></div>
+    </div>
+    <script type="module" src="./src/funciones.js"></script>
+    <script type="module" src="./src/lista-tareas.js"></script>
+  </body>
+</html>

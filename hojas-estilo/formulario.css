@@ -56,7 +56,7 @@ body {
   height: 100vh;
   font-size: 1.5em;
   color: white;
-  gap: 30px;
+  gap: 20px;
   display: flex;
   align-items: stretch;
   flex-direction: column;

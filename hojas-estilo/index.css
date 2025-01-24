@@ -1,6 +1,6 @@
 :root {
   --div4-color: white ;
-  --footer-background: #222;
+  --footer-background: #333;
   --logo-text-color: #7fc7f3;
   --menu-icono-hambur-color: #07fc27;
   --menu-lateral-color:white;
@@ -87,7 +87,7 @@
     text-shadow: 2px 2px 5px #aaa;
     margin-top: 24px;
     text-align: left;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     &:hover {
       cursor: pointer;
@@ -198,7 +198,7 @@ span{
 @media (max-width: 1100px){
   .video{
     width: 500px;
-    height: 400px;
+    height: 350px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -314,8 +314,6 @@ span{
     grid-row-start: 1;
     color: white;
     width: 100%;
-    /* max-width: 100%;
-    min-width: 200px; */
     z-index: 8;
   }
 }
