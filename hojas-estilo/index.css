@@ -239,6 +239,10 @@ span{
     display: none;
   }
 
+  img{
+    display: none;
+  }
+
   .navbar .menu-icon{
     display: flex;
     position: fixed;
