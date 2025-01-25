@@ -197,6 +197,7 @@ i {
 .contenedor{
   width: 100%;
   min-height: 150px;
+  min-width: 300px;
   margin:0 10px;
   background-color: #1803fa;
   padding: 40px;
