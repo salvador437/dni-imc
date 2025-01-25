@@ -45,7 +45,8 @@ app.use((req, res, next) => {
   
 });
 
-//escuchando por un puerto libre y aleatorio
-app.listen(0, function() {
-  console.log("escuchando por el puerto:",this.address().port);
+const PUERTO = process.env.PORT || 3000;
+
+app.listen(PUERTO, () => {
+  console.log(`escuchando por el puerto ${PUERTO}`);
 });
