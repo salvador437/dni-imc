@@ -86,11 +86,12 @@ button {
   height: 100vh;
   font-size: 1.5em;
   color: white;
-  gap: 30px;
+  gap: 25px;
   display: flex;
   align-items: left;
+  user-select: none;
   flex-direction: column;
-  background: linear-gradient(60deg, rgb(7, 7, 48), #0f1495, #4477e6);
+  background: linear-gradient(60deg, rgb(12, 12, 81), #151998, #5383ea);
   grid-row: span 6 / span 9;
   grid-row-start: 2;
 }

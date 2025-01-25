@@ -48,6 +48,7 @@ h2 {
 
 .titulo {
   font-size: 1em;
+  user-select: none;
   text-decoration: underline;
 }
 
@@ -56,6 +57,7 @@ h2 {
   color: var(--text-color);
   text-align: center;
   margin-bottom: 1em;
+  user-select: none;
   background-color: var(--div-background);
 }
 
@@ -79,6 +81,7 @@ h2 {
 
 .label {
   font-size: 0.85em;
+  user-select: none;
 }
 
 .btn-cal-validacion {
@@ -88,6 +91,7 @@ h2 {
   font-size: 1em;
   padding: 0 0.8em;
   border-radius: 0.3em;
+  user-select: none;
   color: var(--btn-cal-validacion-text-color);
   background-color: var(--btn-cal-validacion-background);
   &:hover {

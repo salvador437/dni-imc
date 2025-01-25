@@ -73,7 +73,7 @@
   height: 100%;
   font-size: 1.5em;
   color: var(--menu-lateral-color);
-  gap: 4px;
+  gap: 12px;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -89,6 +89,7 @@
     text-align: left;
     padding: 5px;
     text-decoration: none;
+    user-select: none;
     &:hover {
       cursor: pointer;
       border-left: 2px solid white;

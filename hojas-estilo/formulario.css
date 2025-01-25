@@ -34,6 +34,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
+  user-select: none;
   box-shadow: 1.6em 1.6em 2.2em var(--form-shadow);
 }
 
@@ -57,6 +58,7 @@ body {
   font-size: 1.5em;
   color: white;
   gap: 20px;
+  user-select: none;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -70,6 +72,7 @@ a {
   text-shadow: 2px 2px 5px #aaa;
   padding: 20px;
   text-align: left;
+  user-select: none;
   text-decoration: none;
   &:hover {
     border-left: 2px solid white;

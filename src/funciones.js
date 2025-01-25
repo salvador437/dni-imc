@@ -241,7 +241,8 @@ function toggleMenu2() {
   }
 }
 
-function subirTodo(){
+function subirTodo(e){
+  e.preventDefault();
   window.scrollTo({
     top: 0, 
     behavior: 'smooth' 
