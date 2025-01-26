@@ -10,6 +10,8 @@
   --footer-background: #333;
   --grupo-entradas-color: #bbb;
   --head-color: #bbb;
+  --menu-lateral-color:white;
+  --menu-lateral-background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
   --text-color-footer: white;
 }
 
@@ -26,6 +28,7 @@ body {
 
 .formulario {
   display: flex;
+  flex-direction: column;
   border: 1px solid rgb(16, 87, 158);
   background-color: var(--form-background);
   border-radius: 0.9em;
@@ -51,35 +54,37 @@ body {
 
 .div2 {
   position: fixed;
-  top: 0;
-  left: 0;
-  padding: 5px;
+  top: 0px;
+  left: 0px; 
+  width: 18%; 
   height: 100vh;
   font-size: 1.5em;
-  color: white;
-  gap: 20px;
-  user-select: none;
+  padding-top: 30px;
+  border-right: 5px solid #999;
+  color: var(--menu-lateral-color);
   display: flex;
-  align-items: stretch;
+  align-items: left;
   flex-direction: column;
-  background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
-  grid-row: span 6 / span 9;
-  grid-row-start: 2;
-}
-
-a {
-  color: #d8d2d2;
-  text-shadow: 2px 2px 5px #aaa;
-  padding: 20px;
-  text-align: left;
-  user-select: none;
-  text-decoration: none;
-  &:hover {
-    border-left: 2px solid white;
-    border-radius: 15px solid white;
-    background-color: #333;
+  background-color: #151998;
+  & a, p {
+    color: #d8d2d2;
+    text-shadow: 2px 2px 5px #aaa;
+    padding: 15px 0;
+    margin: 10px;
+    text-align: left;
+    text-decoration: none;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+      border-left: 2px solid white;
+      border-right: 2px solid white;;
+      border-top-right-radius: 15px ;
+      border-bottom-left-radius: 15px;
+      background-color: #030666;
+    }
   }
 }
+
 
 .footer {
   text-align: center;

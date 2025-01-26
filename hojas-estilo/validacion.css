@@ -8,9 +8,9 @@
   --btn-cal-validacion-border-color: 1px solid orangered;
   --clase-validacion-border-color: 1px solid orangered;
   --clase-validacion-text-color: orangered;
+  --clase-validacion-color-shadow: 10px 10px 25px #040111;
   --close-color: #aaa;
   --close-hover-color: #555;
-  --color-shadow: 10px 10px 25px #040111;
   --div-background: #000000cc;
   --footer-background: #222;
   --footer-text-color: white;
@@ -23,10 +23,11 @@
   --navbar-a-hover-background: #222;
   --navbar-a-hover-border-color: 1px solid orangered;
   --navbar-border-top-color: 1px solid #444;
-  --navbar-border-botton-color: 1px solid #000;
+  --navbar-border-botton-color: 5px solid #555;
   --navbar-background-color: linear-gradient(5deg, black, #222, #777);
   --navbar-text-color: orangered;
   --resultado-validacion-color: #e8f803;
+  --text-logo-p-shadow-color:#bbb 2px 2px 5px;
 }
 
 * {
@@ -68,7 +69,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   border-radius: 0.5em;
-  box-shadow: var(--color-shadow);
+  box-shadow: var(--clase-validacion-color-shadow);
   background-color: var(--div-background);
   color: var(--clase-validacion-text-color);
   border: var(--clase-validacion-border-color);
@@ -175,7 +176,6 @@ h2 {
   color: var(--navbar-text-color);
   &:hover {
     border-radius: 0.312em;
-    transition: 0.3s;
     background-color: var(--navbar-a-hover-background);
     border: var(--navbar-a-hover-border-color);
   }
@@ -255,7 +255,7 @@ h2 {
 
 .logo p{
   color: var(--navbar-text-color);
-  text-shadow: #bbb 2px 2px 5px;
+  text-shadow: var(--text-logo-p-shadow-color);
 }
 
 @media screen and (min-width: 41em) {

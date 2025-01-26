@@ -6,12 +6,14 @@
   --body-background-image: url(../images/IMC.jpg);
   --btn-background-color: #333333cc;
   --btn-text-color: #b4abab;
+  --clase-imc-border-color: 1px solid #76c4f5;
   --close-color: #aaa;
   --close-hover-color: #000;
   --color-shadow: 10px 10px 25px #000;
   --div-background: #333333cc;
   --footer-background: #333;
   --inputs-text-color: #b4abab;
+  --logo-p-text-shadow-color: #bbb 2px 2px 5px;
   --logo-text-color: #7fc7f3;
   --menu-icon-color: #76c4f5;
   --menu-respon-backgraund: #1f1142;
@@ -19,7 +21,7 @@
   --modal-box-shadow: 10px 10px 25px #000;
   --modal-content-color: #8bd6f5;
   --navbar-border-top-color: 1px solid #444;
-  --navbar-border-button-color: 1px solid #000;
+  --navbar-border-button-color: 5px solid #555;
   --navbar-text-color: #70c2f5;
   --navbar-background: linear-gradient(5deg, black, #222, #777);
   --text-navbar: #70c2f5;
@@ -78,7 +80,7 @@ de la página calculoIMC.html
   margin-right: auto;
   padding: 1.312em;
   border-radius: 0.5em;
-  border: 1px solid #76c4f5;
+  border: var(--clase-imc-border-color);
   user-select: none;
   box-shadow: var(--color-shadow);
   background-color: var(--div-background);
@@ -167,7 +169,7 @@ tr {
 
 .logo p{
   color: var(--navbar-text-color);
-  text-shadow: #bbb 2px 2px 5px;
+  text-shadow: var(--logo-p-text-shadow-color);
 }
 
 .navbar {
@@ -175,10 +177,10 @@ tr {
   justify-content: space-around;
   align-items: center;
   user-select: none;
+  border-bottom: var(--navbar-border-button-color);
   color: var(--text-navbar);
   background: var(--navbar-background);
   background-color: var(--div-background);
-  border-bottom: var(--navbar-border-button-color);
   border-top: var(--navbar-border-top-color);
 }
 
@@ -190,7 +192,6 @@ tr {
   color: var(--navbar-text-color);
   &:hover {
     border-radius: 0.313em;
-    transition: 0.3s;
     border: var(--a-hover-border-color);
     background-color: var(--a-hover-background-color);
   }

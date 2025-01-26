@@ -37,15 +37,12 @@
   z-index: 10;
   top: 0;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   height: 80px;
   padding-left: 10px;
   font-size: 2rem;
-  text-align: center;
   color: white;
   background: var(--navbar-background);
-  grid-column: span 5 / span 5;
   & .logo {
     font-size: 1em;
     user-select: none;
@@ -69,32 +66,32 @@
 /* reglas para el menu lateral */
 .menu-lateral {
   position: fixed;
-  top: 60px;  
-  height: 100%;
+  top: 60px; 
+  width: 18%; 
+  height: 100vh;
   font-size: 1.5em;
+  padding-top: 30px;
+  border-right: 5px solid #999;
   color: var(--menu-lateral-color);
-  gap: 12px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+  align-items: left;
   flex-direction: column;
   background: var(--menu-lateral-background);
-  grid-row: span 6 / span 9;
-  grid-row-start: 2;
-  
   & a, p {
     color: #d8d2d2;
     text-shadow: 2px 2px 5px #aaa;
-    margin-top: 24px;
+    padding: 10px 0;
+    margin: 10px;
     text-align: left;
-    padding: 5px;
     text-decoration: none;
     user-select: none;
     &:hover {
       cursor: pointer;
       border-left: 2px solid white;
-      border-radius: 15px solid white;
-      background-color: #333;
+      border-right: 3px solid white;;
+      border-top-right-radius: 15px ;
+      border-bottom-left-radius: 15px;
+      background-color: #111;
     }
   }
   
@@ -169,18 +166,15 @@
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   margin: 0;
   position: fixed;
-  text-align: center;
   padding: 0.625em 0;
   bottom: 0;
   left: 0;
   z-index: 9;
   justify-content: center;
   align-items: center;
-  width: 100%;
   user-select: none;
   font-size: 1.5em;
   color: var(--text-color-footer);

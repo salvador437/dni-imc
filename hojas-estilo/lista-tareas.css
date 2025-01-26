@@ -1,4 +1,24 @@
-/* Estilos generales */
+:root{
+  --a-border: 1px solid white;
+  --a-hover-border-radius: 10px;
+  --a-text-color: #d8d2d2;
+  --a-text-shadow: 2px 2px 5px #aaa;
+  --button-background-color: #110c76;
+  --button-border: 1px solid #2e76fb;
+  --button-hover-background-color: #145dd2;
+  --button-hover-color: #dcd2d2;
+  --contenedor-background-color:  #1803fa;
+  --contenedor-border: 2px solid #2e76fb;
+  --div2-background:  #151998;
+  --div2-border-right: 5px solid #999;
+  --div2-text-color: white;
+  --h1-color: #0c087f;
+  --h1-text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
+  --input-background-color: transparent;
+  --input-border: 3px solid #50a8ef;;
+  --input-text-color: white;
+
+}
 
 * {
   margin: 0;
@@ -23,9 +43,9 @@ body {
   width: 600px;
   min-height: 300px;
   margin:0 10px;
-  background-color: #1803fa;
+  background-color: var(--contenedor-background-color);
   padding: 40px;
-  border: 2px solid #2e76fb;
+  border: var(--contenedor-border);
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -38,9 +58,9 @@ body {
 h1 {
   font-size: 50px;
   font-weight: bold;
-  color:#0c087f;
+  color:var(--h1-color);
   user-select: none;
-  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
+  text-shadow: var(--h1-text-shadow);
 }
 
 /* Ingresar texto */ 
@@ -51,11 +71,11 @@ input {
   font-size: 25px;
   margin: 20px;
   padding: 10px;
-  color:white;
+  color:var(--input-text-color);
   border-style: none;
   border-style: inset;
-  background-color: transparent;
-  border: 3px solid #50a8ef;
+  background-color: var(--input-background-color);
+  border: var(--input-border);
   border-radius: 10px;
 }
 
@@ -66,15 +86,15 @@ button {
   height: 60px;
   padding: 10px;
   color: white;
-  background-color: #110c76;
+  background-color: var(--button-background-color);
   font-size: 22px;
   border-radius: 10px;
-  border: 1px solid #2e76fb;
+  border: var(--button-border);
   cursor: pointer;
   user-select: none;
   &:hover {
-    color:rgb(220, 210, 210);
-    background-color: #145dd2;
+    color:var(--button-hover-color);
+    background-color: var(--button-hover-background-color);
   }
 }
 
@@ -82,36 +102,37 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 5px;
+  width: 18%;
   height: 100vh;
-  font-size: 1.5em;
-  color: white;
-  gap: 25px;
+  font-size: 1.5rem;
+  padding-top: 30px;
+  border-right: 5px solid #999;
+  color: var(--div2-text-color);
   display: flex;
   align-items: left;
-  user-select: none;
   flex-direction: column;
-  background: linear-gradient(60deg, rgb(12, 12, 81), #151998, #5383ea);
-  grid-row: span 6 / span 9;
-  grid-row-start: 2;
-}
-
-a {
-  color: #d8d2d2;
-  text-shadow: 2px 2px 5px #aaa;
-  padding: 20px 0;
-  text-align: left;
-  text-decoration: none;
-  border-radius: 1px solid white;
-  &:hover {
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #060346;
+  background: var(--div2-background);
+  & a, p {
+    color: #d8d2d2;
+    text-shadow: 2px 2px 5px #aaa;
+    padding: 15px 0;
+    margin: 10px;
+    text-align: left;
+    text-decoration: none;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      border-top-right-radius: 15px ;
+      border-bottom-left-radius: 15px;
+      background-color: #030666;
+    }
   }
 }
 
-/* Lista de tareas */
 
+/* Lista de tareas */
 #lista-de-tareas {
   width: 80%;
   margin-top: 20px;
@@ -135,7 +156,6 @@ a {
 }
 
 /* Estilo para tarea completada */
-
 .tarea.completada {
   text-decoration: line-through;
   background-color: rgb(249, 3, 3);
@@ -147,7 +167,6 @@ a {
 }
 
 /* Iconos */
-
 i {
   margin: 5px;
   padding: 10px;
@@ -176,7 +195,7 @@ i {
   right: 20px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 930px) {
   .div2{
   display: none;
 }
@@ -195,14 +214,13 @@ i {
 }
 
 .contenedor{
-  width: 100%;
   min-height: 150px;
   min-width: 300px;
   margin:0 10px;
   background-color: #1803fa;
   padding: 40px;
   border: 2px solid #2e76fb;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
