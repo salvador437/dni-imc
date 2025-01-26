@@ -12,7 +12,7 @@
   --div2-background:  #151998;
   --div2-border-right: 5px solid #999;
   --div2-text-color: white;
-  --h1-color: #0c087f;
+  --h1-color: #090751;
   --h1-text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
   --input-background-color: transparent;
   --input-border: 3px solid #50a8ef;;
@@ -126,7 +126,7 @@ button {
       border-right: 2px solid white;
       border-top-right-radius: 15px ;
       border-bottom-left-radius: 15px;
-      background-color: #030666;
+      background-color: #110c76;
     }
   }
 }

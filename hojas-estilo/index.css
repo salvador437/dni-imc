@@ -1,14 +1,19 @@
 :root {
-  --div4-color: white ;
+  --div4-text-color: white ;
   --footer-background: #333;
+  --logo-p-color:#ddd;
   --logo-text-color: #7fc7f3;
+  --logo-text-shadow: #bbb 2px 2px 5px;
   --menu-icono-hambur-color: #07fc27;
   --menu-lateral-color:white;
   --menu-lateral-background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
-  --navbar-background: linear-gradient(5deg, #111, #222, #777);
-  --parrafos-color: #afaea5;
-  --parrafo-1-2-3-4-5-color:#afaea5; 
+  --menu-lateral-border-right: 5px solid #999;
+  --navbar-background-color: linear-gradient(5deg, #111, #222, #777);
+  --navbar-text-color:white;
+  --parrafos-text-color: #afaea5;
+  --parrafo-1-2-3-4-5-text-color:#afaea5; 
   --text-color-footer: white;
+  --titulo-parrafo-text-shadow: #fff 2px 2px 15px;
   --titulo-parrafo-color: #aaa;
   
 }
@@ -41,8 +46,8 @@
   height: 80px;
   padding-left: 10px;
   font-size: 2rem;
-  color: white;
-  background: var(--navbar-background);
+  color: var(--navbar-text-color);
+  background: var(--navbar-background-color);
   & .logo {
     font-size: 1em;
     user-select: none;
@@ -51,8 +56,8 @@
     font-weight: bold;
     border: color var(--logo-text-color);
     & p{
-      color: #ddd;
-      text-shadow: #bbb 2px 2px 5px;
+      color: var(--logo-p-color);
+      text-shadow: var(--logo-text-shadow);
     }
     &:hover {
       cursor: pointer;
@@ -71,7 +76,7 @@
   height: 100vh;
   font-size: 1.5em;
   padding-top: 30px;
-  border-right: 5px solid #999;
+  border-right: var(--menu-lateral-border-right);
   color: var(--menu-lateral-color);
   display: flex;
   align-items: left;
@@ -105,7 +110,7 @@
   grid-row: span 8 / span 8;
   grid-column-start: 2;
   grid-row-start: 1;
-  color: var(--div4-color);
+  color: var(--div4-text-color);
   width: 100%;
   max-width: 100%;
   min-width: 400px;
@@ -133,7 +138,7 @@
   font-size: 1.4em;
   font-weight: 100;
   width: auto;
-  color: var(--parrafos-color);
+  color: var(--parrafos-text-color);
   margin-top: 90px;
   margin-left: 10px;
   margin-right: 10px;
@@ -150,7 +155,7 @@
   text-align: center;
   font-weight: 100;
   width: auto;
-  color: var(--parrafo-1-2-3-4-5-color);
+  color: var(--parrafo-1-2-3-4-5-text-color);
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -299,10 +304,6 @@ span{
     margin-right: auto;
   }
 
-  body{
-    background-color: #111;
-  }
-
   .div4 {
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +311,7 @@ span{
     grid-row: span 8 / span 8;
     grid-column-start: 2;
     grid-row-start: 1;
-    color: white;
+    color: var();
     width: 100%;
     z-index: 8;
   }
