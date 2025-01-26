@@ -9,7 +9,7 @@
     <circle cx="150" cy="150" r="195" fill="#4a38e400" />
     
     <!-- Símbolo del rayo -->
-    <polygon points="110,20 90,80 120,80 80,180 100,110 70,110" fill="#ffcc00" />
+    <polygon points="110,30 90,80 120,80 80,180 100,110 70,110" fill="#ffcc00" />
     
     <!-- Líneas de circuito -->
     <line x1="100" y1="40" x2="100" y2="10" stroke="#00ff99" stroke-width="4"/>

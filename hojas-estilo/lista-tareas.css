@@ -7,16 +7,28 @@
   --button-border: 1px solid #2e76fb;
   --button-hover-background-color: #145dd2;
   --button-hover-color: #dcd2d2;
+  --close5-color: #061bfc;
+  --close5-hover-color: black;
   --contenedor-background-color:  #1803fa;
   --contenedor-border: 2px solid #2e76fb;
-  --div2-background:  #151998;
+  --div2-a-p-color: #d8d2d2;
+  --div2-a-p-hover-background-color: #110c76;
+  --div2-a-p-text-shadow : 2px 2px 5px #aaa;
+  --div2-background: #151998;
   --div2-border-right: 5px solid #999;
   --div2-text-color: white;
   --h1-color: #090751;
   --h1-text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.541);
+  --icono-completar-color: #038cfd;
+  --icono-eliminar-color: white;
   --input-background-color: transparent;
   --input-border: 3px solid #50a8ef;;
   --input-text-color: white;
+  --tarea-text-color: white;
+  --tarea-background-color: #180d69;
+  --tarea-border: 2px solid black;
+  --tarea-terminada-background-color: rgb(249, 3, 3);
+  
 
 }
 
@@ -106,15 +118,15 @@ button {
   height: 100vh;
   font-size: 1.5rem;
   padding-top: 30px;
-  border-right: 5px solid #999;
+  border-right: 5px solid var(--div2-border-right);
   color: var(--div2-text-color);
   display: flex;
   align-items: left;
   flex-direction: column;
   background: var(--div2-background);
   & a, p {
-    color: #d8d2d2;
-    text-shadow: 2px 2px 5px #aaa;
+    color: var(--div2-a-p-color);
+    text-shadow: var(--div2-a-p-text-shadow);
     padding: 15px 0;
     margin: 10px;
     text-align: left;
@@ -126,11 +138,10 @@ button {
       border-right: 2px solid white;
       border-top-right-radius: 15px ;
       border-bottom-left-radius: 15px;
-      background-color: #110c76;
+      background-color: var(--div2-a-p-hover-background-color);
     }
   }
 }
-
 
 /* Lista de tareas */
 #lista-de-tareas {
@@ -145,25 +156,24 @@ button {
   font-size: 25px;
   padding: 10px;
   margin-top: 10px;
-  color: white;
-  background-color: #180d69;
-  border: 2px solid black;
+  color: var(--tarea-text-color);
+  background-color: var(--tarea-background-color);
+  border: var(--tarea-border);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  & p{
+    max-width: 350px;
+  }
 }
 
 /* Estilo para tarea completada */
 .tarea.completada {
   text-decoration: line-through;
-  background-color: rgb(249, 3, 3);
+  background-color: var(--tarea-terminada-background-color);
   border: none;
-}
-
-.tarea p {
-  max-width: 350px;
 }
 
 /* Iconos */
@@ -174,22 +184,22 @@ i {
 }
 
 .icono-completar {
-  color: #038cfd;
+  color: var(--icono-completar-color);
 }
 
 .icono-eliminar {
-  color: rgb(255, 255, 255);
+  color: var(--icono-eliminar-color);
 }
 
 .icono-completar:hover,
 .icono-eliminar:hover {
-  zoom: 1.3;
+  zoom: 1.2;
 }
 
 .close5{
   display: none;
   font-size: 3em;
-  color:#061bfc;
+  color:var(--close5-color);
   position: fixed;
   top:5px;
   right: 20px;
@@ -203,12 +213,12 @@ i {
 .close5{
   display: flex;
   font-size: 3em;
-  color:#061bfc;
+  color:var(--close5-color);
   position: fixed;
   top:5px;
   right: 20px;
   &:hover{
-    color: black;
+    color: var(--close5-hover-color);
     cursor: pointer;
   }
 }
@@ -217,9 +227,9 @@ i {
   min-height: 150px;
   min-width: 300px;
   margin:0 10px;
-  background-color: #1803fa;
+  background-color: var(--contenedor-background-color);
   padding: 40px;
-  border: 2px solid #2e76fb;
+  border: var(--contenedor-border);
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;

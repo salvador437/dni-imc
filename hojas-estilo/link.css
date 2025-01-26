@@ -5,7 +5,9 @@
   --header-border-color: 1px solid #d1740a;
   --items-color: #fff;
   --items-background-color: #121113;
+  --items-hover-background-color:orangered ;
   --li-color: orangered;
+  --text-color: orangered;
 }
 
 * {
@@ -84,7 +86,7 @@ p::first-letter {
   user-select: none;
   border: var(--header-border-color);
   &:hover {
-    background-color: orangered;
+    background-color: var(--items-hover-background-color);
     color: white;
   }
 }
@@ -93,15 +95,15 @@ p::first-letter {
   font-size: 2rem;
   font-family: helvetica;
   font-weight: bold;
-  color: orangered;
+  color: var(--text-color);
   text-transform: uppercase;
   text-align: center;
 }
 
 .parpadea {
   animation-name: parpadeo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-timing-function:ease;
   animation-iteration-count: infinite;
 }
 
