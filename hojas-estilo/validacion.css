@@ -158,10 +158,11 @@ h2 {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   user-select: none;
-  height: 67px;
   background-color: var(--navbar-background);
   border-bottom: var(--navbar-border-botton-color);
   border-top: var(--navbar-border-top-color);
@@ -253,6 +254,7 @@ h2 {
 }
 
 .logo p {
+  margin: 0;
   color: var(--navbar-text-color);
   text-shadow: var(--text-logo-p-shadow-color);
 }
@@ -269,7 +271,7 @@ h2 {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 3.75em;
+  top: 4.4em;
   width: 50%;
   flex-direction: column;
   background-color: var(--footer-background);

@@ -171,6 +171,7 @@ del archivo index.html
 /* la barra de navegación  */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -246,7 +247,7 @@ del archivo index.html
 
 .menu.responsive {
   position: absolute;
-  top: 3.75em;
+  top: 4.4em;
   width: 50%;
   flex-direction: column;
   background-color: var(--menu-respon-backgraund);
