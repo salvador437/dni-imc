@@ -15,7 +15,6 @@ input.addEventListener('keydown', (e) => {
     input.value = "";
   } 
 
-  
 });
 
 document.addEventListener("keydown", function (event) {
@@ -44,8 +43,3 @@ close.addEventListener('click', () => {
 input.addEventListener("focus", () => {
   input.value = "";
 });
-
-
-
-
-

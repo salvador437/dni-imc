@@ -1,4 +1,3 @@
-
 import { salir } from "./funciones";
 
 if (home) {

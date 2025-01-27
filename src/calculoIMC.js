@@ -1,4 +1,4 @@
-import  { 
+import { 
   pantallaCompleta,
   limpiarCalculoIMC, 
   calcularIMC,toggleMenu,
@@ -7,9 +7,9 @@ import  {
 }  from "./funciones.js";
 
 
-const menu = document.querySelector(".menu-icon")
+const menu = document.querySelector(".menu-icon");
 
-menu.addEventListener("click",toggleMenu)
+menu.addEventListener("click",toggleMenu);
 
 // escuchando cuando se hace click en el botón "btnCalImc".
 btnCalImc.addEventListener("click", calcularIMC);

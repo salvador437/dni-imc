@@ -10,7 +10,7 @@
   --footer-background: #333;
   --grupo-entradas-color: #bbb;
   --head-color: #939292;
-  --menu-lateral-color:#939292;;
+  --menu-lateral-color: white;;
   --menu-lateral-background: linear-gradient(60deg, rgb(6, 6, 34), #222, #777);
   --text-color-footer: white;
 }
@@ -41,7 +41,7 @@ body {
   box-shadow: 1.6em 1.6em 2.2em var(--form-shadow);
 }
 
-.head{
+.head {
   margin: 0.625em;
   font-size: 1.5em;
   text-align: center;
@@ -65,9 +65,9 @@ body {
   display: flex;
   align-items: left;
   flex-direction: column;
-  background-color: #333;
+  background: var(--menu-lateral-background);
   & a, p {
-    color: #939292;;
+    color: white;;
     text-shadow: 2px 2px 5px #aaa;
     padding: 15px 0;
     margin: 10px;
@@ -80,7 +80,7 @@ body {
       border-right: 2px solid white;;
       border-top-right-radius: 15px ;
       border-bottom-left-radius: 15px;
-      background-color: #444;
+      background-color: #111;
     }
   }
 }
@@ -111,25 +111,25 @@ body {
   border-top-style: none;
 }
 
-.grupo-entradas:active{
+.grupo-entradas:active {
   background-color: var(--form-background);
   border-style: none;
   outline: none;
   border-bottom:  var(--input-border-boton-color);
 }
 
-.grupo-entradas:focus{
+.grupo-entradas:focus {
   background-color: var(--form-background);
   border-style: none;
   outline: none;
-  border-bottom:  var(--input-border-boton-color);
+  border-bottom: var(--input-border-boton-color);
 }
 
-.grupo-entradas::placeholder{
+.grupo-entradas::placeholder {
   color: var(--input-placeholder-color);
 }
 
-.boton{
+.boton {
   width: 43%;
   margin: 0.5em;
   border-radius: 0.625em;
@@ -168,8 +168,7 @@ textarea {
 
 
 @media (max-width: 668px) {
-  .div2{
-  display: none;
-}
-
+  .div2 {
+    display: none;
+  }
 }

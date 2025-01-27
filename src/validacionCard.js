@@ -31,7 +31,7 @@ document.addEventListener("keydown", function (event) {
   }
 
   if ( (event.altKey &&  event.key === "p" ) ||
-        (event.altKey &&  event.key === "P"
+      (event.altKey &&  event.key === "P"
   ) ) {
     pantallaCompleta();
   }
@@ -43,6 +43,3 @@ document.addEventListener("keydown", function (event) {
     window.open("./index.html","_self","",true);
   }
 });
-
-
-

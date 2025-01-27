@@ -252,7 +252,7 @@ h2 {
   transition-duration: 0.1s;
 }
 
-.logo p{
+.logo p {
   color: var(--navbar-text-color);
   text-shadow: var(--text-logo-p-shadow-color);
 }

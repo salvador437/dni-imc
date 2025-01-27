@@ -213,10 +213,10 @@ del archivo index.html
     transform: rotateZ(-5deg);
     transition-duration: 0.1s;
   }
-    & p{
+    & p {
       color: var(--navbar-text-color);
       text-shadow: #bbb 2px 2px 5px;
-    }
+  }
 }
 
 .menu {

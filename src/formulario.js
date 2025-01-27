@@ -10,7 +10,7 @@ import {
   inputMensaje,
 } from "./funciones.js";
 
-document.addEventListener("submit",()=>{
+document.addEventListener("submit",()=> {
   alert("El formulario se enviará en unos segundos ");
 })
 

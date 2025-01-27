@@ -7,7 +7,7 @@
   --p-color: #f7f463;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   background-color:  var(--color-fondo);
@@ -17,7 +17,7 @@ body{
   
 }
 
-.error-message{
+.error-message {
   text-align: center;
   color:var(--h1-color);
   font-size: 8rem;
@@ -29,13 +29,13 @@ body{
   animation-iteration-count: infinite;
 }
 
-p{
+p {
   text-align: center;
   font-size: 2rem;
   color: var(--p-color);
 }
 
-a{
+a {
   font-size: 2rem;
   color: var(--a-color);
   &:hover{

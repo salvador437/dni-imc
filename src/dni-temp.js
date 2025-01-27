@@ -9,9 +9,9 @@ import  {
 
 
 // asignando en constantes los  elementos HTML implicados.
-const menu = document.querySelector(".menu-icon")
+const menu = document.querySelector(".menu-icon");
 
-menu.addEventListener("click",toggleMenu)
+menu.addEventListener("click",toggleMenu);
 
 // escuchando cuando se hace click en los botones.
 btnCalcular.addEventListener("click", calcularLetraDNI);

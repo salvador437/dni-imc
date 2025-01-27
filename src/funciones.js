@@ -34,8 +34,8 @@ const close = document.querySelector('.close5');
 const boton = document.querySelector('button');
 const listaDeTareas = document.getElementById('lista-de-tareas');
 
-const menu = document.querySelector(".menu")
-const menu2 = document.querySelector(".menu-lateral")
+const menu = document.querySelector(".menu");
+const menu2 = document.querySelector(".menu-lateral");
 
 
 // calcula el índice de masa corporal IMC.
@@ -241,7 +241,7 @@ function toggleMenu2() {
   }
 }
 
-function subirTodo(e){
+function subirTodo(e) {
   e.preventDefault();
   window.scrollTo({
     top: 0, 
@@ -251,21 +251,21 @@ function subirTodo(e){
 
 function agregarTarea() {
   if (input.value) {
-    // Crear tarea.
+    
     let tareaNueva = document.createElement('div');
     tareaNueva.classList.add('tarea');
   
-    // Texto ingresado por el usuario.
+    
     let texto = document.createElement('p');
     texto.innerText = input.value;
     tareaNueva.appendChild(texto);
   
-    // Crear y agregar contenedor de los iconos
+    
     let iconos = document.createElement('div');
     iconos.classList.add('iconos'); 
     tareaNueva.appendChild(iconos);
   
-    // Crear y agregar iconos.
+    
     let completar = document.createElement('i');
     completar.classList.add('bi', 'bi-check-circle-fill', 'icono-completar');
     completar.addEventListener('click', completarTarea);
@@ -276,39 +276,34 @@ function agregarTarea() {
   
     iconos.append(completar, eliminar);
   
-    // Agregar la tarea a la lista.
+    
     listaDeTareas.appendChild(tareaNueva);
   } else {
     alert('Tarea vacia.');
   }
 }
 
-// Marcar una tarea como completada.
+
 function completarTarea(e) {
   let tarea = e.target.parentNode.parentNode;
   tarea.classList.toggle('completada');
 }
 
-// Eliminar una tarea del DOM.
+
 function eliminarTarea(e) {
   let tarea = e.target.parentNode.parentNode;
   tarea.remove();
 }
 
 // exportación de funciones
-export {pantallaCompleta,
-  limpiar,calcularLetraDNI,
-  calcularTemperaturaCF,
-  toggleMenu,toggleMenu2,
-  limpiarCalculoIMC,agregarTarea,
-  calcularIMC,calcularValidacion,
-  limpiarValidacion,salir,ccGen,
-  ccTest,inputValidacion,btnValidacion,
-  inputImcPeso,inputImcAltura,
-  btnCalImc,resultadoIMC,inputdni,
-  inputConversor,btnCalTemp,btnCalcular,
-  closeBtn,inputNombre,inputApellidos,
-  inputMail,inputTelefono,inputCiudad,
-  inputPais,inputMensaje,menu,input,
-  close,boton,menu2,subirTodo
+export {
+  pantallaCompleta,limpiar,calcularLetraDNI,
+  calcularTemperaturaCF,toggleMenu,toggleMenu2,
+  limpiarCalculoIMC,agregarTarea,calcularIMC,
+  calcularValidacion,limpiarValidacion,salir,ccGen,
+  ccTest,inputValidacion,btnValidacion,inputImcPeso,
+  inputImcAltura,btnCalImc,resultadoIMC,inputdni,
+  inputConversor,btnCalTemp,btnCalcular,closeBtn,inputNombre,
+  inputApellidos,inputMail,inputTelefono,inputCiudad,
+  inputPais,inputMensaje,menu,input,close,boton,menu2,subirTodo
 }

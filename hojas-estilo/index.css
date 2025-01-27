@@ -28,7 +28,7 @@
 
 
 .parent {
-  background-image: url(../images/fondo-grid.png);
+  background-image: url(../images/fondo-grid.png) ;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(5, 1fr);
@@ -99,7 +99,6 @@
       background-color: #111;
     }
   }
-  
 }
 
 
@@ -117,13 +116,12 @@
   z-index: 8;
 }
 
-.video{
+.video {
   width: 600px;
   height: 400px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .laVega {
@@ -163,7 +161,7 @@
   user-select: none;
 }
 
-.titulo-parrafo{
+.titulo-parrafo {
   color: #aaa;
   font-size: 1.6em;
   text-shadow: #fff 2px 2px 15px;
@@ -190,21 +188,20 @@
   display: none;
 }
 
-span{
+span {
   color:#dcce6f;
 }
 
 @media (max-width: 1100px){
-  .video{
+  .video {
     width: 500px;
     height: 350px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-  
   }
 
-  .images{
+  .images {
     width: 550px;
     height: 350px;
     display: flex;
@@ -214,16 +211,15 @@ span{
 }
 
 @media (max-width: 800px){
-  .video{
+  .video {
     width: 400px;
     height: 300px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-  
   }
 
-  .images{
+  .images {
     width: 450px;
     height: 250px;
     display: flex;
@@ -242,11 +238,11 @@ span{
     display: none;
   }
 
-  .navbar .menu-icon{
+  .navbar .menu-icon {
     display: flex;
     position: fixed;
     margin-top: 20px;
-    margin-left: 375px;
+    margin-left: 350px;
     cursor: pointer;
     user-select: none;
   }
@@ -266,13 +262,12 @@ span{
     }
   }
 
-  .video{
+  .video {
     width: 300px;
     height: 200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-  
   }
 
   .footer {
@@ -296,7 +291,7 @@ span{
   }
   
 
-  .images{
+  .images {
     width: 350px;
     height: 150px;
     display: flex;

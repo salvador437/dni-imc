@@ -167,7 +167,7 @@ tr {
   background-color: var(--footer-background);
 }
 
-.logo p{
+.logo p {
   color: var(--navbar-text-color);
   text-shadow: var(--logo-p-text-shadow-color);
 }
@@ -197,7 +197,7 @@ tr {
   }
 }
 
-.navbar p{
+.navbar p {
   margin: 0px 0;
 }
 

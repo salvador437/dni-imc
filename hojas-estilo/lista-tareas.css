@@ -28,8 +28,6 @@
   --tarea-background-color: #180d69;
   --tarea-border: 2px solid black;
   --tarea-terminada-background-color: rgb(249, 3, 3);
-  
-
 }
 
 * {
@@ -66,7 +64,6 @@ body {
 }
 
 /* Titulo */
-
 h1 {
   font-size: 50px;
   font-weight: bold;
@@ -76,7 +73,6 @@ h1 {
 }
 
 /* Ingresar texto */ 
-
 input {
   width: 80%;
   height: 50px;
@@ -92,7 +88,6 @@ input {
 }
 
 /* Boton */
-
 button {
   width: 150px;
   height: 60px;
@@ -196,7 +191,7 @@ i {
   zoom: 1.2;
 }
 
-.close5{
+.close5 {
   display: none;
   font-size: 3em;
   color:var(--close5-color);
@@ -206,11 +201,11 @@ i {
 }
 
 @media (max-width: 930px) {
-  .div2{
+  .div2 {
   display: none;
 }
 
-.close5{
+.close5 {
   display: flex;
   font-size: 3em;
   color:var(--close5-color);
@@ -223,7 +218,7 @@ i {
   }
 }
 
-.contenedor{
+.contenedor {
   min-height: 150px;
   min-width: 300px;
   margin:0 10px;
