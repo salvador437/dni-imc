@@ -165,6 +165,9 @@
   color: #aaa;
   font-size: 1.6em;
   text-shadow: #fff 2px 2px 15px;
+  &::first-letter{
+    font-size: 38px;
+  }
 }
 
 .footer {

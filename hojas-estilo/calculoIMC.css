@@ -241,6 +241,7 @@ tr {
 .navbar .menu.responsive {
   position: absolute;
   top: 4.4em;
+  left: 0;
   width: 50%;
   flex-direction: column;
   background-color: var(--menu-respon-backgraund);
@@ -249,6 +250,7 @@ tr {
 .navbar .menu.responsive a {
   display: block;
   text-align: left;
+  margin: 14px 0;
 }
 
 .menu-icon,

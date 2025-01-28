@@ -248,12 +248,14 @@ del archivo index.html
 .menu.responsive {
   position: absolute;
   top: 4.4em;
+  left: 0;
   width: 50%;
   flex-direction: column;
   background-color: var(--menu-respon-backgraund);
   & a{
     display: block;
     text-align: left;
+    margin: 14px 0;
   }
 }
 

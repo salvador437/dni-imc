@@ -167,8 +167,19 @@ textarea {
 }
 
 
+@media (max-width: 968px) {
+  .iv2 {
+    margin: 0 5px;
+    padding: 0 5px;
+    min-width: 450px;
+  }
+}
+
 @media (max-width: 668px) {
   .div2 {
+    display: none;
+   
+    min-width: 450px;
     display: none;
   }
 }
