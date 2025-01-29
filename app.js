@@ -36,12 +36,12 @@ app.get("/lista-tareas.html", (req, res) => {
   res.sendFile(path.join(__dirname + "lista-tareas.html"));
 });
 
-app.get("/readme.html", (req, res, next) => {
+app.get("/readme.html", (req, res) => {
   res.sendFile(path.join(__dirname + "readme.html"));
 });
 
 // Middleware para manejar rutas no definidas (404)
-app.use((req, res, next) => {
+app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, "error404.html"));
   
 });
