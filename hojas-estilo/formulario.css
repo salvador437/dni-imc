@@ -166,20 +166,73 @@ textarea {
   cursor: pointer;
 }
 
-
-@media (max-width: 968px) {
-  .iv2 {
-    margin: 0 5px;
-    padding: 0 5px;
-    min-width: 450px;
+.menu {
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #111;
+    & a{
+      text-decoration: none;
+      margin: 20px 0;
+      padding:15px 15px;
+      color: white;
+      font-size: 18px;
+      &:hover {
+        background-color: #555;
+        
+      }
+    }
   }
-}
+
+
+
+  
 
 @media (max-width: 668px) {
-  .div2 {
+  .menu{
     display: none;
-   
-    min-width: 450px;
-    display: none;
+  }
+
+  .menu-icon {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    right: 15px;
+    top: 15px;
+    &:hover {
+      cursor: pointer;
+      color:blue;
+      user-select: none;
+    }
+  }
+
+  .menu.responsive {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 40%;
+    height: 100%;
+    background-color: #444;
+    & a{
+      text-decoration: none;
+      margin: 20px 5px;
+      padding:10px 15px;
+      color: white;
+      &:hover {
+        cursor: pointer;
+        border-left: 2px solid white;
+        border-right: 3px solid white;;
+        border-top-right-radius: 15px ;
+        border-bottom-left-radius: 15px;
+        background-color: #111;
+      }
+    }
   }
 }

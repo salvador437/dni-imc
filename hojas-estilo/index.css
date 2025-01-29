@@ -211,6 +211,10 @@ span {
     margin-left: auto;
     margin-right: auto;
   }
+  .navbar .menu-icon {
+    display: none;
+  }
+
 }
 
 @media (max-width: 800px){
@@ -220,6 +224,15 @@ span {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .navbar .menu-icon {
+    display: flex;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 360px;
+    cursor: pointer;
+    user-select: none;
   }
 
   .images {
@@ -245,7 +258,7 @@ span {
     display: flex;
     position: fixed;
     margin-top: 20px;
-    margin-left: 350px;
+    margin-left: 330px;
     cursor: pointer;
     user-select: none;
   }
@@ -254,9 +267,8 @@ span {
     display: flex;
     z-index: 100;
     flex-direction: column;
-    top: 3.4em;
+    top: 3.3em;
     width: 40%;
-    flex-direction: column;
     background-color: var(--menu-respon-backgraund);
     & a{
       display: block;

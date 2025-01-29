@@ -7,8 +7,12 @@ import {
   inputTelefono,
   inputCiudad,
   inputPais,
-  inputMensaje,
+  inputMensaje,toggleMenu
 } from "./funciones.js";
+
+const menu = document.querySelector(".menu-icon");
+
+menu.addEventListener("click",toggleMenu);
 
 document.addEventListener("submit",()=> {
   alert("El formulario se enviará en unos segundos ");

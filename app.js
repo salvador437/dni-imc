@@ -4,7 +4,6 @@ const app = express();
 const path = require("path");
 
 
-
 app.use(express.static("./"));
 
 
@@ -46,11 +45,6 @@ app.use((req, res) => {
   
 });
 
-/* const PUERTO = process.env.PORT || 3000;
-
-app.listen(PUERTO, () => {
-  console.log(`escuchando por el puerto ${PUERTO}`);
-}); */
 
 app.listen(0,function(){
   console.log(`puerto:http://localhost:${this.address().port}`) 
