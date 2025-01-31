@@ -20,7 +20,7 @@
     <script defer>
       document.addEventListener("keydown", (event) => {
         if (event.ctrlKey && event.key === "z" || event.ctrlKey && event.key === "Z") {
-          window.open ("./index.html","_self","",true);
+          window.openSync ("./index.html","_self","",true);
         }
         location.reload(true)
       });

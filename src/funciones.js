@@ -103,7 +103,7 @@ function calcularTemperaturaCF() {
 }
 
 
-// cálculo de la validación del número de la card
+// cálculo de la validación del número BIN de la card
 function calcularValidacion() {
   const valorValidacion = inputValidacion.value;
   const validacion = ccTest(valorValidacion);

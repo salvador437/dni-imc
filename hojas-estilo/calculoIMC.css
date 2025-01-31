@@ -178,6 +178,7 @@ tr {
   justify-content: space-around;
   align-items: center;
   user-select: none;
+  padding: 20px 0;
   border-bottom: var(--navbar-border-button-color);
   color: var(--text-navbar);
   background: var(--navbar-background);
@@ -193,7 +194,6 @@ tr {
   color: var(--navbar-text-color);
   &:hover {
     border-radius: 0.313em;
-    margin: 0 10px;
     border: var(--a-hover-border-color);
     background-color: var(--a-hover-background-color);
   }
@@ -217,6 +217,8 @@ tr {
 
 .navbar .menu {
   display: flex;
+  padding: 10px 0;
+  
 }
 
 .navbar .menu a {
@@ -242,7 +244,7 @@ tr {
 .navbar .menu.responsive {
   position: absolute;
   z-index: 100;
-  top: 4.3em;
+  top: 6.8em;
   left: 0;
   width: 230px;
   height: 100vh;
@@ -255,7 +257,7 @@ tr {
 .navbar .menu.responsive a {
   display: block;
   text-align: left;
-  margin: 14px 0;
+  padding: 20px 0;
 }
 
 .menu-icon,
