@@ -229,7 +229,7 @@ function toggleMenu() {
   } else {
     menu.className = "menu";
   }
-  
+  console.log(menu.className)
 }
 
 // commutación menú hanburguesa y navegador.

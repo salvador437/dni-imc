@@ -260,11 +260,7 @@ h2 {
   text-shadow: var(--text-logo-p-shadow-color);
 }
 
-@media screen and (min-width: 41em) {
-  /* .navbar .menu a {
-    display: block;
-  } */
-
+@media  (min-width: 41em) {
   .navbar .menu-icon {
     display: none;
   }
@@ -275,6 +271,7 @@ h2 {
   top: 4.4em;
   left: 0;
   width: 50%;
+  height: 100%;
   flex-direction: column;
   background-color: var(--footer-background);
 }

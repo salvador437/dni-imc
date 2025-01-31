@@ -234,7 +234,7 @@ del archivo index.html
   color: var(--menu-icono-hambur-color);
 }
 
-@media screen and (min-width: 41em) {
+@media  (min-width: 41em) {
   .menu a {
     display: block;
   }
@@ -249,13 +249,26 @@ del archivo index.html
   position: absolute;
   top: 4.4em;
   left: 0;
-  width: 50%;
+  width: 220px;
+  height: 100vh;
+  font-size: 1.0em;
+  padding-top: 30px;
+  border-right: 4px solid #555;
   flex-direction: column;
+  text-align: left;
   background-color: var(--menu-respon-backgraund);
   & a{
+    width: 195px;
     display: block;
-    text-align: left;
-    margin: 14px 0;
+    margin: 5px 5px;
+    &:hover {
+      cursor: pointer;
+      border-left: 2px solid white;
+      border-right: 3px solid white;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background-color: #111;
+    }
   }
 }
 

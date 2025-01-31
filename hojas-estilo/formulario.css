@@ -58,7 +58,7 @@ body {
   left: 0px; 
   width: 18%; 
   height: 100vh;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 30px;
   border-right: 5px solid #999;
   color: var(--menu-lateral-color);
@@ -172,25 +172,28 @@ textarea {
     position: absolute;
     top: 0;
     left: 0;
-    width: 15%;
-    height: 100%;
-    background-color: #111;
+    font-size: 1em;
+    width: 250px;
+    height: 100vh;
+    background-color: #444;
+    border-right: 4px solid #666;
     & a{
       text-decoration: none;
-      margin: 20px 0;
-      padding:15px 15px;
+      margin: 20px 5px;
+      padding:5px 15px;
       color: white;
       font-size: 18px;
       &:hover {
-        background-color: #555;
-        
+        cursor: pointer;
+        border-left: 2px solid white;
+        border-right: 3px solid white;;
+        border-top-right-radius: 15px ;
+        border-bottom-left-radius: 15px;
+        background-color: #111;
       }
     }
   }
 
-
-
-  
 
 @media (max-width: 668px) {
   .menu{
@@ -219,6 +222,7 @@ textarea {
     margin-left: 5px;
     width: 40%;
     height: 100%;
+    font-size: 1.2em;
     background-color: #444;
     & a{
       text-decoration: none;

@@ -1,7 +1,11 @@
 import  {
-  agregarTarea, input,
+  agregarTarea, input,toggleMenu,
   close, boton, pantallaCompleta
 }  from "./funciones.js";
+
+const menu = document.querySelector(".menu-icon");
+
+menu.addEventListener("click",toggleMenu);
 
 
 boton.addEventListener('click', agregarTarea);

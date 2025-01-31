@@ -193,6 +193,7 @@ tr {
   color: var(--navbar-text-color);
   &:hover {
     border-radius: 0.313em;
+    margin: 0 10px;
     border: var(--a-hover-border-color);
     background-color: var(--a-hover-background-color);
   }
@@ -228,7 +229,7 @@ tr {
   cursor: pointer;
 }
 
-@media screen and (min-width: 41em) {
+@media  (min-width: 41em) {
   .navbar .menu a {
     display: block;
   }
@@ -240,9 +241,13 @@ tr {
 
 .navbar .menu.responsive {
   position: absolute;
-  top: 4.4em;
+  z-index: 100;
+  top: 4.3em;
   left: 0;
-  width: 50%;
+  width: 230px;
+  height: 100vh;
+  font-size: 1em;
+  border-right: 4px solid #555;
   flex-direction: column;
   background-color: var(--menu-respon-backgraund);
 }

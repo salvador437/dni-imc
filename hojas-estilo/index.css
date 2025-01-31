@@ -269,6 +269,8 @@ span {
     flex-direction: column;
     top: 3.3em;
     width: 40%;
+    height: 100%;
+    border-right: 4px solid #444;
     background-color: var(--menu-respon-backgraund);
     & a{
       display: block;
@@ -304,11 +306,10 @@ span {
     color: var(--text-color-footer);
     background-color: var(--footer-background);
   }
-  
 
   .images {
     width: 350px;
-    height: 150px;
+    height: 200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
