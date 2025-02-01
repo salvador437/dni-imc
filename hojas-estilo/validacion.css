@@ -221,6 +221,7 @@ h2 {
 
 .navbar .menu.responsive {
   position: absolute;
+  z-index: 100;
   top: 3.75em;
   width: 220px;
   height: 100vh;
@@ -230,20 +231,18 @@ h2 {
   flex-direction: column;
   text-align: left;
   background-color: var(--footer-background);
-
-}
-
-.navbar .menu.responsive a {
-  width: 195px;
+  & a {
+    width: 195px;
   display: block;
   padding: 8px 10px;
   &:hover {
     cursor: pointer;
     border-left: 2px solid white;
     border-right: 3px solid white;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: #111;
+  }
   }
 }
 
