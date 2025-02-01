@@ -258,7 +258,7 @@ span {
     display: flex;
     position: fixed;
     margin-top: 20px;
-    margin-left: 330px;
+    margin-left: 300px;
     cursor: pointer;
     user-select: none;
   }

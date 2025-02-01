@@ -126,7 +126,7 @@ function calcularValidacion() {
   }
 }
 
-// genéra un número de tarjeta válido
+// genéra un número BIN de tarjeta válido
 function ccGen(bin) {
   let cc = "";
   let xInd = 0;

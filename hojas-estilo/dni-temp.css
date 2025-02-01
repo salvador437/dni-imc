@@ -247,6 +247,7 @@ del archivo index.html
 
 .menu.responsive {
   position: absolute;
+  z-index: 100;
   top: 4.4em;
   left: 0;
   width: 220px;

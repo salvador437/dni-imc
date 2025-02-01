@@ -209,7 +209,7 @@ h2 {
   cursor: pointer;
 }
 
-@media screen and (min-width: 37.5em) {
+@media  (min-width: 37.5em) {
   .navbar .menu a {
     display: block;
   }
@@ -222,14 +222,29 @@ h2 {
 .navbar .menu.responsive {
   position: absolute;
   top: 3.75em;
-  width: 100%;
+  width: 220px;
+  height: 100vh;
+  font-size: 1.0em;
+  padding: 10px 0;
+  border-right: 4px solid #555;
   flex-direction: column;
+  text-align: left;
   background-color: var(--footer-background);
+
 }
 
 .navbar .menu.responsive a {
+  width: 195px;
   display: block;
-  text-align: center;
+  padding: 8px 10px;
+  &:hover {
+    cursor: pointer;
+    border-left: 2px solid white;
+    border-right: 3px solid white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #111;
+  }
 }
 
 .menu-icon {
