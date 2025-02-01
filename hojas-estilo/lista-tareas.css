@@ -54,6 +54,7 @@ body .menu-icon {
   top: 5px;
   right: 40px;
   font-size: 38px;
+  user-select: none;
   cursor: pointer;
 }
 

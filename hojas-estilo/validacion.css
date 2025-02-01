@@ -220,21 +220,22 @@ h2 {
 }
 
 .navbar .menu.responsive {
-  position: absolute;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   z-index: 100;
   top: 3.75em;
   width: 220px;
   height: 100vh;
   font-size: 1.0em;
-  padding: 10px 0;
+  padding: 8px 0px 8px 15px;
   border-right: 4px solid #555;
-  flex-direction: column;
   text-align: left;
   background-color: var(--footer-background);
   & a {
-    width: 195px;
+  width: 195px;
   display: block;
-  padding: 8px 10px;
+  padding: 8px 0px 8px 15px;
   &:hover {
     cursor: pointer;
     border-left: 2px solid white;
@@ -284,8 +285,8 @@ h2 {
   position: absolute;
   top: 4.4em;
   left: 0;
-  width: 50%;
-  height: 100%;
+  width: 220px;
+  height: 100vh;
   flex-direction: column;
   background-color: var(--footer-background);
 }
