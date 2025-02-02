@@ -275,6 +275,10 @@ h2 {
   text-shadow: var(--text-logo-p-shadow-color);
 }
 
+img {
+  display: none;
+}
+
 @media  (min-width: 41em) {
   .navbar .menu-icon {
     display: none;
@@ -292,6 +296,10 @@ h2 {
   flex-direction: column;
   text-align: left;
   background-color: var(--footer-background);
+}
+
+img {
+  display: flex;
 }
 
 .navbar .menu.responsive a {

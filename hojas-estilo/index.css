@@ -267,6 +267,7 @@ span {
     display: flex;
     z-index: 100;
     flex-direction: column;
+    position: fixed;
     top: 3.3em;
     width: 40%;
     height: 100%;
