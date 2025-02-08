@@ -28,7 +28,7 @@
 
 
 .parent {
-  background-image: url(../images/fondo-grid.png) ;
+  background: url(../images/fondo-grid.png) no-repeat center center fixed;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(5, 1fr);
