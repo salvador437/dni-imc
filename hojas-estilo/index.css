@@ -26,7 +26,15 @@
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue";
 }
 
-
+.flecha{
+  position:relative;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  font-size: 248px;
+  z-index: 120;
+  
+}
 .parent {
   background: url(../images/fondo-grid.png) no-repeat center center fixed;
   display: grid;
@@ -114,6 +122,22 @@
   max-width: 100%;
   min-width: 400px;
   z-index: 8;
+}
+
+.flecha{
+  position: fixed;
+  bottom: 50%;
+  right: 10px;
+  font-size: 40px;
+  z-index: 120;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 0 20px;
+  &:hover {
+    cursor: pointer;
+    background-color: #555;
+  }
 }
 
 .video {
