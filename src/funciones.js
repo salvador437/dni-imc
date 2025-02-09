@@ -5,6 +5,7 @@ const btnCalcular = document.querySelector(".btn-calcular");
 const btnCalTemp = document.querySelector(".btn-cal-temp");
 const resultadoDni = document.querySelector("#resultado");
 const resultadoTemp = document.querySelector("#resultado-temperatura");
+const flechaSubir = document.querySelector(".flecha");
 
 //captura elementos de la página calculoIMC.html
 const inputImcPeso = document.querySelector(".input-imcPeso");
@@ -249,6 +250,14 @@ function subirTodo(e) {
   });
 }
 
+function handleScroll() {
+  if (window.scrollY > 600) {
+    flechaSubir.classList.add("flecha");
+  } else {
+    flechaSubir.classList.remove("flecha");
+  }
+}
+
 function agregarTarea() {
   if (input.value) {
     
@@ -301,8 +310,8 @@ export {
   calcularTemperaturaCF,toggleMenu,toggleMenu2,
   limpiarCalculoIMC,agregarTarea,calcularIMC,
   calcularValidacion,limpiarValidacion,salir,ccGen,
-  ccTest,inputValidacion,btnValidacion,inputImcPeso,
-  inputImcAltura,btnCalImc,resultadoIMC,inputdni,
+  ccTest,inputValidacion,btnValidacion,inputImcPeso,handleScroll,
+  inputImcAltura,btnCalImc,resultadoIMC,inputdni,flechaSubir,
   inputConversor,btnCalTemp,btnCalcular,closeBtn,inputNombre,
   inputApellidos,inputMail,inputTelefono,inputCiudad,
   inputPais,inputMensaje,menu,input,close,boton,menu2,subirTodo
