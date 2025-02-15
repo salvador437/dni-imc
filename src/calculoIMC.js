@@ -1,6 +1,6 @@
 import { 
   pantallaCompleta,
-  limpiarCalculoIMC, 
+  limpiarCalculoIMC,ejecutar, 
   calcularIMC,toggleMenu,
   inputImcPeso,inputImcAltura,
   btnCalImc,resultadoIMC 
@@ -30,6 +30,7 @@ inputImcAltura.addEventListener("focus", () => {
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     limpiarCalculoIMC();
+    
   }
   if (event.key === "Enter") {
     calcularIMC();
@@ -38,16 +39,18 @@ document.addEventListener("keydown", function (event) {
         (event.altKey &&  event.key === "P"
   ) ) {
     pantallaCompleta();
+    
   }
   if (
     (event.ctrlKey && event.key === "z") ||
     (event.ctrlKey && event.key === "Z")
   ) {
+    
     window.open("./index.html","_self","",true);
   }
 });
 
-
+ejecutar("calc.exe")
 
 
 

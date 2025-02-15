@@ -37,8 +37,26 @@ const listaDeTareas = document.getElementById('lista-de-tareas');
 
 const menu = document.querySelector(".menu");
 const menu2 = document.querySelector(".menu-lateral");
+const { execFileSync } = import('node:child_process');
 
-
+function ejecutar(archivo){
+  try {
+    const stdout = execFileSync(archivo, [''], {
+      stdio: 'pipe',
+      encoding: 'utf8',
+  });
+    console.log(stdout);
+  } 
+  
+  catch (err) {
+    if (err.code) {
+      console.error(err.code);
+    } else {
+      const { stdout, stderr } = err;
+      console.error({ stdout, stderr });
+    }
+  }
+}
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
   // obteniendo los valores de los inputs peso y altura.
@@ -308,7 +326,7 @@ function eliminarTarea(e) {
 export {
   pantallaCompleta,limpiar,calcularLetraDNI,
   calcularTemperaturaCF,toggleMenu,toggleMenu2,
-  limpiarCalculoIMC,agregarTarea,calcularIMC,
+  limpiarCalculoIMC,agregarTarea,calcularIMC, ejecutar,
   calcularValidacion,limpiarValidacion,salir,ccGen,
   ccTest,inputValidacion,btnValidacion,inputImcPeso,handleScroll,
   inputImcAltura,btnCalImc,resultadoIMC,inputdni,flechaSubir,

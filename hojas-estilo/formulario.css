@@ -180,9 +180,9 @@ textarea {
     & a{
       text-decoration: none;
       margin: 20px 5px;
-      padding:5px 15px;
+      padding:20px 0px;
       color: white;
-      font-size: 18px;
+      font-size: 20px;
       &:hover {
         cursor: pointer;
         border-left: 2px solid white;

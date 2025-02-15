@@ -178,7 +178,7 @@ tr {
   justify-content: space-around;
   align-items: center;
   user-select: none;
-  padding: 20px 0;
+  padding: 5px 0px;
   border-bottom: var(--navbar-border-button-color);
   color: var(--text-navbar);
   background: var(--navbar-background);
