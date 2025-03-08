@@ -126,7 +126,7 @@
 
 .flecha{
   position: fixed;
-  bottom: 50%;
+  bottom: 10%;
   right: 10px;
   font-size: 40px;
   z-index: 120;

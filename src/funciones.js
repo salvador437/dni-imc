@@ -46,9 +46,7 @@ function ejecutar(archivo){
       encoding: 'utf8',
   });
     console.log(stdout);
-  } 
-  
-  catch (err) {
+  } catch (err) {
     if (err.code) {
       console.error(err.code);
     } else {
@@ -57,6 +55,7 @@ function ejecutar(archivo){
     }
   }
 }
+
 // calcula el índice de masa corporal IMC.
 function calcularIMC() {
   // obteniendo los valores de los inputs peso y altura.
