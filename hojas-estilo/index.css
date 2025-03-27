@@ -126,7 +126,7 @@
 
 .flecha{
   position: fixed;
-  bottom: 10%;
+  bottom: 50%;
   right: 10px;
   font-size: 40px;
   z-index: 120;
@@ -136,7 +136,9 @@
   padding: 0 20px;
   &:hover {
     cursor: pointer;
-    background-color: #555;
+    color: red;
+    border: 3px solid red;
+    /* background-color: #555; */
   }
 }
 
