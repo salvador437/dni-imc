@@ -59,7 +59,7 @@ p::first-letter {
 }
 
 .header {
-  border: var(--header-border-color);
+  outline: var(--header-border-color);
   border-radius: 15px;
   margin-bottom: 30px;
   user-select: none;
@@ -84,7 +84,7 @@ p::first-letter {
   padding-bottom: 7px;
   padding-top: 7px;
   user-select: none;
-  border: var(--header-border-color);
+  outline: var(--header-border-color);
   &:hover {
     background-color: var(--items-hover-background-color);
     color: white;

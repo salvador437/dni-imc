@@ -62,7 +62,7 @@
     padding-left: 20px;
     align-content: center;
     font-weight: bold;
-    border: color var(--logo-text-color);
+    outline: color var(--logo-text-color);
     & p{
       color: var(--logo-p-color);
       text-shadow: var(--logo-text-shadow);

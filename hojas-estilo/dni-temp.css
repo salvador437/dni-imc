@@ -197,7 +197,7 @@ a {
   &:hover {
     border-radius: 0.312em;
     background-color: var(--a-hover-background);
-    border: var(--a-hover-border-color);
+    outline: var(--a-hover-border-color);
   }
 }
 

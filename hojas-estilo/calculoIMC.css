@@ -123,7 +123,7 @@ de la página calculoIMC.html
   color: var(--modal-content-color);
   margin: 15% auto;
   padding: 1.25em;
-  border: var(--modal-borde-color);
+  outline: var(--modal-borde-color);
   width: 80%;
   max-width: 31.25em;
   box-shadow: var(--modal-box-shadow);
@@ -194,7 +194,7 @@ tr {
   color: var(--navbar-text-color);
   &:hover {
     border-radius: 0.313em;
-    border: var(--a-hover-border-color);
+    outline: var(--a-hover-border-color);
     background-color: var(--a-hover-background-color);
   }
 }
